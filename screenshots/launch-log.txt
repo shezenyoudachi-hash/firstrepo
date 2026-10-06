@@ -42,162 +42,162 @@ Build version 17F113
   ]
 }
 == launch (light) ==
-com.example.TVGuide: 5596
+com.example.TVGuide: 5811
 == running processes ==
-5596	0	UIKitApplication:com.example.TVGuide[4e94][rb-legacy]
+5811	0	UIKitApplication:com.example.TVGuide[6ffa][rb-legacy]
 == launch (dark) ==
-com.example.TVGuide: 6652
+com.example.TVGuide: 6699
 == running processes ==
-6652	0	UIKitApplication:com.example.TVGuide[6fb9][rb-legacy]
+6699	0	UIKitApplication:com.example.TVGuide[3bb1][rb-legacy]
 == app log ==
-2026-10-06 15:35:55.861 Df TVGuide[6652:5f9d] (libMobileGestalt.dylib) No persisted cache on this platform.
-2026-10-06 15:35:55.864 Df TVGuide[6652:5fa4] [com.apple.BoardServices:XPCErrors] [C:1] Alloc com.apple.frontboard.systemappservices
-2026-10-06 15:35:55.866 Df TVGuide[6652:5fa4] [com.apple.xpc:connection] [0x103d50140] activating connection: mach=false listener=false peer=false name=(anonymous)
-2026-10-06 15:35:55.866 Df TVGuide[6652:5fa2] [com.apple.UIKit:BackgroundTask] Creating new assertion because there is no existing background assertion.
-2026-10-06 15:35:55.876 Df TVGuide[6652:5fa2] [com.apple.UIKit:BackgroundTask] Creating new background assertion
-2026-10-06 15:35:55.876 Df TVGuide[6652:5fa2] [com.apple.UIKit:BackgroundTask] Created new background assertion <BKSProcessAssertion: 0x10364e5d0>
-2026-10-06 15:35:55.876 Df TVGuide[6652:5fa2] [com.apple.runningboard:connection] Initializing connection
-2026-10-06 15:35:55.876 Df TVGuide[6652:5fa2] [com.apple.runningboard:process] Removing all cached process handles
-2026-10-06 15:35:55.878 Df TVGuide[6652:5fa2] [com.apple.runningboard:connection] Creating connection to com.apple.runningboard
-2026-10-06 15:35:55.879 Df TVGuide[6652:5fa2] [com.apple.xpc:connection] [0x103d50280] activating connection: mach=true listener=false peer=false name=com.apple.runningboard
-2026-10-06 15:35:55.880 Df TVGuide[6652:5f9d] [com.apple.UIKit:Application] Deactivation reason added: 10; deactivation reasons: 0 -> 1024; animating application lifecycle event: 0
-2026-10-06 15:35:55.880 Df TVGuide[6652:5f9d] [com.apple.BoardServices:Injection] activating monitor for service com.apple.frontboard.open
-2026-10-06 15:35:55.881 Df TVGuide[6652:5fa1] [com.apple.runningboard:connection] Sending handshake request attempt #1 to server
-2026-10-06 15:35:55.881 Df TVGuide[6652:5f9d] [com.apple.BoardServices:Injection] activating monitor for service com.apple.frontboard.workspace-service
-2026-10-06 15:35:55.881 Df TVGuide[6652:5f9d] [com.apple.FrontBoard:Common] FBSWorkspace registering source: com.apple.frontboard.systemappservices
-2026-10-06 15:35:55.882 Df TVGuide[6652:5fa1] [com.apple.runningboard:connection] Handshake succeeded
-2026-10-06 15:35:55.882 Df TVGuide[6652:5fa1] [com.apple.runningboard:connection] Identity resolved as app<com.example.TVGuide((null))>
-2026-10-06 15:35:55.882 Df TVGuide[6652:5f9d] [com.apple.FrontBoard:Common] FBSWorkspace connected to endpoint : <BSServiceConnectionEndpoint: 0x103d24940; target: com.apple.frontboard.systemappservices; service: com.apple.frontboard.workspace-service>
-2026-10-06 15:35:55.882 Df TVGuide[6652:5f9d] [com.apple.FrontBoard:Common] <FBSWorkspaceScenesClient:0x103cdcc80 com.apple.frontboard.systemappservices> attempting immediate handshake from activate
-2026-10-06 15:35:55.882 Df TVGuide[6652:5fa2] [com.apple.UIKit:BackgroundTask] Incrementing reference count for background assertion <BKSProcessAssertion: 0x10364e5d0>
-2026-10-06 15:35:55.883 Df TVGuide[6652:5f9d] [com.apple.FrontBoard:Common] <FBSWorkspaceScenesClient:0x103cdcc80 com.apple.frontboard.systemappservices> sent handshake
-2026-10-06 15:35:55.883 Df TVGuide[6652:5fa2] [com.apple.UIKit:BackgroundTask] Created background task <_UIBackgroundTaskInfo: 0x103c5c700>: taskID = 1, taskName = Launch Background Task for Coalescing, creationTime = 311 (elapsed = 0).
-2026-10-06 15:35:55.883 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UIApplicationSceneKeyboardSettings on FBSSceneSettings
-2026-10-06 15:35:55.884 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneOcclusionSettings> on FBSSceneSettings
-2026-10-06 15:35:55.885 Df TVGuide[6652:5f9d] [com.apple.runningboard:general] Added observer for process assertions expiration warning: <_RBSExpirationWarningClient: 0x103d24c80>
-2026-10-06 15:35:55.885 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneInterfaceProtectionSettings> on FBSSceneSettings
-2026-10-06 15:35:55.886 A  TVGuide[6652:5fa3] (RunningBoardServices) didChangeInheritances
-2026-10-06 15:35:55.890 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneLayoutPreferencesHostSettingsExtension on FBSSceneSettings
-2026-10-06 15:35:55.890 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneSafeAreaSettingsExtension on FBSSceneSettings
-2026-10-06 15:35:55.890 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneLayoutPreferenceClientSettingsExtension on FBSSceneClientSettings
-2026-10-06 15:35:55.891 Df TVGuide[6652:5f9d] [com.apple.UIKit:UIScreen] Evaluated capturing state as 0 on <UIScreen: 0x103d50500> for initial
-2026-10-06 15:35:55.891 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UIHomeAffordanceHostSceneSettings> on FBSSceneSettings
-2026-10-06 15:35:55.891 Df TVGuide[6652:5f9d] [com.apple.UIKit:UIScreen] Evaluated capturing state as 0 on <UIScreen: 0x103d50500> for CADisplay KVO
-2026-10-06 15:35:55.891 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISystemShellSceneHostingEnvironmentSettings on FBSSceneSettings
-2026-10-06 15:35:55.891 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneRenderingEnvironmentSettings on FBSSceneSettings
-2026-10-06 15:35:55.892 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneRenderingEnvironmentClientSettings> on FBSSceneClientSettings
-2026-10-06 15:35:55.892 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneTransitioningHostSettings> on FBSSceneSettings
-2026-10-06 15:35:55.892 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneFocusSystemSettings> on FBSSceneSettings
-2026-10-06 15:35:55.892 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneOrientationSettingsExtension on FBSSceneSettings
-2026-10-06 15:35:55.892 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneOrientationClientSettingsExtension on FBSSceneClientSettings
-2026-10-06 15:35:55.892 Df TVGuide[6652:5f9d] [com.apple.Accessibility:AXSupportCommon] Read CategoryName: per-app = 1, category name = (null)
-2026-10-06 15:35:55.892 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneWindowingControlClientSettings on FBSSceneClientSettings
-2026-10-06 15:35:55.893 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingContentSizePreferenceClientSettings> on FBSSceneClientSettings
-2026-10-06 15:35:55.893 Df TVGuide[6652:5f9d] [com.apple.Accessibility:AXSupportCommon] Read CategoryName: per-app = 0, category name = (null)
-2026-10-06 15:35:55.893 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneHostingTraitCollectionPropagationSettings on FBSSceneSettings
-2026-10-06 15:35:55.893 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingSheetPresentationSettings> on FBSSceneSettings
-2026-10-06 15:35:55.894 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingSheetPresentationClientSettings> on FBSSceneClientSettings
-2026-10-06 15:35:55.894 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingEventDeferringSettings> on FBSSceneSettings
-2026-10-06 15:35:55.894 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <UIKit__UITypedKeyValueSceneSettings> on FBSSceneSettings
-2026-10-06 15:35:55.894 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <UIKit__UITypedKeyValueSceneSettings> on FBSSceneClientSettings
-2026-10-06 15:35:55.895 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingViewControllerPreferencePropagationClientSettings> on FBSSceneClientSettings
-2026-10-06 15:35:55.895 Df TVGuide[6652:5fa2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneZoomTransitionSettings> on FBSSceneSettings
-2026-10-06 15:35:55.896 Df TVGuide[6652:5fa7] [com.apple.FrontBoard:SceneExtension] Realizing settings extension FBSSceneSettingsCore on FBSSceneSettings
-2026-10-06 15:35:55.896 Df TVGuide[6652:5fa7] [com.apple.FrontBoard:SceneExtension] Realizing settings extension FBSSceneClientSettingsCore on FBSSceneClientSettings
-2026-10-06 15:35:55.899 Df TVGuide[6652:5f9d] [com.apple.dt.xctest:Default] Registering for test daemon availability notify post.
-2026-10-06 15:35:55.907 Df TVGuide[6652:5fa7] [com.apple.FrontBoard:SceneExtension] UIMutableApplicationSceneSettings setting counterpart class: UIApplicationSceneSettings
-2026-10-06 15:35:55.907 Df TVGuide[6652:5f9d] [com.apple.dt.xctest:Default] notify_get_state check indicated test daemon not ready.
-2026-10-06 15:35:55.907 Df TVGuide[6652:5f9d] [com.apple.dt.xctest:Default] notify_get_state check indicated test daemon not ready.
-2026-10-06 15:35:55.907 Df TVGuide[6652:5f9d] [com.apple.dt.xctest:Default] notify_get_state check indicated test daemon not ready.
-2026-10-06 15:35:55.907 Df TVGuide[6652:5fa7] [com.apple.FrontBoard:SceneExtension] UIMutableApplicationSceneClientSettings setting counterpart class: UIApplicationSceneClientSettings
-2026-10-06 15:35:55.908 Df TVGuide[6652:5f9d] [com.apple.UIKit:Application] Deactivation reason added: 11; deactivation reasons: 1024 -> 3072; animating application lifecycle event: 0
-2026-10-06 15:35:55.908 Df TVGuide[6652:5fa7] [com.apple.FrontBoard:SceneExtension] Realizing settings extension FBSSceneTransitionContextCore on FBSSceneTransitionContext
-2026-10-06 15:35:55.911 Df TVGuide[6652:5f9d] [com.apple.UIKit:Application] Deactivation reason removed: 10; deactivation reasons: 3072 -> 2048; animating application lifecycle event: 0
-2026-10-06 15:35:55.914 Df TVGuide[6652:5f9d] [com.apple.UIKit:EventBus] Event Timing Profile for Touch: not found, path="/System/Library/EventTimingProfiles/Sim.Touch.plist"
-2026-10-06 15:35:55.914 Df TVGuide[6652:5f9d] [com.apple.UIKit:EventBus] Event Timing Profile for Pencil: not found, path="/System/Library/EventTimingProfiles/Sim.Pencil.plist"
-2026-10-06 15:35:55.914 Df TVGuide[6652:5f9d] [com.apple.UIKit:UpdateScheduler] Selected display: name=LCD (PurpleMain), id=1
-2026-10-06 15:35:55.917 Df TVGuide[6652:5f9d] [com.apple.xpc:connection] [0x103d50a00] activating connection: mach=true listener=false peer=false name=com.apple.lsd.mapdb
-2026-10-06 15:35:55.949 Df TVGuide[6652:5f9d] [com.apple.BoardServices:XPCErrors] [C:2] Alloc com.apple.backboard.hid-services.xpc
-2026-10-06 15:35:55.949 Df TVGuide[6652:5f9d] [com.apple.xpc:connection] [0x103d50c80] activating connection: mach=false listener=false peer=false name=(anonymous)
-2026-10-06 15:35:55.951 Df TVGuide[6652:5f9d] [com.apple.app_launch_measurement:ApplicationLaunch] alm_acquire_pageins_recording_assertion: acquired pageins recording assertion!
-2026-10-06 15:35:55.954 Df TVGuide[6652:5fa2] [com.apple.BackBoard:EventDelivery] BKSHIDEventDeliveryManager - connection activation
-2026-10-06 15:35:55.954 Df TVGuide[6652:5f9d] [com.apple.UIKit:Application] Deactivation reason added: 5; deactivation reasons: 2048 -> 2080; animating application lifecycle event: 1
-2026-10-06 15:35:55.954 Df TVGuide[6652:5f9d] [com.apple.UIKit:InterfaceStyle] Should send trait collection or coordinate space update, interface style 2 -> 2, <UIWindowScene: 0x10364f4f0> (3C2F315B-F636-4DD5-8B09-7FB7136DDF7F)
-2026-10-06 15:35:55.955 Df TVGuide[6652:5f9d] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 2, <UIWindowScene: 0x10364f4f0> (3C2F315B-F636-4DD5-8B09-7FB7136DDF7F)
-2026-10-06 15:35:55.955 Df TVGuide[6652:5f9d] [com.apple.UIKit:HomeAffordanceObservation] Initializing: <_UIHomeAffordanceSceneNotifier: 0x103e1d810>; with scene: <UIWindowScene: 0x10364f4f0>
-2026-10-06 15:35:55.955 Df TVGuide[6652:5f9d] [com.apple.BacklightServices:scenes] 0x103c26f40 setDelegate:<0x103c26ac0 _UIBacklightEnvironment> hasDelegate:YES for environment:sceneID:com.example.TVGuide-default
-2026-10-06 15:35:55.956 Df TVGuide[6652:5f9d] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 2, <UIWindowScene: 0x10364f4f0> (3C2F315B-F636-4DD5-8B09-7FB7136DDF7F)
-2026-10-06 15:35:55.956 Df TVGuide[6652:5f9d] [com.apple.UIKit:EventDeferring] [0x103e1d030] Initialized with scene: <UIWindowScene: 0x10364f4f0>; behavior: <_UIEventDeferringBehavior_iOS: 0x103d27f20>; availableForProcess: 1, systemShellManagesKeyboardFocus: 1
-2026-10-06 15:35:55.957 Df TVGuide[6652:5fa7] [com.apple.BackBoard:EventDelivery] BKSHIDEventObserver - connection activation
-2026-10-06 15:35:55.957 Df TVGuide[6652:5f9d] [com.apple.BackBoard:EventDelivery] policyStatus:<BKSHIDEventDeliveryPolicyObserver: 0x103dd4420; process scope; status: target> was:none
-2026-10-06 15:35:55.958 Df TVGuide[6652:5f9d] [com.apple.UIKit:KeyWindow] Setting default evaluation strategy for UIUserInterfaceIdiomPhone to LastOneWins
-2026-10-06 15:35:55.958 Df TVGuide[6652:5f9d] [com.apple.UIKit:KeyWindow] Scene target of keyboard event deferring environment did change: 1; scene: UIWindowScene: 0x10364f4f0; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.example.TVGuide-default
-2026-10-06 15:35:55.958 Df TVGuide[6652:5f9d] [com.apple.UIKit:EventDeferring] [0x103e1d030] Scene target of event deferring environments did update: scene: 0x10364f4f0; current systemShellManagesKeyboardFocus: 1; systemShellManagesKeyboardFocusForScene: 1; eligibleForRecordRemoval: 1;
-2026-10-06 15:35:55.958 Df TVGuide[6652:5f9d] [com.apple.UIKit:KeyWindow] Scene became target of keyboard event deferring environment: UIWindowScene: 0x10364f4f0; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.example.TVGuide-default
-2026-10-06 15:35:55.958 Df TVGuide[6652:5f9d] [com.apple.UIKit:KeyWindow] Stack[KeyWindow] 0x103c26e50: Taking no further action for migration from LastOneWins -> SystemShellManaged as there are no scenes
-2026-10-06 15:35:55.958 Df TVGuide[6652:5f9d] [com.apple.UIKit:KeyWindow] Setting default evaluation strategy for UIUserInterfaceIdiomPhone to SystemShellManaged
-2026-10-06 15:35:55.958 Df TVGuide[6652:5f9d] [com.apple.UIKit:KeyWindow] Key window needs update: 0; currentKeyWindowScene: 0x0; evaluatedKeyWindowScene: 0x10364f4f0; currentApplicationKeyWindow: 0x0; evaluatedApplicationKeyWindow: 0x0; reason: UIWindowScene: 0x10364f4f0: Window scene became target of keyboard environment
-2026-10-06 15:35:55.958 Df TVGuide[6652:5f9d] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 2, <UIWindowScene: 0x10364f4f0> (3C2F315B-F636-4DD5-8B09-7FB7136DDF7F)
-2026-10-06 15:35:55.959 Df TVGuide[6652:5f9d] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 2, <UIWindowScene: 0x10364f4f0> (3C2F315B-F636-4DD5-8B09-7FB7136DDF7F)
-2026-10-06 15:35:55.961 Df TVGuide[6652:5f9d] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 2, <UIWindowScene: 0x10364f4f0> (3C2F315B-F636-4DD5-8B09-7FB7136DDF7F)
-2026-10-06 15:35:56.031 Df TVGuide[6652:5f9d] [com.apple.UIKit:Orientation] <UIWindowScene: 0x10364f4f0> (3C2F315B-F636-4DD5-8B09-7FB7136DDF7F) Scene updated orientation preferences: none -> ( Pu Ll Lr )
-2026-10-06 15:35:56.041 Df TVGuide[6652:5f9d] [com.apple.UIKit:KeyWindow] Key window API is scene-level: YES
-2026-10-06 15:35:56.041 Df TVGuide[6652:5f9d] [com.apple.UIKit:KeyWindow] UIWindowScene: 0x10364f4f0: Window became key in scene: UIWindow: 0x103d98400; contextId: 0x2F5563BC: reason: UIWindowScene: 0x10364f4f0: Window requested to become key in scene: 0x103d98400
-2026-10-06 15:35:56.042 Df TVGuide[6652:5f9d] [com.apple.UIKit:KeyWindow] Key window needs update: 1; currentKeyWindowScene: 0x0; evaluatedKeyWindowScene: 0x10364f4f0; currentApplicationKeyWindow: 0x0; evaluatedApplicationKeyWindow: 0x103d98400; reason: UIWindowScene: 0x10364f4f0: Window requested to become key in scene: 0x103d98400
-2026-10-06 15:35:56.042 Df TVGuide[6652:5f9d] [com.apple.UIKit:KeyWindow] Window did become application key: UIWindow: 0x103d98400; contextId: 0x2F5563BC; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.example.TVGuide-default
-2026-10-06 15:35:56.042 Df TVGuide[6652:5f9d] [com.apple.UIKit:EventDeferring] [0x103e1d030] Begin local event deferring requested for token: 0x103dd4b40; environments: 1; reason: UIWindowScene: 0x10364f4f0: Begin event deferring in keyboardFocus for window: 0x103d98400
-2026-10-06 15:35:56.046 Df TVGuide[6652:5f9d] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 2, <UIWindowScene: 0x10364f4f0> (3C2F315B-F636-4DD5-8B09-7FB7136DDF7F)
-2026-10-06 15:35:56.047 Df TVGuide[6652:5f9d] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.example.TVGuide-default  persistentID: 3C2F315B-F636-4DD5-8B09-7FB7136DDF7F
-2026-10-06 15:35:56.048 Df TVGuide[6652:5f9d] [com.apple.UIKit:Application] Ignoring already applied deactivation reason: 5; deactivation reasons: 2080
-2026-10-06 15:35:56.048 Df TVGuide[6652:5f9d] [com.apple.UIKit:Application] Deactivation reason added: 12; deactivation reasons: 2080 -> 6176; animating application lifecycle event: 1
-2026-10-06 15:35:56.048 Df TVGuide[6652:5f9d] [com.apple.UIKit:Application] Deactivation reason removed: 11; deactivation reasons: 6176 -> 4128; animating application lifecycle event: 1
-2026-10-06 15:35:56.049 Df TVGuide[6652:5f9d] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneIntelligenceSupportSettings> on FBSSceneSettings
-2026-10-06 15:35:56.050 Df TVGuide[6652:5fa2] [com.apple.UIIntelligenceSupport:xpc] establishing connection to agent
-2026-10-06 15:35:56.050 Df TVGuide[6652:5f9d] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 2, <UIWindowScene: 0x10364f4f0> (3C2F315B-F636-4DD5-8B09-7FB7136DDF7F)
-2026-10-06 15:35:56.051 Df TVGuide[6652:5fa1] [com.apple.BackBoard:EventDelivery] policyStatus:<BKSHIDEventDeliveryPolicyObserver: 0x103dd4420; token: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.example.TVGuide-default; status: ancestor> was:target
-2026-10-06 15:35:56.060 Df TVGuide[6652:5fa2] [com.apple.xpc:session] [0x103d9d4f0] Session created.
-2026-10-06 15:35:56.060 Df TVGuide[6652:5fa2] [com.apple.xpc:session] [0x103d9d4f0] Session created from connection [0x103fd08c0]
-2026-10-06 15:35:56.060 Df TVGuide[6652:5fa2] [com.apple.xpc:connection] [0x103fd08c0] activating connection: mach=true listener=false peer=false name=com.apple.uiintelligencesupport.agent
-2026-10-06 15:35:56.060 Df TVGuide[6652:5fa2] [com.apple.xpc:session] [0x103d9d4f0] Session activated
-2026-10-06 15:35:56.060 A  TVGuide[6652:5f9d] (CoreFoundation) Updating Key-Value Observers Of Preferences
-2026-10-06 15:35:56.171 Df TVGuide[6652:5fa3] [com.apple.xpc:connection] [0x103fd1180] activating connection: mach=true listener=false peer=false name=com.apple.fontservicesd
-2026-10-06 15:35:56.279 Df TVGuide[6652:5f9d] [PrototypeTools:domain] Not observing PTDefaults on customer install.
-2026-10-06 15:35:56.281 Df TVGuide[6652:5f9d] [com.apple.UIKit:_UIVisualStyleRegistry] Note: no default visual style class registered as fallback for stylable class UIActivityIndicatorView
-2026-10-06 15:35:56.281 Df TVGuide[6652:5f9d] [com.apple.UIKit:_UIVisualStyleRegistry] Note: no default visual style class registered as fallback for stylable class UIActivityIndicatorView
-2026-10-06 15:35:56.376 Df TVGuide[6652:5f9d] [com.apple.FrontBoard:SceneClient] [(FBSceneManager):sceneID:com.example.TVGuide-default] Sending action(s): BLSInvalidateFrameSpecifiersAction
-2026-10-06 15:35:56.456 Df TVGuide[6652:5f9d] [com.apple.xpc:connection] [0x11d741b80] activating connection: mach=true listener=false peer=false name=com.apple.IOSurface.Remote
-2026-10-06 15:35:56.462 Df TVGuide[6652:5f9d] [com.apple.network:activity] Create activity from XPC object <nw_activity 50:1 [BF3D9D61-BDEE-48B6-B240-A4654AB6D7AE] (reporting strategy default)>
-2026-10-06 15:35:56.462 Df TVGuide[6652:5f9d] [com.apple.network:activity] Create activity from XPC object <nw_activity 50:2 [5062CF04-D643-41D2-8D98-A4CB20EEBC2A] (reporting strategy default)>
-2026-10-06 15:35:56.462 Df TVGuide[6652:5f9d] [com.apple.network:activity] Set activity <nw_activity 50:1 [BF3D9D61-BDEE-48B6-B240-A4654AB6D7AE] (reporting strategy default)> as the global parent
-2026-10-06 15:35:56.462 Df TVGuide[6652:5f9d] [com.apple.UIKit:BackgroundTask] Ending background task with UIBackgroundTaskIdentifier: 1
-2026-10-06 15:35:56.462 Df TVGuide[6652:5f9d] [com.apple.UIKit:BackgroundTask] Ending task with identifier 1 and description: <_UIBackgroundTaskInfo: 0x103c5c700>: taskID = 1, taskName = Launch Background Task for Coalescing, creationTime = 311 (elapsed = 0), _expireHandler: (null)
-2026-10-06 15:35:56.462 Df TVGuide[6652:5f9d] [com.apple.UIKit:BackgroundTask] Decrementing reference count for assertion <BKSProcessAssertion: 0x10364e5d0> (used by background task with identifier 1: <_UIBackgroundTaskInfo: 0x103c5c700>: taskID = 1, taskName = Launch Background Task for Coalescing, creationTime = 311 (elapsed = 0))
-2026-10-06 15:35:56.462 Df TVGuide[6652:5f9d] [com.apple.UIKit:BackgroundTask] Will invalidate assertion: <BKSProcessAssertion: 0x10364e5d0> for task identifier: 1
-2026-10-06 15:35:56.463 Df TVGuide[6652:5fa1] [com.apple.CoreAnalytics:client] No XPC connection in Simulator
-2026-10-06 15:35:56.464 Df TVGuide[6652:5f9d] [com.apple.UIKit:UpdateScheduler] Target list changed: <CADisplay:LCD PurpleMain>
-2026-10-06 15:35:56.465 Df TVGuide[6652:5f9d] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.example.TVGuide-default  persistentID: 3C2F315B-F636-4DD5-8B09-7FB7136DDF7F
-2026-10-06 15:35:56.465 Df TVGuide[6652:5f9d] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 2, <UIWindowScene: 0x10364f4f0> (3C2F315B-F636-4DD5-8B09-7FB7136DDF7F)
-2026-10-06 15:35:56.467 E  TVGuide[6652:5fa1] [com.apple.app_launch_measurement:General] Failed to send CA Event for app launch measurements for ca_event_type: 0 event_name: com.apple.app_launch_measurement.FirstFramePresentationMetric
-2026-10-06 15:35:56.469 Df TVGuide[6652:5f9d] [com.apple.UIKit:EventDeferring] [0x103e1d030] Scene target of event deferring environments did update: scene: 0x10364f4f0; current systemShellManagesKeyboardFocus: 1; systemShellManagesKeyboardFocusForScene: 1; eligibleForRecordRemoval: 1;
-2026-10-06 15:35:56.470 Df TVGuide[6652:5f9d] [com.apple.UIKit:KeyWindow] Scene became target of keyboard event deferring environment: UIWindowScene: 0x10364f4f0; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.example.TVGuide-default
-2026-10-06 15:35:56.470 Df TVGuide[6652:5f9d] [com.apple.Accessibility:AXCommon] Read Per-App on Init: Smart invert = (null)
-2026-10-06 15:35:56.470 A  TVGuide[6652:5fa1] (RunningBoardServices) didChangeInheritances
-2026-10-06 15:35:56.471 Df TVGuide[6652:5f9d] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 2, <UIWindowScene: 0x10364f4f0> (3C2F315B-F636-4DD5-8B09-7FB7136DDF7F)
-2026-10-06 15:35:56.472 Df TVGuide[6652:5f9d] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.example.TVGuide-default  persistentID: 3C2F315B-F636-4DD5-8B09-7FB7136DDF7F
-2026-10-06 15:35:56.472 Df TVGuide[6652:5f9d] [com.apple.UIKit:Application] Deactivation reason removed: 12; deactivation reasons: 4128 -> 32; animating application lifecycle event: 1
-2026-10-06 15:35:56.472 Df TVGuide[6652:5f9d] [com.apple.KeyboardArbiter:Client] Send setDeactivating: N (-DeactivationReason:SuspendedEventsOnly)
-2026-10-06 15:35:56.475 Df TVGuide[6652:5f9d] [com.apple.UIKit:Application] Deactivation reason removed: 5; deactivation reasons: 32 -> 0; animating application lifecycle event: 0
-2026-10-06 15:35:57.021 A  TVGuide[6652:5fa1] (RunningBoardServices) didChangeInheritances
-2026-10-06 15:35:57.036 Df TVGuide[6652:5f9d] [com.apple.KeyboardArbiter:Client] startConnection
-2026-10-06 15:35:57.037 Df TVGuide[6652:5f9d] [com.apple.xpc:connection] [0x103fd2080] activating connection: mach=true listener=false peer=false name=com.apple.UIKit.KeyboardManagement.hosted
-2026-10-06 15:35:57.039 Df TVGuide[6652:5f9d] [com.apple.KeyboardArbiter:Client] handleKeyboardChange: set currentKeyboard:N (wasKeyboard:N)
-2026-10-06 15:35:57.045 Df TVGuide[6652:5f9d] [com.apple.UIKit:KeyboardSceneDelegate] forceReloadInputViews
-2026-10-06 15:35:57.045 Df TVGuide[6652:5f9d] [com.apple.UIKit:KeyboardSceneDelegate] Reloading input views for key-window scene responder: <(null): 0x0; > force:Y
-2026-10-06 15:35:57.045 Df TVGuide[6652:5f9d] [com.apple.UIKit:KeyboardArbiterClientLog] isWritingToolsHandlingKeyboardTracking:Y (WT ready:Y, Arbiter ready:Y)
-2026-10-06 15:35:57.140 Df TVGuide[6652:5f9d] [com.apple.network:activity] <nw_activity 50:1 [BF3D9D61-BDEE-48B6-B240-A4654AB6D7AE] (global parent) (reporting strategy default) complete (reason success)> complete with reason 2 (success), duration 1744ms
-2026-10-06 15:35:57.140 Df TVGuide[6652:5f9d] [com.apple.network:activity] <nw_activity 50:2 [5062CF04-D643-41D2-8D98-A4CB20EEBC2A] (reporting strategy default) complete (reason success)> complete with reason 2 (success), duration 1744ms
-2026-10-06 15:35:57.140 Df TVGuide[6652:5f9d] [com.apple.network:activity] Unsetting the global parent activity <nw_activity 50:1 [BF3D9D61-BDEE-48B6-B240-A4654AB6D7AE] (global parent) (reporting strategy default) complete (reason success)>
-2026-10-06 15:35:57.140 Df TVGuide[6652:5f9d] [com.apple.network:activity] Unset the global parent activity
-2026-10-06 15:35:57.141 Df TVGuide[6652:5f9d] [com.apple.app_launch_measurement:ApplicationLaunch] alm_release_pageins_recording_assertion: releasing pageins recording assertion
-2026-10-06 15:35:57.141 E  TVGuide[6652:5fa2] [com.apple.app_launch_measurement:General] Failed to send CA Event for app launch measurements for ca_event_type: 1 event_name: com.apple.app_launch_measurement.ExtendedLaunchMetrics
+2026-10-06 15:45:55.901 Df TVGuide[6699:6132] [com.apple.xpc:connection] [0x10173d190] activating connection: mach=true listener=false peer=false name=com.apple.cfprefsd.daemon
+2026-10-06 15:45:55.985 A  TVGuide[6699:6148] (CoreFoundation) Loading Preferences From User Session CFPrefsD
+2026-10-06 15:45:55.991 Df TVGuide[6699:6132] (libMobileGestalt.dylib) No persisted cache on this platform.
+2026-10-06 15:45:56.000 Df TVGuide[6699:6147] [com.apple.BoardServices:XPCErrors] [C:1] Alloc com.apple.frontboard.systemappservices
+2026-10-06 15:45:56.001 Df TVGuide[6699:6147] [com.apple.xpc:connection] [0x101d40000] activating connection: mach=false listener=false peer=false name=(anonymous)
+2026-10-06 15:45:56.064 Df TVGuide[6699:6132] [com.apple.UIKit:Application] Deactivation reason added: 10; deactivation reasons: 0 -> 1024; animating application lifecycle event: 0
+2026-10-06 15:45:56.064 Df TVGuide[6699:6132] [com.apple.runningboard:connection] Initializing connection
+2026-10-06 15:45:56.064 Df TVGuide[6699:6132] [com.apple.runningboard:process] Removing all cached process handles
+2026-10-06 15:45:56.064 Df TVGuide[6699:6132] [com.apple.BoardServices:Injection] activating monitor for service com.apple.frontboard.open
+2026-10-06 15:45:56.065 Df TVGuide[6699:6132] [com.apple.BoardServices:Injection] activating monitor for service com.apple.frontboard.workspace-service
+2026-10-06 15:45:56.066 Df TVGuide[6699:6132] [com.apple.FrontBoard:Common] FBSWorkspace registering source: com.apple.frontboard.systemappservices
+2026-10-06 15:45:56.068 Df TVGuide[6699:6132] [com.apple.FrontBoard:Common] FBSWorkspace connected to endpoint : <BSServiceConnectionEndpoint: 0x101d308e0; target: com.apple.frontboard.systemappservices; service: com.apple.frontboard.workspace-service>
+2026-10-06 15:45:56.068 Df TVGuide[6699:6132] [com.apple.FrontBoard:Common] <FBSWorkspaceScenesClient:0x101ccc500 com.apple.frontboard.systemappservices> attempting immediate handshake from activate
+2026-10-06 15:45:56.068 Df TVGuide[6699:6132] [com.apple.FrontBoard:Common] <FBSWorkspaceScenesClient:0x101ccc500 com.apple.frontboard.systemappservices> sent handshake
+2026-10-06 15:45:56.069 Df TVGuide[6699:6132] [com.apple.runningboard:general] Added observer for process assertions expiration warning: <_RBSExpirationWarningClient: 0x101d30c80>
+2026-10-06 15:45:56.073 Df TVGuide[6699:614c] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UIApplicationSceneKeyboardSettings on FBSSceneSettings
+2026-10-06 15:45:56.077 Df TVGuide[6699:614c] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneOcclusionSettings> on FBSSceneSettings
+2026-10-06 15:45:56.078 Df TVGuide[6699:614c] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneInterfaceProtectionSettings> on FBSSceneSettings
+2026-10-06 15:45:56.080 Df TVGuide[6699:614c] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneLayoutPreferencesHostSettingsExtension on FBSSceneSettings
+2026-10-06 15:45:56.082 Df TVGuide[6699:6145] [com.apple.UIKit:BackgroundTask] Creating new assertion because there is no existing background assertion.
+2026-10-06 15:45:56.083 Df TVGuide[6699:614c] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneSafeAreaSettingsExtension on FBSSceneSettings
+2026-10-06 15:45:56.084 Df TVGuide[6699:6145] [com.apple.UIKit:BackgroundTask] Creating new background assertion
+2026-10-06 15:45:56.086 Df TVGuide[6699:6145] [com.apple.UIKit:BackgroundTask] Created new background assertion <BKSProcessAssertion: 0x101db4410>
+2026-10-06 15:45:56.088 Df TVGuide[6699:6145] [com.apple.runningboard:connection] Creating connection to com.apple.runningboard
+2026-10-06 15:45:56.089 Df TVGuide[6699:6145] [com.apple.xpc:connection] [0x101d40140] activating connection: mach=true listener=false peer=false name=com.apple.runningboard
+2026-10-06 15:45:56.089 Df TVGuide[6699:614c] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneLayoutPreferenceClientSettingsExtension on FBSSceneClientSettings
+2026-10-06 15:45:56.089 Df TVGuide[6699:6148] [com.apple.runningboard:connection] Sending handshake request attempt #1 to server
+2026-10-06 15:45:56.090 Df TVGuide[6699:614c] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UIHomeAffordanceHostSceneSettings> on FBSSceneSettings
+2026-10-06 15:45:56.091 Df TVGuide[6699:614c] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISystemShellSceneHostingEnvironmentSettings on FBSSceneSettings
+2026-10-06 15:45:56.092 Df TVGuide[6699:614c] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneRenderingEnvironmentSettings on FBSSceneSettings
+2026-10-06 15:45:56.093 Df TVGuide[6699:6148] [com.apple.runningboard:connection] Handshake succeeded
+2026-10-06 15:45:56.093 Df TVGuide[6699:6148] [com.apple.runningboard:connection] Identity resolved as app<com.example.TVGuide((null))>
+2026-10-06 15:45:56.094 Df TVGuide[6699:614c] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneRenderingEnvironmentClientSettings> on FBSSceneClientSettings
+2026-10-06 15:45:56.094 Df TVGuide[6699:614c] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneTransitioningHostSettings> on FBSSceneSettings
+2026-10-06 15:45:56.095 Df TVGuide[6699:614c] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneFocusSystemSettings> on FBSSceneSettings
+2026-10-06 15:45:56.095 Df TVGuide[6699:6145] [com.apple.UIKit:BackgroundTask] Incrementing reference count for background assertion <BKSProcessAssertion: 0x101db4410>
+2026-10-06 15:45:56.095 Df TVGuide[6699:614c] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneOrientationSettingsExtension on FBSSceneSettings
+2026-10-06 15:45:56.095 Df TVGuide[6699:6145] [com.apple.UIKit:BackgroundTask] Created background task <_UIBackgroundTaskInfo: 0x101c56d40>: taskID = 1, taskName = Launch Background Task for Coalescing, creationTime = 418 (elapsed = 0).
+2026-10-06 15:45:56.096 Df TVGuide[6699:614c] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneOrientationClientSettingsExtension on FBSSceneClientSettings
+2026-10-06 15:45:56.096 Df TVGuide[6699:614c] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneWindowingControlClientSettings on FBSSceneClientSettings
+2026-10-06 15:45:56.098 Df TVGuide[6699:6145] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingContentSizePreferenceClientSettings> on FBSSceneClientSettings
+2026-10-06 15:45:56.098 Df TVGuide[6699:6145] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneHostingTraitCollectionPropagationSettings on FBSSceneSettings
+2026-10-06 15:45:56.100 Df TVGuide[6699:6145] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingSheetPresentationSettings> on FBSSceneSettings
+2026-10-06 15:45:56.102 Df TVGuide[6699:6145] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingSheetPresentationClientSettings> on FBSSceneClientSettings
+2026-10-06 15:45:56.102 Df TVGuide[6699:6132] [com.apple.UIKit:UIScreen] Evaluated capturing state as 0 on <UIScreen: 0x101d403c0> for initial
+2026-10-06 15:45:56.103 Df TVGuide[6699:6145] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingEventDeferringSettings> on FBSSceneSettings
+2026-10-06 15:45:56.105 Df TVGuide[6699:614c] [com.apple.FrontBoard:SceneExtension] Realizing settings extension FBSSceneSettingsCore on FBSSceneSettings
+2026-10-06 15:45:56.105 Df TVGuide[6699:6132] [com.apple.UIKit:UIScreen] Evaluated capturing state as 0 on <UIScreen: 0x101d403c0> for CADisplay KVO
+2026-10-06 15:45:56.108 Df TVGuide[6699:6145] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <UIKit__UITypedKeyValueSceneSettings> on FBSSceneSettings
+2026-10-06 15:45:56.108 Df TVGuide[6699:614c] [com.apple.FrontBoard:SceneExtension] Realizing settings extension FBSSceneClientSettingsCore on FBSSceneClientSettings
+2026-10-06 15:45:56.109 Df TVGuide[6699:6145] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <UIKit__UITypedKeyValueSceneSettings> on FBSSceneClientSettings
+2026-10-06 15:45:56.110 Df TVGuide[6699:6145] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingViewControllerPreferencePropagationClientSettings> on FBSSceneClientSettings
+2026-10-06 15:45:56.110 Df TVGuide[6699:6145] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneZoomTransitionSettings> on FBSSceneSettings
+2026-10-06 15:45:56.114 Df TVGuide[6699:614c] [com.apple.FrontBoard:SceneExtension] UIMutableApplicationSceneSettings setting counterpart class: UIApplicationSceneSettings
+2026-10-06 15:45:56.115 Df TVGuide[6699:6132] [com.apple.Accessibility:AXSupportCommon] Read CategoryName: per-app = 1, category name = (null)
+2026-10-06 15:45:56.115 Df TVGuide[6699:614c] [com.apple.FrontBoard:SceneExtension] UIMutableApplicationSceneClientSettings setting counterpart class: UIApplicationSceneClientSettings
+2026-10-06 15:45:56.116 Df TVGuide[6699:614c] [com.apple.FrontBoard:SceneExtension] Realizing settings extension FBSSceneTransitionContextCore on FBSSceneTransitionContext
+2026-10-06 15:45:56.116 Df TVGuide[6699:6132] [com.apple.Accessibility:AXSupportCommon] Read CategoryName: per-app = 0, category name = (null)
+2026-10-06 15:45:56.127 Df TVGuide[6699:6132] [com.apple.dt.xctest:Default] Registering for test daemon availability notify post.
+2026-10-06 15:45:56.127 Df TVGuide[6699:6132] [com.apple.dt.xctest:Default] notify_get_state check indicated test daemon not ready.
+2026-10-06 15:45:56.127 Df TVGuide[6699:6132] [com.apple.dt.xctest:Default] notify_get_state check indicated test daemon not ready.
+2026-10-06 15:45:56.128 Df TVGuide[6699:6132] [com.apple.dt.xctest:Default] notify_get_state check indicated test daemon not ready.
+2026-10-06 15:45:56.128 Df TVGuide[6699:6132] [com.apple.UIKit:Application] Deactivation reason added: 11; deactivation reasons: 1024 -> 3072; animating application lifecycle event: 0
+2026-10-06 15:45:56.131 Df TVGuide[6699:6132] [com.apple.UIKit:Application] Deactivation reason removed: 10; deactivation reasons: 3072 -> 2048; animating application lifecycle event: 0
+2026-10-06 15:45:56.134 Df TVGuide[6699:6132] [com.apple.UIKit:EventBus] Event Timing Profile for Touch: not found, path="/System/Library/EventTimingProfiles/Sim.Touch.plist"
+2026-10-06 15:45:56.135 Df TVGuide[6699:6132] [com.apple.UIKit:EventBus] Event Timing Profile for Pencil: not found, path="/System/Library/EventTimingProfiles/Sim.Pencil.plist"
+2026-10-06 15:45:56.135 Df TVGuide[6699:6132] [com.apple.UIKit:UpdateScheduler] Selected display: name=LCD (PurpleMain), id=1
+2026-10-06 15:45:56.145 Df TVGuide[6699:6132] [com.apple.xpc:connection] [0x101d408c0] activating connection: mach=true listener=false peer=false name=com.apple.lsd.mapdb
+2026-10-06 15:45:56.212 A  TVGuide[6699:6148] (RunningBoardServices) didChangeInheritances
+2026-10-06 15:45:56.233 Df TVGuide[6699:6132] [com.apple.BoardServices:XPCErrors] [C:2] Alloc com.apple.backboard.hid-services.xpc
+2026-10-06 15:45:56.233 Df TVGuide[6699:6132] [com.apple.xpc:connection] [0x101d40b40] activating connection: mach=false listener=false peer=false name=(anonymous)
+2026-10-06 15:45:56.238 Df TVGuide[6699:6132] [com.apple.app_launch_measurement:ApplicationLaunch] alm_acquire_pageins_recording_assertion: acquired pageins recording assertion!
+2026-10-06 15:45:56.241 Df TVGuide[6699:6132] [com.apple.UIKit:Application] Deactivation reason added: 5; deactivation reasons: 2048 -> 2080; animating application lifecycle event: 1
+2026-10-06 15:45:56.242 Df TVGuide[6699:6132] [com.apple.UIKit:InterfaceStyle] Should send trait collection or coordinate space update, interface style 2 -> 2, <UIWindowScene: 0x10174bf50> (12F10304-654F-48AF-83F3-436A97CACB5D)
+2026-10-06 15:45:56.247 Df TVGuide[6699:6132] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 2, <UIWindowScene: 0x10174bf50> (12F10304-654F-48AF-83F3-436A97CACB5D)
+2026-10-06 15:45:56.248 Df TVGuide[6699:6132] [com.apple.UIKit:HomeAffordanceObservation] Initializing: <_UIHomeAffordanceSceneNotifier: 0x101e356c0>; with scene: <UIWindowScene: 0x10174bf50>
+2026-10-06 15:45:56.248 Df TVGuide[6699:6132] [com.apple.BacklightServices:scenes] 0x101c26cd0 setDelegate:<0x101c26d90 _UIBacklightEnvironment> hasDelegate:YES for environment:sceneID:com.example.TVGuide-default
+2026-10-06 15:45:56.249 Df TVGuide[6699:6132] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 2, <UIWindowScene: 0x10174bf50> (12F10304-654F-48AF-83F3-436A97CACB5D)
+2026-10-06 15:45:56.249 Df TVGuide[6699:6132] [com.apple.UIKit:EventDeferring] [0x101e34850] Initialized with scene: <UIWindowScene: 0x10174bf50>; behavior: <_UIEventDeferringBehavior_iOS: 0x101f8c080>; availableForProcess: 1, systemShellManagesKeyboardFocus: 1
+2026-10-06 15:45:56.265 Df TVGuide[6699:6132] [com.apple.BackBoard:EventDelivery] policyStatus:<BKSHIDEventDeliveryPolicyObserver: 0x101df5380; process scope; status: target> was:none
+2026-10-06 15:45:56.265 Df TVGuide[6699:6132] [com.apple.UIKit:KeyWindow] Setting default evaluation strategy for UIUserInterfaceIdiomPhone to LastOneWins
+2026-10-06 15:45:56.265 Df TVGuide[6699:6132] [com.apple.UIKit:KeyWindow] Scene target of keyboard event deferring environment did change: 1; scene: UIWindowScene: 0x10174bf50; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.example.TVGuide-default
+2026-10-06 15:45:56.265 Df TVGuide[6699:6132] [com.apple.UIKit:EventDeferring] [0x101e34850] Scene target of event deferring environments did update: scene: 0x10174bf50; current systemShellManagesKeyboardFocus: 1; systemShellManagesKeyboardFocusForScene: 1; eligibleForRecordRemoval: 1;
+2026-10-06 15:45:56.266 Df TVGuide[6699:6132] [com.apple.UIKit:KeyWindow] Scene became target of keyboard event deferring environment: UIWindowScene: 0x10174bf50; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.example.TVGuide-default
+2026-10-06 15:45:56.266 Df TVGuide[6699:6132] [com.apple.UIKit:KeyWindow] Stack[KeyWindow] 0x101c26c10: Taking no further action for migration from LastOneWins -> SystemShellManaged as there are no scenes
+2026-10-06 15:45:56.266 Df TVGuide[6699:6132] [com.apple.UIKit:KeyWindow] Setting default evaluation strategy for UIUserInterfaceIdiomPhone to SystemShellManaged
+2026-10-06 15:45:56.266 Df TVGuide[6699:6132] [com.apple.UIKit:KeyWindow] Key window needs update: 0; currentKeyWindowScene: 0x0; evaluatedKeyWindowScene: 0x10174bf50; currentApplicationKeyWindow: 0x0; evaluatedApplicationKeyWindow: 0x0; reason: UIWindowScene: 0x10174bf50: Window scene became target of keyboard environment
+2026-10-06 15:45:56.266 Df TVGuide[6699:6132] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 2, <UIWindowScene: 0x10174bf50> (12F10304-654F-48AF-83F3-436A97CACB5D)
+2026-10-06 15:45:56.267 Df TVGuide[6699:6132] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 2, <UIWindowScene: 0x10174bf50> (12F10304-654F-48AF-83F3-436A97CACB5D)
+2026-10-06 15:45:56.268 Df TVGuide[6699:6132] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 2, <UIWindowScene: 0x10174bf50> (12F10304-654F-48AF-83F3-436A97CACB5D)
+2026-10-06 15:45:56.355 Df TVGuide[6699:6132] [com.apple.UIKit:Orientation] <UIWindowScene: 0x10174bf50> (12F10304-654F-48AF-83F3-436A97CACB5D) Scene updated orientation preferences: none -> ( Pu Ll Lr )
+2026-10-06 15:45:56.364 Df TVGuide[6699:6132] [com.apple.UIKit:KeyWindow] Key window API is scene-level: YES
+2026-10-06 15:45:56.365 Df TVGuide[6699:6132] [com.apple.UIKit:KeyWindow] UIWindowScene: 0x10174bf50: Window became key in scene: UIWindow: 0x101dcc400; contextId: 0xC299333E: reason: UIWindowScene: 0x10174bf50: Window requested to become key in scene: 0x101dcc400
+2026-10-06 15:45:56.365 Df TVGuide[6699:6132] [com.apple.UIKit:KeyWindow] Key window needs update: 1; currentKeyWindowScene: 0x0; evaluatedKeyWindowScene: 0x10174bf50; currentApplicationKeyWindow: 0x0; evaluatedApplicationKeyWindow: 0x101dcc400; reason: UIWindowScene: 0x10174bf50: Window requested to become key in scene: 0x101dcc400
+2026-10-06 15:45:56.365 Df TVGuide[6699:6132] [com.apple.UIKit:KeyWindow] Window did become application key: UIWindow: 0x101dcc400; contextId: 0xC299333E; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.example.TVGuide-default
+2026-10-06 15:45:56.365 Df TVGuide[6699:6132] [com.apple.UIKit:EventDeferring] [0x101e34850] Begin local event deferring requested for token: 0x101df6be0; environments: 1; reason: UIWindowScene: 0x10174bf50: Begin event deferring in keyboardFocus for window: 0x101dcc400
+2026-10-06 15:45:56.369 Df TVGuide[6699:6132] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 2, <UIWindowScene: 0x10174bf50> (12F10304-654F-48AF-83F3-436A97CACB5D)
+2026-10-06 15:45:56.370 Df TVGuide[6699:6132] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.example.TVGuide-default  persistentID: 12F10304-654F-48AF-83F3-436A97CACB5D
+2026-10-06 15:45:56.370 Df TVGuide[6699:6132] [com.apple.UIKit:Application] Ignoring already applied deactivation reason: 5; deactivation reasons: 2080
+2026-10-06 15:45:56.371 Df TVGuide[6699:6132] [com.apple.UIKit:Application] Deactivation reason added: 12; deactivation reasons: 2080 -> 6176; animating application lifecycle event: 1
+2026-10-06 15:45:56.371 Df TVGuide[6699:6132] [com.apple.UIKit:Application] Deactivation reason removed: 11; deactivation reasons: 6176 -> 4128; animating application lifecycle event: 1
+2026-10-06 15:45:56.372 Df TVGuide[6699:6132] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneIntelligenceSupportSettings> on FBSSceneSettings
+2026-10-06 15:45:56.373 Df TVGuide[6699:6132] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 2, <UIWindowScene: 0x10174bf50> (12F10304-654F-48AF-83F3-436A97CACB5D)
+2026-10-06 15:45:56.381 A  TVGuide[6699:6132] (CoreFoundation) Updating Key-Value Observers Of Preferences
+2026-10-06 15:45:56.381 Df TVGuide[6699:6152] [com.apple.BackBoard:EventDelivery] BKSHIDEventObserver - connection activation
+2026-10-06 15:45:56.382 Df TVGuide[6699:614e] [com.apple.BackBoard:EventDelivery] BKSHIDEventDeliveryManager - connection activation
+2026-10-06 15:45:56.425 Df TVGuide[6699:6147] [com.apple.UIIntelligenceSupport:xpc] establishing connection to agent
+2026-10-06 15:45:56.425 Df TVGuide[6699:6147] [com.apple.xpc:session] [0x101db53b0] Session created.
+2026-10-06 15:45:56.425 Df TVGuide[6699:6147] [com.apple.xpc:session] [0x101db53b0] Session created from connection [0x101fd08c0]
+2026-10-06 15:45:56.425 Df TVGuide[6699:6147] [com.apple.xpc:connection] [0x101fd08c0] activating connection: mach=true listener=false peer=false name=com.apple.uiintelligencesupport.agent
+2026-10-06 15:45:56.425 Df TVGuide[6699:6147] [com.apple.xpc:session] [0x101db53b0] Session activated
+2026-10-06 15:45:56.480 Df TVGuide[6699:6148] [com.apple.xpc:connection] [0x101fd17c0] activating connection: mach=true listener=false peer=false name=com.apple.fontservicesd
+2026-10-06 15:45:56.530 Df TVGuide[6699:6148] [com.apple.BackBoard:EventDelivery] policyStatus:<BKSHIDEventDeliveryPolicyObserver: 0x101df5380; token: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.example.TVGuide-default; status: ancestor> was:target
+2026-10-06 15:45:56.688 Df TVGuide[6699:6132] [PrototypeTools:domain] Not observing PTDefaults on customer install.
+2026-10-06 15:45:56.692 Df TVGuide[6699:6132] [com.apple.UIKit:_UIVisualStyleRegistry] Note: no default visual style class registered as fallback for stylable class UIActivityIndicatorView
+2026-10-06 15:45:56.692 Df TVGuide[6699:6132] [com.apple.UIKit:_UIVisualStyleRegistry] Note: no default visual style class registered as fallback for stylable class UIActivityIndicatorView
+2026-10-06 15:45:56.985 Df TVGuide[6699:6132] [com.apple.FrontBoard:SceneClient] [(FBSceneManager):sceneID:com.example.TVGuide-default] Sending action(s): BLSInvalidateFrameSpecifiersAction
+2026-10-06 15:45:57.102 Df TVGuide[6699:6147] [com.apple.UIKit:BackgroundTask] Ending background task with UIBackgroundTaskIdentifier: 1
+2026-10-06 15:45:57.102 Df TVGuide[6699:6147] [com.apple.UIKit:BackgroundTask] Ending task with identifier 1 and description: <_UIBackgroundTaskInfo: 0x101c56d40>: taskID = 1, taskName = Launch Background Task for Coalescing, creationTime = 418 (elapsed = 1), _expireHandler: (null)
+2026-10-06 15:45:57.103 Df TVGuide[6699:6147] [com.apple.UIKit:BackgroundTask] Decrementing reference count for assertion <BKSProcessAssertion: 0x101db4410> (used by background task with identifier 1: <_UIBackgroundTaskInfo: 0x101c56d40>: taskID = 1, taskName = Launch Background Task for Coalescing, creationTime = 418 (elapsed = 1))
+2026-10-06 15:45:57.103 Df TVGuide[6699:6147] [com.apple.UIKit:BackgroundTask] Will invalidate assertion: <BKSProcessAssertion: 0x101db4410> for task identifier: 1
+2026-10-06 15:45:57.110 Df TVGuide[6699:6132] [com.apple.xpc:connection] [0x121db8500] activating connection: mach=true listener=false peer=false name=com.apple.IOSurface.Remote
+2026-10-06 15:45:57.120 Df TVGuide[6699:6132] [com.apple.network:activity] Create activity from XPC object <nw_activity 50:1 [3CF6794C-AFC2-409B-BB3C-3B7C1C0F5860] (reporting strategy default)>
+2026-10-06 15:45:57.120 Df TVGuide[6699:6132] [com.apple.network:activity] Create activity from XPC object <nw_activity 50:2 [5493942A-EDB6-43E7-B03E-DB06C15F540F] (reporting strategy default)>
+2026-10-06 15:45:57.120 Df TVGuide[6699:6132] [com.apple.network:activity] Set activity <nw_activity 50:1 [3CF6794C-AFC2-409B-BB3C-3B7C1C0F5860] (reporting strategy default)> as the global parent
+2026-10-06 15:45:57.121 Df TVGuide[6699:6132] [com.apple.UIKit:UpdateScheduler] Target list changed: <CADisplay:LCD PurpleMain>
+2026-10-06 15:45:57.121 A  TVGuide[6699:614e] (RunningBoardServices) didChangeInheritances
+2026-10-06 15:45:57.121 Df TVGuide[6699:6132] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.example.TVGuide-default  persistentID: 12F10304-654F-48AF-83F3-436A97CACB5D
+2026-10-06 15:45:57.122 Df TVGuide[6699:6132] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 2, <UIWindowScene: 0x10174bf50> (12F10304-654F-48AF-83F3-436A97CACB5D)
+2026-10-06 15:45:57.125 Df TVGuide[6699:6132] [com.apple.UIKit:EventDeferring] [0x101e34850] Scene target of event deferring environments did update: scene: 0x10174bf50; current systemShellManagesKeyboardFocus: 1; systemShellManagesKeyboardFocusForScene: 1; eligibleForRecordRemoval: 1;
+2026-10-06 15:45:57.125 Df TVGuide[6699:6132] [com.apple.UIKit:KeyWindow] Scene became target of keyboard event deferring environment: UIWindowScene: 0x10174bf50; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.example.TVGuide-default
+2026-10-06 15:45:57.125 Df TVGuide[6699:6132] [com.apple.Accessibility:AXCommon] Read Per-App on Init: Smart invert = (null)
+2026-10-06 15:45:57.127 A  TVGuide[6699:6149] (RunningBoardServices) didChangeInheritances
+2026-10-06 15:45:57.128 Df TVGuide[6699:6132] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 2, <UIWindowScene: 0x10174bf50> (12F10304-654F-48AF-83F3-436A97CACB5D)
+2026-10-06 15:45:57.129 Df TVGuide[6699:6132] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.example.TVGuide-default  persistentID: 12F10304-654F-48AF-83F3-436A97CACB5D
+2026-10-06 15:45:57.129 Df TVGuide[6699:6132] [com.apple.UIKit:Application] Deactivation reason removed: 12; deactivation reasons: 4128 -> 32; animating application lifecycle event: 1
+2026-10-06 15:45:57.129 Df TVGuide[6699:6132] [com.apple.KeyboardArbiter:Client] Send setDeactivating: N (-DeactivationReason:SuspendedEventsOnly)
+2026-10-06 15:45:57.134 Df TVGuide[6699:6132] [com.apple.UIKit:Application] Deactivation reason removed: 5; deactivation reasons: 32 -> 0; animating application lifecycle event: 0
+2026-10-06 15:45:57.243 A  TVGuide[6699:6149] (RunningBoardServices) didChangeInheritances
+2026-10-06 15:45:57.646 Df TVGuide[6699:6132] [com.apple.KeyboardArbiter:Client] startConnection
+2026-10-06 15:45:57.648 Df TVGuide[6699:6132] [com.apple.xpc:connection] [0x105a9d900] activating connection: mach=true listener=false peer=false name=com.apple.UIKit.KeyboardManagement.hosted
+2026-10-06 15:45:57.669 Df TVGuide[6699:6132] [com.apple.KeyboardArbiter:Client] handleKeyboardChange: set currentKeyboard:N (wasKeyboard:N)
+2026-10-06 15:45:57.681 Df TVGuide[6699:6132] [com.apple.UIKit:KeyboardSceneDelegate] forceReloadInputViews
+2026-10-06 15:45:57.681 Df TVGuide[6699:6132] [com.apple.UIKit:KeyboardSceneDelegate] Reloading input views for key-window scene responder: <(null): 0x0; > force:Y
+2026-10-06 15:45:57.683 Df TVGuide[6699:6132] [com.apple.UIKit:KeyboardArbiterClientLog] isWritingToolsHandlingKeyboardTracking:Y (WT ready:Y, Arbiter ready:Y)
+2026-10-06 15:45:57.728 Df TVGuide[6699:6132] [com.apple.network:activity] <nw_activity 50:1 [3CF6794C-AFC2-409B-BB3C-3B7C1C0F5860] (global parent) (reporting strategy default) complete (reason success)> complete with reason 2 (success), duration 2878ms
+2026-10-06 15:45:57.728 Df TVGuide[6699:6132] [com.apple.network:activity] <nw_activity 50:2 [5493942A-EDB6-43E7-B03E-DB06C15F540F] (reporting strategy default) complete (reason success)> complete with reason 2 (success), duration 2878ms
+2026-10-06 15:45:57.728 Df TVGuide[6699:6132] [com.apple.network:activity] Unsetting the global parent activity <nw_activity 50:1 [3CF6794C-AFC2-409B-BB3C-3B7C1C0F5860] (global parent) (reporting strategy default) complete (reason success)>
+2026-10-06 15:45:57.728 Df TVGuide[6699:6132] [com.apple.network:activity] Unset the global parent activity
+2026-10-06 15:45:57.728 Df TVGuide[6699:6132] [com.apple.app_launch_measurement:ApplicationLaunch] alm_release_pageins_recording_assertion: releasing pageins recording assertion
 == crash reports ==
