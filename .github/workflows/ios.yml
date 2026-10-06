@@ -9,6 +9,9 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: write
+
 jobs:
   build-and-test:
     runs-on: macos-15
@@ -21,6 +24,21 @@ jobs:
 
       - name: Generate Xcode project
         run: xcodegen generate
+
+      # project.yml から生成した TVGuide.xcodeproj をブランチにコミットする。
+      # これにより Mac に XcodeGen がなくても、clone して開くだけでビルドできる。
+      - name: Commit generated project
+        if: github.event_name == 'push'
+        run: |
+          git add TVGuide.xcodeproj
+          if git diff --cached --quiet; then
+            echo "TVGuide.xcodeproj is up to date"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "TVGuide.xcodeproj を project.yml から再生成"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
 
       - name: Select simulator
         id: sim
@@ -40,12 +58,6 @@ jobs:
             CODE_SIGNING_ALLOWED=NO > xcodebuild.log 2>&1 || status=$?
           grep -E "error:|warning:|Test Case .*(passed|failed)|Executed|\*\* (BUILD|TEST)" xcodebuild.log || true
           exit $status
-
-      - name: Upload generated project
-        uses: actions/upload-artifact@v4
-        with:
-          name: xcodeproj
-          path: TVGuide.xcodeproj
 
       - name: Upload log
         if: always()

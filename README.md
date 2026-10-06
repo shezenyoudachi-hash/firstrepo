@@ -41,17 +41,17 @@ EPGStation などの録画サーバーや、EPG 配信サービスが出力す�
 
 ## ビルド方法
 
-必要なもの：Xcode 15 以降（iOS 17 SDK）、[XcodeGen](https://github.com/yonaskolb/XcodeGen)
+必要なもの：Xcode 15 以降（iOS 17 SDK）
 
 ```sh
-brew install xcodegen
-xcodegen generate
+git clone -b claude/magical-wright-ziwhzv https://github.com/shezenyoudachi-hash/firstrepo.git
+cd firstrepo
 open TVGuide.xcodeproj
 ```
 
 Xcode でシミュレーターを選んで ▶ を押せば起動します。テストは ⌘U。
 
-XcodeGen を使わない場合は、Xcode で新規 iOS App（SwiftUI）プロジェクトを作り、`TVGuide/` 以下の Swift ファイルを追加してください（テンプレートの `ContentView.swift` と `App` ファイルは削除）。
+`TVGuide.xcodeproj` は [XcodeGen](https://github.com/yonaskolb/XcodeGen) で `project.yml` から生成しています。プッシュすると GitHub Actions が自動で再生成・コミットするので、Mac に XcodeGen を入れる必要はありません。ファイルを追加・削除したときは、Xcode で直接いじらずにプッシュして再生成させるか、`xcodegen generate` を実行してください。
 
 ## 構成
 
