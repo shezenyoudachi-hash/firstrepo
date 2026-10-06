@@ -3,6 +3,8 @@ import SwiftUI
 /// 縦軸が時刻、横軸がチャンネルの番組表
 struct GuideGridView: View {
     @Environment(GuideStore.self) private var store
+    /// 値が変わるたびに現在時刻へスクロールする（「今」ボタン用）
+    var nowRequest = 0
     var onSelect: (Program) -> Void
 
     enum Metrics {
@@ -43,10 +45,20 @@ struct GuideGridView: View {
                 }
                 .frame(width: max(width, Metrics.timeColumnWidth))
             }
-            .task(id: store.day) {
-                scrollToNow(proxy)
+            // 番組の読み込み後・日付変更後・「今」ボタンで現在時刻へスクロールする。
+            // レイアウト確定前に scrollTo すると iOS 26 で無視されるため少し待つ。
+            .task(id: ScrollTrigger(day: store.day, channelCount: channels.count, request: nowRequest)) {
+                try? await Task.sleep(for: .milliseconds(150))
+                guard !Task.isCancelled else { return }
+                withAnimation { scrollToNow(proxy) }
             }
         }
+    }
+
+    private struct ScrollTrigger: Equatable {
+        let day: BroadcastDay
+        let channelCount: Int
+        let request: Int
     }
 
     private func scrollToNow(_ proxy: ScrollViewProxy) {

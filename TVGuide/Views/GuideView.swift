@@ -4,10 +4,11 @@ import SwiftUI
 struct GuideView: View {
     @Environment(GuideStore.self) private var store
     @State private var selectedProgram: Program?
+    @State private var nowRequest = 0
 
     var body: some View {
         NavigationStack {
-            GuideGridView(onSelect: { selectedProgram = $0 })
+            GuideGridView(nowRequest: nowRequest, onSelect: { selectedProgram = $0 })
                 .overlay {
                     if store.isLoading && store.schedule.programs.isEmpty {
                         ProgressView("読み込み中…")
@@ -16,13 +17,24 @@ struct GuideView: View {
                 .navigationTitle(store.day.label)
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
+                    ToolbarItem(placement: .principal) {
+                        VStack(spacing: 0) {
+                            Text(store.day.label)
+                                .font(.headline)
+                            if store.isUsingSampleData {
+                                Text("サンプルデータ")
+                                    .font(.caption2)
+                                    .foregroundStyle(.orange)
+                            }
+                        }
+                        .fixedSize()
+                    }
                     ToolbarItem(placement: .topBarLeading) {
-                        if store.isUsingSampleData {
-                            Text("サンプル")
-                                .font(.caption.bold())
-                                .padding(.horizontal, 6)
-                                .padding(.vertical, 2)
-                                .background(.orange.opacity(0.2), in: Capsule())
+                        Button("今") {
+                            Task {
+                                await store.select(day: BroadcastDay())
+                                nowRequest += 1
+                            }
                         }
                     }
                     ToolbarItem(placement: .topBarTrailing) {
