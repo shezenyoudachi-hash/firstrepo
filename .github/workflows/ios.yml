@@ -41,6 +41,12 @@ jobs:
           grep -E "error:|warning:|Test Case .*(passed|failed)|Executed|\*\* (BUILD|TEST)" xcodebuild.log || true
           exit $status
 
+      - name: Upload generated project
+        uses: actions/upload-artifact@v4
+        with:
+          name: xcodeproj
+          path: TVGuide.xcodeproj
+
       - name: Upload log
         if: always()
         uses: actions/upload-artifact@v4
