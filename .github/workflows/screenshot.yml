@@ -1,0 +1,73 @@
+name: Simulator Screenshot
+
+# シミュレーターでアプリを起動してスクリーンショットと起動ログを撮り、ブランチにコミットする（手動実行）
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  screenshot:
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Boot simulator
+        id: sim
+        run: |
+          UDID=$(xcrun simctl list devices available -j \
+            | python3 -c 'import json,sys; d=json.load(sys.stdin)["devices"]; print(next(x["udid"] for k in sorted(d, reverse=True) if "iOS" in k for x in d[k] if x["name"].startswith("iPhone")))')
+          echo "udid=$UDID" >> "$GITHUB_OUTPUT"
+          xcrun simctl boot "$UDID" || true
+          xcrun simctl bootstatus "$UDID" -b
+
+      - name: Build app
+        run: |
+          xcodebuild build \
+            -project TVGuide.xcodeproj \
+            -scheme TVGuide \
+            -destination "id=${{ steps.sim.outputs.udid }}" \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO > build.log 2>&1 || { tail -50 build.log; exit 1; }
+
+      - name: Launch and capture
+        run: |
+          UDID=${{ steps.sim.outputs.udid }}
+          APP=build/Build/Products/Debug-iphonesimulator/TVGuide.app
+          mkdir -p screenshots
+          LOG=screenshots/launch-log.txt
+          {
+            echo "== Info.plist =="
+            plutil -p "$APP/Info.plist"
+          } > "$LOG"
+          xcrun simctl install "$UDID" "$APP"
+          for mode in light dark; do
+            xcrun simctl ui "$UDID" appearance "$mode"
+            xcrun simctl terminate "$UDID" com.example.TVGuide 2>/dev/null || true
+            echo "== launch ($mode) ==" >> "$LOG"
+            xcrun simctl launch "$UDID" com.example.TVGuide >> "$LOG" 2>&1 || echo "launch failed" >> "$LOG"
+            sleep 10
+            xcrun simctl io "$UDID" screenshot "screenshots/launch-$mode.png"
+            echo "== running processes ==" >> "$LOG"
+            xcrun simctl spawn "$UDID" launchctl list | grep -i tvguide >> "$LOG" || echo "TVGuide is NOT running" >> "$LOG"
+          done
+          echo "== app log ==" >> "$LOG"
+          xcrun simctl spawn "$UDID" log show --last 3m --style compact \
+            --predicate 'process == "TVGuide"' 2>&1 | grep -vE "^\s*$" | tail -150 >> "$LOG" || true
+          echo "== crash reports ==" >> "$LOG"
+          for f in ~/Library/Logs/DiagnosticReports/TVGuide*; do
+            [ -e "$f" ] && head -120 "$f" >> "$LOG"
+          done
+          true
+
+      - name: Commit screenshots
+        run: |
+          git add screenshots
+          git diff --cached --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "シミュレーターのスクリーンショットを更新"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
