@@ -6,7 +6,11 @@ import Observation
 @Observable
 final class GuideStore {
     enum SettingsKey {
+        static let dataSource = "dataSource"
         static let apiKey = "nhkAPIKey"
+        static let mirakurunURL = "mirakurunURL"
+        static let mirakurunChannels = "mirakurunChannels"
+        static let xmltvURL = "xmltvURL"
         static let area = "nhkArea"
         static let reminders = "reminderProgramIDs"
     }
@@ -21,22 +25,63 @@ final class GuideStore {
     let selectableDays = 7
 
     private let defaults: UserDefaults
+    /// 最後に読み込みに成功した取得元（取得元を切り替えて失敗したとき、古い番組表を残さないため）
+    @ObservationIgnored private var loadedSource: DataSource?
     private let providerOverride: (any ProgramProvider)?
 
     init(defaults: UserDefaults = .standard, provider: (any ProgramProvider)? = nil) {
         self.defaults = defaults
         self.providerOverride = provider
         self.reminderIDs = Set(defaults.stringArray(forKey: SettingsKey.reminders) ?? [])
+        Self.migrateLegacySettings(defaults)
     }
 
-    var isUsingSampleData: Bool { providerOverride == nil && apiKey.isEmpty }
+    /// 旧バージョン（NHK の API キーのみ）の設定を引き継ぐ
+    private static func migrateLegacySettings(_ defaults: UserDefaults) {
+        guard defaults.string(forKey: SettingsKey.dataSource) == nil,
+              !(defaults.string(forKey: SettingsKey.apiKey) ?? "").isEmpty else { return }
+        defaults.set(DataSource.nhk.rawValue, forKey: SettingsKey.dataSource)
+    }
 
-    private var apiKey: String { defaults.string(forKey: SettingsKey.apiKey) ?? "" }
+    var isUsingSampleData: Bool { providerOverride == nil && dataSource == .sample }
 
-    private var provider: any ProgramProvider {
+    var dataSource: DataSource {
+        DataSource(rawValue: string(SettingsKey.dataSource)) ?? .sample
+    }
+
+    private func string(_ key: String) -> String {
+        (defaults.string(forKey: key) ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+
+    private func makeProvider() throws -> any ProgramProvider {
         if let providerOverride { return providerOverride }
-        if apiKey.isEmpty { return SampleProgramProvider() }
-        return NHKProgramProvider(apiKey: apiKey, area: defaults.string(forKey: SettingsKey.area) ?? Area.default.id)
+        switch dataSource {
+        case .sample:
+            return SampleProgramProvider()
+        case .nhk:
+            let area = defaults.string(forKey: SettingsKey.area) ?? Area.default.id
+            return NHKProgramProvider(apiKey: string(SettingsKey.apiKey), area: area)
+        case .mirakurun:
+            guard let url = Self.serverURL(string(SettingsKey.mirakurunURL)) else {
+                throw ProgramProviderError.invalidServerURL
+            }
+            let channels = MirakurunChannelSet(rawValue: string(SettingsKey.mirakurunChannels)) ?? .terrestrial
+            return MirakurunProgramProvider(baseURL: url, channelTypes: channels.channelTypes)
+        case .xmltv:
+            guard let url = Self.serverURL(string(SettingsKey.xmltvURL)) else {
+                throw ProgramProviderError.invalidServerURL
+            }
+            return XMLTVProgramProvider(url: url)
+        }
+    }
+
+    /// `192.168.1.10:40772` のようにスキームを省略した入力も受け付ける
+    static func serverURL(_ input: String) -> URL? {
+        guard !input.isEmpty else { return nil }
+        let withScheme = input.contains("://") ? input : "http://\(input)"
+        guard let url = URL(string: withScheme), url.host() != nil,
+              ["http", "https"].contains(url.scheme?.lowercased() ?? "") else { return nil }
+        return url
     }
 
     var availableDays: [BroadcastDay] {
@@ -54,11 +99,16 @@ final class GuideStore {
         isLoading = true
         defer { isLoading = false }
         do {
-            schedule = try await provider.fetchSchedule(for: day)
+            let source = dataSource
+            schedule = try await makeProvider().fetchSchedule(for: day)
+            loadedSource = source
             errorMessage = nil
         } catch is CancellationError {
             // 画面遷移などでキャンセルされた場合は何もしない
         } catch {
+            if loadedSource != dataSource {
+                schedule = Schedule(channels: [], programs: [])
+            }
             errorMessage = error.localizedDescription
         }
     }
@@ -115,6 +165,25 @@ struct OnAirItem: Identifiable {
     let channel: Channel
     let program: Program
     var id: String { program.id }
+}
+
+/// 番組表の取得元
+enum DataSource: String, CaseIterable, Identifiable {
+    case sample
+    case nhk
+    case mirakurun
+    case xmltv
+
+    var id: String { rawValue }
+
+    var displayName: String {
+        switch self {
+        case .sample: "サンプルデータ"
+        case .nhk: "NHK 番組表 API"
+        case .mirakurun: "Mirakurun（自宅チューナー）"
+        case .xmltv: "XMLTV（URL 指定）"
+        }
+    }
 }
 
 /// NHK API の地域コード

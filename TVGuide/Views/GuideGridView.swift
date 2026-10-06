@@ -9,7 +9,7 @@ struct GuideGridView: View {
         static let pointsPerMinute: CGFloat = 2.4
         static let columnWidth: CGFloat = 128
         static let timeColumnWidth: CGFloat = 28
-        static let headerHeight: CGFloat = 44
+        static let headerHeight: CGFloat = 48
         static let minutesPerDay: Double = 24 * 60
         static var dayHeight: CGFloat { CGFloat(minutesPerDay) * pointsPerMinute }
     }
@@ -103,9 +103,19 @@ private struct ChannelHeaderRow: View {
                 .frame(width: GuideGridView.Metrics.timeColumnWidth)
             ForEach(channels) { channel in
                 VStack(spacing: 0) {
-                    Text("\(channel.number)")
-                        .font(.caption2.monospacedDigit())
-                        .foregroundStyle(.secondary)
+                    HStack(spacing: 4) {
+                        if let logoURL = channel.logoURL {
+                            AsyncImage(url: logoURL) { image in
+                                image.resizable().scaledToFit()
+                            } placeholder: {
+                                Color.clear
+                            }
+                            .frame(width: 24, height: 14)
+                        }
+                        Text("\(channel.number)")
+                            .font(.caption2.monospacedDigit())
+                            .foregroundStyle(.secondary)
+                    }
                     Text(channel.name)
                         .font(.subheadline.bold())
                         .lineLimit(1)

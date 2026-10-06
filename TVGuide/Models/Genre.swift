@@ -59,4 +59,27 @@ enum Genre: Int, CaseIterable, Codable, Sendable {
         let value = Int(major, radix: 16).flatMap { $0 <= 11 ? $0 : nil } ?? Int(major)
         self = value.flatMap(Genre.init(rawValue:)) ?? .other
     }
+
+    /// XMLTV の <category> などのジャンル名から推定する
+    init?(categoryName name: String) {
+        let lowered = name.lowercased()
+        let keywords: [(Genre, [String])] = [
+            (.news, ["ニュース", "報道", "news"]),
+            (.sports, ["スポーツ", "sport"]),
+            (.information, ["情報", "ワイドショー", "talk", "information"]),
+            (.drama, ["ドラマ", "drama", "soap"]),
+            (.music, ["音楽", "music"]),
+            (.variety, ["バラエティ", "variety", "entertainment", "comedy", "game show"]),
+            (.movie, ["映画", "movie", "film"]),
+            (.anime, ["アニメ", "特撮", "anime", "animation", "cartoon"]),
+            (.documentary, ["ドキュメンタリー", "教養", "documentary"]),
+            (.theater, ["劇場", "公演", "theater", "theatre", "arts"]),
+            (.hobby, ["趣味", "教育", "education", "hobby", "cooking", "children"]),
+            (.welfare, ["福祉", "welfare"]),
+        ]
+        guard let match = keywords.first(where: { $0.1.contains { lowered.contains($0) } }) else {
+            return nil
+        }
+        self = match.0
+    }
 }

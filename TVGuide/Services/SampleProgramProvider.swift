@@ -52,7 +52,7 @@ struct SampleProgramProvider: ProgramProvider {
                     channelID: channel.id,
                     title: template.title,
                     subtitle: "第\(Int.random(in: 1...20, using: &rng))回",
-                    description: "\(template.title)の番組説明です。これはサンプルデータです。設定画面で NHK 番組表 API のキーを入力すると実際の番組表が表示されます。",
+                    description: "\(template.title)の番組説明です。これはサンプルデータです。設定画面で番組表の取得元を変更すると、実際の番組表が表示されます。",
                     cast: ["山田太郎", "佐藤花子", "鈴木一郎", "田中美咲"].shuffled(using: &rng).prefix(2).joined(separator: "、"),
                     startDate: cursor,
                     endDate: end,
