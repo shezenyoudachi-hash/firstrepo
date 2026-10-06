@@ -3,22 +3,35 @@ name: Simulator Screenshot
 # シミュレーターでアプリを起動してスクリーンショットと起動ログを撮り、ブランチにコミットする（手動実行）
 on:
   workflow_dispatch:
+    inputs:
+      runner:
+        description: macOS ランナー
+        default: macos-26
 
 permissions:
   contents: write
 
 jobs:
   screenshot:
-    runs-on: macos-15
+    runs-on: ${{ inputs.runner || 'macos-26' }}
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
+      - name: Select newest Xcode
+        run: |
+          ls -d /Applications/Xcode*.app
+          XCODE=$(ls -d /Applications/Xcode_*.app | grep -v -i beta | sort -V | tail -1)
+          sudo xcode-select -s "$XCODE"
+          xcodebuild -version
+
       - name: Boot simulator
         id: sim
         run: |
+          xcrun simctl list runtimes
           UDID=$(xcrun simctl list devices available -j \
-            | python3 -c 'import json,sys; d=json.load(sys.stdin)["devices"]; print(next(x["udid"] for k in sorted(d, reverse=True) if "iOS" in k for x in d[k] if x["name"].startswith("iPhone")))')
+            | python3 -c 'import json,re,sys; d=json.load(sys.stdin)["devices"]; v=lambda k: [int(n) for n in re.findall(r"\d+", k.split("iOS-")[-1])]; print(next(x["udid"] for k in sorted((k for k in d if "iOS" in k), key=v, reverse=True) for x in d[k] if x["name"].startswith("iPhone")))')
+          echo "== simulator ==" ; xcrun simctl list devices | grep "$UDID"
           echo "udid=$UDID" >> "$GITHUB_OUTPUT"
           xcrun simctl boot "$UDID" || true
           xcrun simctl bootstatus "$UDID" -b
@@ -39,6 +52,8 @@ jobs:
           mkdir -p screenshots
           LOG=screenshots/launch-log.txt
           {
+            xcodebuild -version
+            xcrun simctl list devices | grep "$UDID"
             echo "== Info.plist =="
             plutil -p "$APP/Info.plist"
           } > "$LOG"
