@@ -1,0 +1,13 @@
+name: EPG Discover (J:COM areas)
+
+# 九州の地上波チャンネルの J:COM エリア ID を調べるための一時的なワークフロー（手動実行）
+on:
+  workflow_dispatch:
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 epg/discover_jcom_areas.py 1 400
