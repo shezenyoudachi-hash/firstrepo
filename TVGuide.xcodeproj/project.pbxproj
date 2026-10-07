@@ -56,6 +56,7 @@
 		A91697F78ECDA955DC11701E /* ProgramProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramProvider.swift; sourceTree = "<group>"; };
 		AF9C6907AD8345FC4DB1C934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B49D7F6EFB602FB5708F1368 /* GuideStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideStore.swift; sourceTree = "<group>"; };
+		B91A7C32158B8ADADF4E18B1 /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
 		CC5CFF5557117F9EB8DEE887 /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
 		D43EA85D9E92B101A13A575E /* TVGuide.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TVGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D677A987D1583A64CC01594F /* GuideGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideGridView.swift; sourceTree = "<group>"; };
@@ -100,6 +101,7 @@
 		73C82C559F4AF6426F74C586 = {
 			isa = PBXGroup;
 			children = (
+				88FAB39737BCA02C70D234A1 /* Config */,
 				BEB5D7379822CE2D1024A59A /* TVGuide */,
 				59814BB454423448D5879065 /* TVGuideTests */,
 				030E1EC5BEE5AF8CCF6F1ECF /* Products */,
@@ -117,6 +119,14 @@
 				DE94FAAACAC383E28ACB8975 /* XMLTVProgramProvider.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		88FAB39737BCA02C70D234A1 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B91A7C32158B8ADADF4E18B1 /* Signing.xcconfig */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		BD27D8B9C6A2E8C602A694A5 /* ViewModels */ = {
@@ -206,6 +216,14 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					B0076A8A1B6BBEF7C21D978E = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					B0C33CBA0C1058A91CEE7EC3 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 2033BDE1DF851AC9F942874B /* Build configuration list for PBXProject "TVGuide" */;
@@ -284,7 +302,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.TVGuideTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).TVGuideTests";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVGuide.app/TVGuide";
@@ -293,6 +311,7 @@
 		};
 		42553ED3ED936F389254EDDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B91A7C32158B8ADADF4E18B1 /* Signing.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -367,7 +386,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.TVGuide;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).TVGuide";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -375,6 +394,7 @@
 		};
 		6E7A795A03B4DEA6291BCBDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B91A7C32158B8ADADF4E18B1 /* Signing.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -442,7 +462,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.TVGuide;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).TVGuide";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -458,7 +478,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.TVGuideTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).TVGuideTests";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVGuide.app/TVGuide";
