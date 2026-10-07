@@ -26,7 +26,7 @@
 		<true/>
 	</dict>
 	<key>NSLocalNetworkUsageDescription</key>
-	<string>自宅の録画サーバー（Mirakurun など）から番組表を取得するために使用します。</string>
+	<string>自宅の録画サーバー（Mirakurun など）から番組表を取得したり、テレビ（ブラビア）に録画予約したりするために使用します。</string>
 	<key>UILaunchScreen</key>
 	<dict/>
 	<key>UISupportedInterfaceOrientations</key>
