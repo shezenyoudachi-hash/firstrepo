@@ -16,9 +16,7 @@ final class LoopbackTV: @unchecked Sendable {
 
     init(respond: @escaping @Sendable (String) -> String) throws {
         self.respond = respond
-        let parameters = NWParameters.tcp
-        parameters.requiredLocalEndpoint = NWEndpoint.hostPort(host: "127.0.0.1", port: .any)
-        listener = try NWListener(using: parameters)
+        listener = try NWListener(using: .tcp, on: .any)
     }
 
     func start() async throws {
@@ -55,6 +53,7 @@ final class LoopbackTV: @unchecked Sendable {
             guard let self else { return }
             var buffer = buffer
             if let data { buffer.append(data) }
+            let lock = self.lock
             let text = String(decoding: buffer, as: UTF8.self)
             if let headerEnd = text.range(of: "\r\n\r\n") {
                 let header = text[..<headerEnd.lowerBound]
@@ -63,8 +62,8 @@ final class LoopbackTV: @unchecked Sendable {
                     .flatMap { Int($0.split(separator: ":")[1].trimmingCharacters(in: .whitespaces)) } ?? 0
                 let bodyBytes = buffer.count - text[..<headerEnd.upperBound].utf8.count
                 if bodyBytes >= length {
-                    lock.withLock { received.append(text) }
-                    let response = respond(text)
+                    lock.withLock { self.received.append(text) }
+                    let response = self.respond(text)
                     connection.send(content: Data(response.utf8), completion: .contentProcessed { _ in
                         connection.cancel()
                     })
@@ -75,7 +74,7 @@ final class LoopbackTV: @unchecked Sendable {
                 connection.cancel()
                 return
             }
-            receive(on: connection, buffer: buffer)
+            self.receive(on: connection, buffer: buffer)
         }
     }
 }
