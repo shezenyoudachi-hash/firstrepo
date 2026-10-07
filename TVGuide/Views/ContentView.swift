@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     @Environment(GuideStore.self) private var store
+    @Environment(BraviaStore.self) private var bravia
 
     var body: some View {
         TabView {
@@ -15,6 +16,7 @@ struct ContentView: View {
                 .tabItem { Label("設定", systemImage: "gearshape") }
         }
         .task { await store.load() }
+        .task { await bravia.loadSchedules() }
         .alert("エラー", isPresented: Binding(
             get: { store.errorMessage != nil },
             set: { if !$0 { store.errorMessage = nil } }
@@ -29,4 +31,5 @@ struct ContentView: View {
 #Preview {
     ContentView()
         .environment(GuideStore(provider: SampleProgramProvider()))
+        .environment(BraviaStore(credentials: MemoryCredentialStore()))
 }

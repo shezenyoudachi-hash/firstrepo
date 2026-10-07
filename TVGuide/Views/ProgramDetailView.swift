@@ -5,6 +5,10 @@ struct ProgramDetailView: View {
     let program: Program
     @Environment(GuideStore.self) private var store
     @Environment(\.dismiss) private var dismiss
+    @Environment(BraviaStore.self) private var bravia
+    @State private var isReserving = false
+    @State private var conflicts: [String]?
+    @State private var reserveMessage: String?
 
     var body: some View {
         NavigationStack {
@@ -32,6 +36,7 @@ struct ProgramDetailView: View {
                         section("出演", text: program.cast)
                     }
                     reminderButton
+                    braviaButton
                 }
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -99,6 +104,61 @@ struct ProgramDetailView: View {
             }
             .buttonStyle(.borderedProminent)
             .tint(isOn ? .gray : .orange)
+        }
+    }
+
+    @ViewBuilder
+    private var braviaButton: some View {
+        if bravia.isReady && program.endDate > .now {
+            if program.broadcastEvent == nil {
+                Text("この番組は、番組表の取得元が予約に必要な情報を提供していないため、ブラビアに予約できません。")
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
+            } else if bravia.isReserved(program) {
+                Label("ブラビアに録画予約済み", systemImage: "record.circle.fill")
+                    .foregroundStyle(.red)
+                    .frame(maxWidth: .infinity)
+            } else {
+                Button {
+                    Task { await reserve(force: false) }
+                } label: {
+                    HStack {
+                        if isReserving { ProgressView() } else { Image(systemName: "record.circle") }
+                        Text("ブラビアで録画予約")
+                    }
+                    .frame(maxWidth: .infinity)
+                }
+                .buttonStyle(.bordered)
+                .tint(.red)
+                .disabled(isReserving)
+                .confirmationDialog("予約すると、次の番組が録画できなくなります", isPresented: Binding(
+                    get: { conflicts != nil }, set: { if !$0 { conflicts = nil } }
+                ), titleVisibility: .visible) {
+                    Button("それでも予約する", role: .destructive) {
+                        Task { await reserve(force: true) }
+                    }
+                } message: {
+                    Text((conflicts ?? []).joined(separator: "\n"))
+                }
+            }
+            if let reserveMessage {
+                Text(reserveMessage)
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
+            }
+        }
+    }
+
+    private func reserve(force: Bool) async {
+        isReserving = true
+        defer { isReserving = false }
+        switch await bravia.reserve(program, force: force) {
+        case .needsConfirmation(let titles):
+            conflicts = titles
+        case .reserved:
+            reserveMessage = "ブラビアに録画予約しました。"
+        case .failed(let message):
+            reserveMessage = message
         }
     }
 

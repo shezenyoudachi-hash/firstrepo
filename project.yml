@@ -26,7 +26,7 @@ targets:
         UILaunchScreen: {}
         NSAppTransportSecurity:
           NSAllowsLocalNetworking: true
-        NSLocalNetworkUsageDescription: 自宅の録画サーバー（Mirakurun など）から番組表を取得するために使用します。
+        NSLocalNetworkUsageDescription: 自宅の録画サーバー（Mirakurun など）から番組表を取得したり、テレビ（ブラビア）に録画予約したりするために使用します。
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
           - UIInterfaceOrientationLandscapeLeft

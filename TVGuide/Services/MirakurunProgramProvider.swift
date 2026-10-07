@@ -51,6 +51,10 @@ struct MirakurunProgramProvider: ProgramProvider {
 
         let channelIDs = Set(channels.map(\.id))
         let items = try decoder.decode([ProgramItem].self, from: programs)
+        let kinds = Dictionary(
+            uniqueServices.compactMap { service in service.broadcastKind.map { (service.channelID, $0) } },
+            uniquingKeysWith: { first, _ in first }
+        )
         let result: [Program] = items.compactMap { item in
             let channelID = Service.channelID(networkId: item.networkId, serviceId: item.serviceId)
             guard channelIDs.contains(channelID), let name = item.name, !name.isEmpty else { return nil }
@@ -69,7 +73,10 @@ struct MirakurunProgramProvider: ProgramProvider {
                 cast: cast,
                 startDate: start,
                 endDate: start.addingTimeInterval(TimeInterval(item.duration) / 1000),
-                genres: (item.genres ?? []).compactMap { $0.lv1.flatMap(Genre.init(rawValue:)) }
+                genres: (item.genres ?? []).compactMap { $0.lv1.flatMap(Genre.init(rawValue:)) },
+                broadcastEvent: kinds[channelID].flatMap { kind in
+                    item.eventId.map { BroadcastEvent(kind: kind, serviceID: item.serviceId, eventID: $0) }
+                }
             )
         }
         return Schedule(channels: channels, programs: result)
@@ -103,6 +110,15 @@ struct MirakurunProgramProvider: ProgramProvider {
             channel?.type == "GR" ? (remoteControlKeyId ?? serviceId) : serviceId
         }
 
+        var broadcastKind: BroadcastKind? {
+            switch channel?.type {
+            case "GR": .terrestrial
+            case "BS": .bs
+            case "CS": .cs
+            default: nil
+            }
+        }
+
         var typeOrder: Int {
             ["GR", "BS", "CS", "SKY"].firstIndex(of: channel?.type ?? "") ?? 9
         }
@@ -110,6 +126,7 @@ struct MirakurunProgramProvider: ProgramProvider {
 
     struct ProgramItem: Decodable {
         let id: Int
+        let eventId: Int?
         let serviceId: Int
         let networkId: Int
         let startAt: Int64

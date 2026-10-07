@@ -194,6 +194,7 @@ final class MirakurunProgramProviderTests: XCTestCase {
         XCTAssertTrue(program.description.contains("【番組内容】"))
         XCTAssertEqual(program.primaryGenre, .news)
         XCTAssertEqual(program.duration, 3600)
+        XCTAssertEqual(program.broadcastEvent, BroadcastEvent(kind: .terrestrial, serviceID: 1064, eventID: 12345))
     }
 
     func testDecodeWithBS() throws {

@@ -2,6 +2,12 @@ import SwiftUI
 
 struct SettingsView: View {
     @Environment(GuideStore.self) private var store
+    @Environment(BraviaStore.self) private var bravia
+    @AppStorage(BraviaStore.hostKey) private var braviaHost = ""
+    @State private var braviaMessage: String?
+    @State private var isRegisteringBravia = false
+    @State private var isAskingPIN = false
+    @State private var pin = ""
     @AppStorage(GuideStore.SettingsKey.useNHK) private var useNHK = false
     @AppStorage(GuideStore.SettingsKey.useXMLTV) private var useXMLTV = false
     @AppStorage(GuideStore.SettingsKey.useMirakurun) private var useMirakurun = false
@@ -58,6 +64,8 @@ struct SettingsView: View {
                     }
                 }
 
+                braviaSection
+
                 Section("通知") {
                     Stepper("放送 \(leadMinutes) 分前に通知", value: $leadMinutes, in: 1...60)
                 }
@@ -71,6 +79,15 @@ struct SettingsView: View {
             .onChange(of: mirakurunURL) { reload() }
             .onChange(of: mirakurunChannels) { reload() }
             .onChange(of: xmltvURL) { reload() }
+            .onChange(of: braviaHost) { bravia.hostDidChange() }
+            .alert("テレビに表示された PIN", isPresented: $isAskingPIN) {
+                TextField("4 桁の数字", text: $pin)
+                    .keyboardType(.numberPad)
+                Button("登録") { Task { await submitPIN() } }
+                Button("キャンセル", role: .cancel) { pin = "" }
+            } message: {
+                Text("テレビの画面に表示されている数字を入力してください。")
+            }
         }
     }
 
@@ -141,6 +158,68 @@ struct SettingsView: View {
             Text("Mirakurun サーバー")
         } footer: {
             Text("同じ Wi-Fi などから接続できるサーバーのアドレスとポート（標準は 40772）を入力してください。初回はローカルネットワークへのアクセス許可を求められます。")
+        }
+    }
+
+    private var braviaSection: some View {
+        Section {
+            TextField("テレビの IP アドレス（例: 192.168.1.20）", text: $braviaHost)
+                .keyboardType(.numbersAndPunctuation)
+                .textInputAutocapitalization(.never)
+                .autocorrectionDisabled()
+            if bravia.isRegistered {
+                Label("登録済み", systemImage: "checkmark.circle.fill")
+                    .foregroundStyle(.green)
+                NavigationLink("録画予約の一覧") { BraviaScheduleView() }
+                Button("登録を解除", role: .destructive) { bravia.unregister() }
+            } else {
+                Button {
+                    Task { await startBraviaRegistration() }
+                } label: {
+                    HStack {
+                        Text("テレビに登録する")
+                        if isRegisteringBravia { Spacer(); ProgressView() }
+                    }
+                }
+                .disabled(braviaHost.isEmpty || isRegisteringBravia)
+            }
+            if let braviaMessage {
+                Text(braviaMessage)
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
+            }
+        } header: {
+            Text("ブラビア（録画予約）")
+        } footer: {
+            Text("同じ Wi-Fi にあるソニーのテレビ BRAVIA に録画予約できます。テレビに録画用の USB HDD をつなぎ、テレビの「設定 → ネットワーク → ホームネットワーク（またはリモート機器設定）」でリモート操作を許可してください。IP アドレスはテレビの「設定 → ネットワーク → 詳細設定 → ネットワーク状態の確認」などで分かります。ソニー非公式の方法のため、機種によっては使えません。")
+        }
+    }
+
+    private func startBraviaRegistration() async {
+        isRegisteringBravia = true
+        defer { isRegisteringBravia = false }
+        switch await bravia.startRegistration() {
+        case .pinRequested:
+            braviaMessage = nil
+            pin = ""
+            isAskingPIN = true
+        case .registered:
+            braviaMessage = "テレビに登録しました。"
+        case .failed(let message):
+            braviaMessage = message
+        }
+    }
+
+    private func submitPIN() async {
+        isRegisteringBravia = true
+        defer { isRegisteringBravia = false; pin = "" }
+        switch await bravia.register(pin: pin) {
+        case .registered:
+            braviaMessage = "テレビに登録しました。番組の詳細画面から録画予約できます。"
+        case .failed(let message):
+            braviaMessage = message
+        case .pinRequested:
+            isAskingPIN = true
         }
     }
 

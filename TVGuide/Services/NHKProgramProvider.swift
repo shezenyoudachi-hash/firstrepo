@@ -120,7 +120,8 @@ struct NHKProgramProvider: ProgramProvider {
                     startDate: start,
                     endDate: end,
                     genres: primaryGenres(item) ?? genres(in: item),
-                    imageURL: imageURL(about)
+                    imageURL: imageURL(about),
+                    broadcastEvent: broadcastEvent(item, serviceID: serviceID)
                 ))
             }
         }
@@ -133,6 +134,20 @@ struct NHKProgramProvider: ProgramProvider {
         guard let list = (item["identifierGroup"] as? [String: Any])?["genre"] else { return nil }
         let genres = genreValues(list)
         return genres.isEmpty ? nil : genres
+    }
+
+    /// `identifierGroup` の `sid`（16進のサービス ID、例: "0400"）と `eventId`（10進）
+    private static func broadcastEvent(_ item: [String: Any], serviceID: String) -> BroadcastEvent? {
+        guard let group = item["identifierGroup"] as? [String: Any],
+              let sid = (group["sid"] as? String).flatMap({ Int($0, radix: 16) }),
+              let eventID = (group["eventId"] as? String).flatMap({ Int($0) }) else { return nil }
+        let kind: BroadcastKind
+        switch serviceID.prefix(1) {
+        case "g", "e": kind = .terrestrial
+        case "s": kind = ["s5", "s6"].contains(serviceID) ? .bs4k : .bs
+        default: return nil
+        }
+        return BroadcastEvent(kind: kind, serviceID: sid, eventID: eventID)
     }
 
     /// 番組内容 + 補足（`misc.freeLine`）

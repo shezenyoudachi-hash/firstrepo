@@ -102,6 +102,7 @@ struct XMLTVProgramProvider: ProgramProvider {
         private var categories: [String] = []
         private var cast: [String] = []
         private var inCredits = false
+        private var programmeIconURL: URL?
 
         func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?,
                     qualifiedName qName: String?, attributes: [String: String] = [:]) {
@@ -115,8 +116,11 @@ struct XMLTVProgramProvider: ProgramProvider {
                 programme = attributes
                 categories = []
                 cast = []
+                programmeIconURL = nil
             case "icon" where channelID != nil && programme == nil:
                 iconURL = attributes["src"].flatMap(URL.init(string:))
+            case "icon" where programme != nil:
+                programmeIconURL = attributes["src"].flatMap(URL.init(string:))
             case "credits":
                 inCredits = true
             default:
@@ -175,6 +179,14 @@ struct XMLTVProgramProvider: ProgramProvider {
             channels.append(Channel(id: channelID, name: name, number: number, logoURL: iconURL))
         }
 
+        /// このアプリの番組表（epg/grab_jcom.py）が入れる録画予約用の属性
+        static func broadcastEvent(_ attributes: [String: String]) -> BroadcastEvent? {
+            guard let kind = attributes["broadcast"].flatMap(BroadcastKind.init(xmltv:)),
+                  let serviceID = attributes["service-id"].flatMap({ Int($0) }),
+                  let eventID = attributes["event-id"].flatMap({ Int($0) }) else { return nil }
+            return BroadcastEvent(kind: kind, serviceID: serviceID, eventID: eventID)
+        }
+
         private func finishProgramme() {
             defer { programme = nil }
             guard let attributes = programme,
@@ -192,7 +204,9 @@ struct XMLTVProgramProvider: ProgramProvider {
                 cast: cast.joined(separator: "、"),
                 startDate: start,
                 endDate: stop,
-                genres: categories.compactMap(Genre.init(categoryName:))
+                genres: categories.compactMap(Genre.init(categoryName:)),
+                imageURL: programmeIconURL,
+                broadcastEvent: Self.broadcastEvent(attributes)
             ))
         }
     }

@@ -13,6 +13,8 @@ struct Program: Identifiable, Hashable, Codable, Sendable {
     let genres: [Genre]
     /// 番組の画像（取得元が提供している場合）
     var imageURL: URL? = nil
+    /// 放送波の上での番号（録画予約に使う。取得元が提供している場合のみ）
+    var broadcastEvent: BroadcastEvent? = nil
 
     var duration: TimeInterval { endDate.timeIntervalSince(startDate) }
     var primaryGenre: Genre { genres.first ?? .other }
