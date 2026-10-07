@@ -75,25 +75,30 @@ final class GuideStore {
         (defaults.string(forKey: key) ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
     }
 
-    private func makeProvider(for source: DataSource) throws -> any ProgramProvider {
+    private func makeProviders(for source: DataSource) throws -> [any ProgramProvider] {
         switch source {
         case .sample:
-            return SampleProgramProvider()
+            return [SampleProgramProvider()]
         case .nhk:
             let area = defaults.string(forKey: SettingsKey.area) ?? Area.default.id
-            return NHKProgramProvider(apiKey: string(SettingsKey.apiKey), area: area)
+            return [NHKProgramProvider(apiKey: string(SettingsKey.apiKey), area: area)]
         case .mirakurun:
             guard let url = Self.serverURL(string(SettingsKey.mirakurunURL)) else {
                 throw ProgramProviderError.invalidServerURL
             }
             let channels = MirakurunChannelSet(rawValue: string(SettingsKey.mirakurunChannels)) ?? .terrestrial
-            return MirakurunProgramProvider(baseURL: url, channelTypes: channels.channelTypes)
+            return [MirakurunProgramProvider(baseURL: url, channelTypes: channels.channelTypes)]
         case .xmltv:
-            guard let url = Self.serverURL(string(SettingsKey.xmltvURL)) else {
-                throw ProgramProviderError.invalidServerURL
-            }
-            return XMLTVProgramProvider(url: url)
+            // 1行に1つずつ、複数の URL を指定できる
+            let urls = Self.xmltvURLs(string(SettingsKey.xmltvURL))
+            guard !urls.isEmpty else { throw ProgramProviderError.invalidServerURL }
+            return urls.map { XMLTVProgramProvider(url: $0) }
         }
+    }
+
+    /// XMLTV の URL 欄（改行・空白区切り）を URL の配列にする
+    static func xmltvURLs(_ text: String) -> [URL] {
+        text.split(whereSeparator: { $0.isWhitespace }).compactMap { serverURL(String($0)) }
     }
 
     /// `192.168.1.10:40772` のようにスキームを省略した入力も受け付ける
@@ -130,7 +135,7 @@ final class GuideStore {
         } else {
             for source in sources {
                 do {
-                    providers.append((source, try makeProvider(for: source)))
+                    providers += try makeProviders(for: source).map { (source, $0) }
                 } catch {
                     failures.append((source, error))
                 }
@@ -314,7 +319,10 @@ struct Area: Identifiable, Hashable {
         Area(id: "230", name: "名古屋"), Area(id: "270", name: "大阪"),
         Area(id: "280", name: "神戸"), Area(id: "330", name: "岡山"),
         Area(id: "340", name: "広島"), Area(id: "380", name: "松山"),
-        Area(id: "400", name: "福岡"), Area(id: "430", name: "熊本"),
+        Area(id: "400", name: "福岡"), Area(id: "401", name: "北九州"),
+        Area(id: "410", name: "佐賀"), Area(id: "420", name: "長崎"),
+        Area(id: "430", name: "熊本"), Area(id: "440", name: "大分"),
+        Area(id: "450", name: "宮崎"), Area(id: "460", name: "鹿児島"),
         Area(id: "470", name: "那覇"),
     ]
 }

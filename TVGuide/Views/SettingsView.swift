@@ -14,8 +14,20 @@ struct SettingsView: View {
 
     @State private var reloadTask: Task<Void, Never>?
 
-    /// BS・CS の番組表を配信している XMLTV（https://github.com/Animenosekai/japanterebi-xmltv）
-    static let japanterebiURL = "https://animenosekai.github.io/japanterebi-xmltv/guide.xml"
+    /// すぐに使える XMLTV
+    static let xmltvPresets: [(name: String, url: String)] = [
+        // 有志が公開している BS・CS の番組表（https://github.com/Animenosekai/japanterebi-xmltv）
+        ("民放 BS・CS（japanterebi-xmltv）", "https://animenosekai.github.io/japanterebi-xmltv/guide.xml"),
+        // このリポジトリの GitHub Actions（.github/workflows/epg.yml）が作る地上波民放の番組表
+        ("地上波民放：福岡", "\(epgDataBaseURL)/guide-fukuoka.xml"),
+        ("地上波民放：熊本", "\(epgDataBaseURL)/guide-kumamoto.xml"),
+        ("地上波民放：大分", "\(epgDataBaseURL)/guide-oita.xml"),
+    ]
+    static let epgDataBaseURL = "https://raw.githubusercontent.com/shezenyoudachi-hash/firstrepo/epg-data"
+
+    private var xmltvURLs: [String] {
+        xmltvURL.split(whereSeparator: { $0.isWhitespace }).map(String.init)
+    }
 
     var body: some View {
         NavigationStack {
@@ -82,20 +94,36 @@ struct SettingsView: View {
 
     private var xmltvSection: some View {
         Section {
-            TextField("https://example.com/epg.xml", text: $xmltvURL)
+            TextField("https://example.com/epg.xml", text: $xmltvURL, axis: .vertical)
+                .lineLimit(1...6)
+                .font(.footnote.monospaced())
                 .keyboardType(.URL)
                 .textInputAutocapitalization(.never)
                 .autocorrectionDisabled()
-            if xmltvURL != Self.japanterebiURL {
-                Button("BS・CS の番組表（japanterebi-xmltv）を使う") {
-                    xmltvURL = Self.japanterebiURL
+            ForEach(Self.xmltvPresets, id: \.url) { preset in
+                let isAdded = xmltvURLs.contains(preset.url)
+                Button {
+                    toggleXMLTV(preset.url)
+                } label: {
+                    Label(preset.name, systemImage: isAdded ? "checkmark.circle.fill" : "plus.circle")
                 }
             }
         } header: {
             Text("XMLTV")
         } footer: {
-            Text("japanterebi-xmltv は有志が公開している BS・CS の番組表です（地上波の民放は含まれません）。チャンネルが多いため、最初は民放 BS だけを表示します。インターネット上の URL は https のみ対応です。")
+            Text("URL は1行に1つずつ、複数指定できます。下のボタンで追加・削除できます。\n・民放 BS・CS：有志が公開している番組表です。チャンネルが多いため、最初は民放 BS だけを表示します。\n・地上波民放（福岡・熊本・大分）：J:COM の番組表をもとに GitHub Actions で6時間ごとに作っています。NHK は「NHK」をオンにして地域を合わせてください。\nインターネット上の URL は https のみ対応です。")
         }
+    }
+
+    /// プリセットの URL を XMLTV の欄に追加する（すでにあれば取り除く）
+    private func toggleXMLTV(_ url: String) {
+        var urls = xmltvURLs
+        if let index = urls.firstIndex(of: url) {
+            urls.remove(at: index)
+        } else {
+            urls.append(url)
+        }
+        xmltvURL = urls.joined(separator: "\n")
     }
 
     private var mirakurunSection: some View {

@@ -39,6 +39,20 @@ SwiftUI で作ったテレビ番組表の iOS アプリです。
 
 EPGStation などの録画サーバーや、EPG 配信サービスが出力する XMLTV の URL を入力します。設定画面のボタンで、BS・CS の番組表を公開している [japanterebi-xmltv](https://github.com/Animenosekai/japanterebi-xmltv) の URL を入力できます（地上波の民放は含まれません。チャンネルが多いため最初は民放 BS 7局だけを表示）。インターネット上の URL は https のみ対応です（ATS の制限。http はローカルネットワークだけ許可しています）。
 
+### 地上波民放（九州）
+
+民放の地上波には公式の番組表 API がないため、このリポジトリの GitHub Actions（`.github/workflows/epg.yml`）が、[iptv-org/epg](https://github.com/iptv-org/epg) を使って J:COM の番組表から福岡・熊本・大分の民放の番組表を **6時間ごと** に作り、`epg-data` ブランチに保存しています。設定画面の XMLTV のボタンで追加できます。
+
+| 地域 | 局 | URL |
+| --- | --- | --- |
+| 福岡 | KBC・RKB・FBS・TVQ・TNC | `https://raw.githubusercontent.com/shezenyoudachi-hash/firstrepo/epg-data/guide-fukuoka.xml` |
+| 熊本 | RKK・KKT・KAB・TKU | `…/epg-data/guide-kumamoto.xml` |
+| 大分 | OBS・TOS・OAB | `…/epg-data/guide-oita.xml` |
+
+- J:COM の番組表サイトのデータを自動で取得しています。個人で使う範囲にとどめ、利用規約は各自で確認してください
+- サイトの作りが変わると取得できなくなることがあります（Actions のタブでエラーになります）
+- 局を追加・変更するときは `epg/channels/*.channels.xml` を編集します
+
 ## ビルド方法
 
 必要なもの：Xcode 15 以降（iOS 17 SDK）

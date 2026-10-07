@@ -267,6 +267,11 @@ final class DataSourceSettingsTests: XCTestCase {
         XCTAssertEqual(GuideStore(defaults: defaults).enabledSources, [.nhk])
     }
 
+    func testMultipleXMLTVURLs() {
+        let urls = GuideStore.xmltvURLs("https://a.example.com/guide.xml\n  https://b.example.com/guide.xml \n\n")
+        XCTAssertEqual(urls.map(\.absoluteString), ["https://a.example.com/guide.xml", "https://b.example.com/guide.xml"])
+    }
+
     func testLegacySingleSourceMigratesToToggle() {
         let defaults = UserDefaults(suiteName: #function)!
         defaults.removePersistentDomain(forName: #function)
