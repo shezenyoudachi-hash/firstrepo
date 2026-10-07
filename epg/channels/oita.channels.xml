@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- 大分の地上波民放（J:COM 番組表 エリア 229 で確認） -->
-<channels>
-  <channel site="tvguide.myjcom.jp" site_id="2_61456_31794" lang="ja" xmltv_id="OBS.jp">OBS大分放送</channel>
-  <channel site="tvguide.myjcom.jp" site_id="2_61464_31795" lang="ja" xmltv_id="TOS.jp">TOSテレビ大分</channel>
-  <channel site="tvguide.myjcom.jp" site_id="2_61472_31796" lang="ja" xmltv_id="OAB.jp">OAB大分朝日放送</channel>
-</channels>

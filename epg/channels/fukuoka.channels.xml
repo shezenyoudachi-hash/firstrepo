@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- 福岡の地上波民放（J:COM 番組表 エリア 37/54 で確認） -->
-<channels>
-  <channel site="tvguide.myjcom.jp" site_id="2_56336_31874" lang="ja" xmltv_id="KBC.jp">KBC九州朝日放送</channel>
-  <channel site="tvguide.myjcom.jp" site_id="2_56344_31875" lang="ja" xmltv_id="RKB.jp">RKB毎日放送</channel>
-  <channel site="tvguide.myjcom.jp" site_id="2_56352_31876" lang="ja" xmltv_id="FBS.jp">FBS福岡放送</channel>
-  <channel site="tvguide.myjcom.jp" site_id="2_56360_31877" lang="ja" xmltv_id="TVQ.jp">TVQ九州放送</channel>
-  <channel site="tvguide.myjcom.jp" site_id="2_56368_31878" lang="ja" xmltv_id="TNC.jp">TNCテレビ西日本</channel>
-</channels>

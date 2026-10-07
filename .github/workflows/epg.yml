@@ -3,7 +3,7 @@ name: EPG (九州の地上波)
 # J:COM の番組表（tvguide.myjcom.jp）から、九州の地上波民放の番組表を XMLTV で作り、
 # このリポジトリの epg-data ブランチに保存する。アプリは raw.githubusercontent.com から読み込む。
 #   https://raw.githubusercontent.com/<owner>/<repo>/epg-data/guide-fukuoka.xml
-# 取得には iptv-org/epg（https://github.com/iptv-org/epg）を使う。
+# 取得は epg/grab_jcom.py（録画予約に使うイベント ID も入れる）。
 on:
   schedule:
     - cron: "17 */6 * * *" # 6 時間ごと（サイトに負担をかけないよう控えめに）
@@ -25,30 +25,10 @@ jobs:
         with:
           path: app
 
-      - uses: actions/checkout@v4
-        with:
-          repository: iptv-org/epg
-          path: epg
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-
-      - name: Install iptv-org/epg
-        working-directory: epg
-        run: npm ci --ignore-scripts --no-audit --no-fund
-
       - name: Grab
-        working-directory: epg
         run: |
-          mkdir -p ../out
-          for file in ../app/epg/channels/*.channels.xml; do
-            region=$(basename "$file" .channels.xml)
-            npm run grab --- --channels="$file" --output="../out/guide-$region.xml" --days=3 --maxConnections=1
-          done
-
-      - name: Add channel numbers
-        run: python3 app/epg/add_channel_numbers.py out/guide-*.xml
+          mkdir -p out
+          python3 app/epg/grab_jcom.py app/epg/channels.json out 3
 
       - name: Publish to epg-data branch
         working-directory: out

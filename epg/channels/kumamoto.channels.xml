@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- 熊本の地上波民放（J:COM 番組表 エリア 227 で確認） -->
-<channels>
-  <channel site="tvguide.myjcom.jp" site_id="2_57360_31858" lang="ja" xmltv_id="RKK.jp">RKK熊本放送</channel>
-  <channel site="tvguide.myjcom.jp" site_id="2_57376_31860" lang="ja" xmltv_id="KKT.jp">KKTくまもと県民テレビ</channel>
-  <channel site="tvguide.myjcom.jp" site_id="2_57384_31861" lang="ja" xmltv_id="KAB.jp">KAB熊本朝日放送</channel>
-  <channel site="tvguide.myjcom.jp" site_id="2_57368_31859" lang="ja" xmltv_id="TKU.jp">TKUテレビ熊本</channel>
-</channels>

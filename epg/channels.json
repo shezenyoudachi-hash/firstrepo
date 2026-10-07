@@ -1,0 +1,21 @@
+{
+  "_comment": "J:COM 番組表（tvguide.myjcom.jp）のチャンネル。site_id は <channel_type>_<service_id>_<network_id>。地域ごとに guide-<地域>.xml を作る",
+  "fukuoka": [
+    {"id": "KBC.jp", "site_id": "2_56336_31874"},
+    {"id": "RKB.jp", "site_id": "2_56344_31875"},
+    {"id": "FBS.jp", "site_id": "2_56352_31876"},
+    {"id": "TVQ.jp", "site_id": "2_56360_31877"},
+    {"id": "TNC.jp", "site_id": "2_56368_31878"}
+  ],
+  "kumamoto": [
+    {"id": "RKK.jp", "site_id": "2_57360_31858"},
+    {"id": "KKT.jp", "site_id": "2_57376_31860"},
+    {"id": "KAB.jp", "site_id": "2_57384_31861"},
+    {"id": "TKU.jp", "site_id": "2_57368_31859"}
+  ],
+  "oita": [
+    {"id": "OBS.jp", "site_id": "2_61456_31794"},
+    {"id": "TOS.jp", "site_id": "2_61464_31795"},
+    {"id": "OAB.jp", "site_id": "2_61472_31796"}
+  ]
+}
