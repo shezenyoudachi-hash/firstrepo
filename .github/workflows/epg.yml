@@ -1,0 +1,69 @@
+name: EPG (九州の地上波)
+
+# J:COM の番組表（tvguide.myjcom.jp）から、九州の地上波民放の番組表を XMLTV で作り、
+# このリポジトリの epg-data ブランチに保存する。アプリは raw.githubusercontent.com から読み込む。
+#   https://raw.githubusercontent.com/<owner>/<repo>/epg-data/guide-fukuoka.xml
+# 取得には iptv-org/epg（https://github.com/iptv-org/epg）を使う。
+on:
+  schedule:
+    - cron: "17 */6 * * *" # 6 時間ごと（サイトに負担をかけないよう控えめに）
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: epg
+  cancel-in-progress: false
+
+jobs:
+  grab:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: app
+
+      - uses: actions/checkout@v4
+        with:
+          repository: iptv-org/epg
+          path: epg
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install iptv-org/epg
+        working-directory: epg
+        run: npm ci --ignore-scripts --no-audit --no-fund
+
+      - name: Grab
+        working-directory: epg
+        run: |
+          mkdir -p ../out
+          for file in ../app/epg/channels/*.channels.xml; do
+            region=$(basename "$file" .channels.xml)
+            npm run grab --- --channels="$file" --output="../out/guide-$region.xml" --days=3 --maxConnections=1
+          done
+
+      - name: Add channel numbers
+        run: python3 app/epg/add_channel_numbers.py out/guide-*.xml
+
+      - name: Publish to epg-data branch
+        working-directory: out
+        run: |
+          # 番組が1件も取れなかったファイルがあれば失敗にする（古いデータを空で上書きしない）
+          for f in guide-*.xml; do
+            grep -q "<programme" "$f" || { echo "no programmes in $f"; exit 1; }
+          done
+          cat > README.md <<'MD'
+          このブランチは GitHub Actions（.github/workflows/epg.yml）が自動で更新する番組表データです。手で編集しないでください。
+          MD
+          git init -q -b epg-data
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -q -m "番組表を更新 ($(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M'))"
+          # 履歴を残さず毎回置き換える（リポジトリが大きくならないように）
+          git push -q --force "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" epg-data
