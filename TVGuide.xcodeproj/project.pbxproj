@@ -22,6 +22,7 @@
 		86A0CFBCD21DF86680C66617 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2934FFF6AF7DBC5088CD82 /* Genre.swift */; };
 		8F3E67DA36D522CBE9FD7DFE /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5CFF5557117F9EB8DEE887 /* Program.swift */; };
 		9FCB5C50808AC24E0D375523 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1B3EE1989FC632554FD6A /* SearchView.swift */; };
+		A1A75BE62D74CA8BA495A382 /* ChannelSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D22D9E3B33303ECF6E16ABA /* ChannelSelectionView.swift */; };
 		A318AE7B4D989BAF0D6DB984 /* OnAirView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAEC63C9E9B3F3090DC319D /* OnAirView.swift */; };
 		A318C3A18E00850CA7AEB2C5 /* GuideGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D677A987D1583A64CC01594F /* GuideGridView.swift */; };
 		C823718FAE8BAA3126FF11FD /* TVGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF82EF7EDC1599DD2FB1B8 /* TVGuideApp.swift */; };
@@ -44,6 +45,7 @@
 		0BF48E13CF15D638BAA5F4F9 /* NHKProgramProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHKProgramProvider.swift; sourceTree = "<group>"; };
 		19D52B8B97CE1465B9F14EF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1DAEC63C9E9B3F3090DC319D /* OnAirView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnAirView.swift; sourceTree = "<group>"; };
+		3D22D9E3B33303ECF6E16ABA /* ChannelSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelSelectionView.swift; sourceTree = "<group>"; };
 		3D5FAD4AC77101527FF41ECE /* MirakurunProgramProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirakurunProgramProvider.swift; sourceTree = "<group>"; };
 		4F139F124C824ACE1CBDA612 /* TVGuideTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TVGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		644103762AF11CBF768B54CD /* TVGuideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVGuideTests.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		6652036F5D24F1CC94846CFB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3D22D9E3B33303ECF6E16ABA /* ChannelSelectionView.swift */,
 				19D52B8B97CE1465B9F14EF4 /* ContentView.swift */,
 				D677A987D1583A64CC01594F /* GuideGridView.swift */,
 				F082048EBD59CFA6BBAEBCD2 /* GuideView.swift */,
@@ -261,6 +264,7 @@
 			files = (
 				432BBE5A37C47668602E6A12 /* BroadcastDay.swift in Sources */,
 				6FC69D362A342C856D97E65B /* Channel.swift in Sources */,
+				A1A75BE62D74CA8BA495A382 /* ChannelSelectionView.swift in Sources */,
 				F368C819CEBF91E8C0345174 /* ContentView.swift in Sources */,
 				86A0CFBCD21DF86680C66617 /* Genre.swift in Sources */,
 				A318C3A18E00850CA7AEB2C5 /* GuideGridView.swift in Sources */,
