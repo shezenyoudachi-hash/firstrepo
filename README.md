@@ -53,6 +53,23 @@ Xcode でシミュレーターを選んで ▶ を押せば起動します。テ
 
 `TVGuide.xcodeproj` は [XcodeGen](https://github.com/yonaskolb/XcodeGen) で `project.yml` から生成しています。プッシュすると GitHub Actions が自動で再生成・コミットするので、Mac に XcodeGen を入れる必要はありません。ファイルを追加・削除したときは、Xcode で直接いじらずにプッシュして再生成させるか、`xcodegen generate` を実行してください。
 
+## iPhone 実機にインストール
+
+無料の Apple ID でインストールできます（有料の Apple Developer Program は不要）。
+
+1. **Xcode に Apple ID を追加**：Xcode → 設定（⌘,）→ アカウント → 左下の「＋」→ Apple ID
+2. **署名の設定ファイルを作成**：ターミナルで
+   ```sh
+   sh scripts/setup-signing.sh
+   ```
+   チーム ID と、自分専用のバンドル ID を書いた `Config/Local.xcconfig` が作られます（Git には含まれません）。
+3. **iPhone を USB で Mac につなぐ**：iPhone に「このコンピュータを信頼しますか？」と出たら「信頼」
+4. **iPhone のデベロッパモードをオン**：iPhone の 設定 → プライバシーとセキュリティ → デベロッパモード → オン（再起動されます）
+5. **Xcode を開き直し**、上部のデバイス選択で自分の iPhone を選んで ▶
+6. 初回は iPhone で「信頼されていないデベロッパ」と出るので、iPhone の 設定 → 一般 → VPNとデバイス管理 → 自分の Apple ID → 「信頼」。もう一度 ▶
+
+無料の Apple ID の場合、インストールしたアプリは **7日間** で起動できなくなります。そのときは Mac につないで ▶ を押せば再インストールされます。
+
 ## 構成
 
 ```

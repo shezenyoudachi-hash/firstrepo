@@ -1,0 +1,9 @@
+// 署名の設定。
+// 実機で動かすときは、このファイルではなく Config/Local.xcconfig（Git 管理外）に
+// 自分のチーム ID とバンドル ID を書く。scripts/setup-signing.sh で自動作成できる。
+
+CODE_SIGN_STYLE = Automatic
+DEVELOPMENT_TEAM =
+BUNDLE_ID_PREFIX = com.example
+
+#include? "Local.xcconfig"

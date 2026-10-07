@@ -4,6 +4,9 @@ options:
   deploymentTarget:
     iOS: "17.0"
   developmentLanguage: ja
+configFiles:
+  Debug: Config/Signing.xcconfig
+  Release: Config/Signing.xcconfig
 settings:
   base:
     SWIFT_VERSION: "5.0"
@@ -30,7 +33,7 @@ targets:
           - UIInterfaceOrientationLandscapeRight
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.example.TVGuide
+        PRODUCT_BUNDLE_IDENTIFIER: $(BUNDLE_ID_PREFIX).TVGuide
         GENERATE_INFOPLIST_FILE: NO
   TVGuideTests:
     type: bundle.unit-test
@@ -41,6 +44,7 @@ targets:
       - target: TVGuide
     settings:
       base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(BUNDLE_ID_PREFIX).TVGuideTests
         GENERATE_INFOPLIST_FILE: YES
 schemes:
   TVGuide:
