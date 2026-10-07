@@ -208,9 +208,18 @@ actor BraviaClient {
             withJSONObject: ["method": method, "id": requestID, "params": params, "version": version] as [String: Any],
             options: [.sortedKeys]
         )
-        let (data, response) = try await session.data(for: request)
-        guard let http = response as? HTTPURLResponse else { throw BraviaError.unreadable(method) }
-        return (data, http)
+        // 401（PIN の要求）に URLSession が自動で同じ要求を送り直すと、テレビは表示した PIN を取り消してしまう。
+        // そのため認証の問い合わせが来たら打ち切り、401 の応答をそのまま返す（ChallengeRefuser）
+        let refuser = ChallengeRefuser()
+        do {
+            let (data, response) = try await session.data(for: request, delegate: refuser)
+            guard let http = response as? HTTPURLResponse else { throw BraviaError.unreadable(method) }
+            return (data, http)
+        } catch let error as URLError where error.code == .cancelled || error.code == .userCancelledAuthentication {
+            guard refuser.wasChallenged else { throw error }
+            let asked = refuser.answer ?? HTTPURLResponse(url: url, statusCode: 401, httpVersion: "HTTP/1.1", headerFields: nil)!
+            return (Data(), asked)
+        }
     }
 
     static func url(host: String, service: String) -> URL? {
@@ -232,6 +241,37 @@ actor BraviaClient {
         }
         guard let result = object["result"] else { throw BraviaError.unreadable(method) }
         return result
+    }
+}
+
+/// 認証の問い合わせ（HTTP 401 + `WWW-Authenticate: Basic`）を受けたら、要求を送り直さずに打ち切る。
+///
+/// URLSession は 401 に Basic 認証の問い合わせが付いていると、デリゲートがない場合も、資格情報を渡さない場合も、
+/// 同じ要求をもう 1 回送ってから 401 を返す。BRAVIA は未登録のアプリからの登録の要求に、画面に PIN を出して
+/// 401 で答え、2 回目の要求でその PIN を取り消す（bdzbridge の実機での記録）。取り消し（cancel）だけが、
+/// 2 回目を送らずに終わらせる。
+private final class ChallengeRefuser: NSObject, URLSessionTaskDelegate, @unchecked Sendable {
+    private let lock = NSLock()
+    private var response: HTTPURLResponse?
+    private var challenged = false
+
+    var answer: HTTPURLResponse? { lock.withLock { response } }
+    var wasChallenged: Bool { lock.withLock { challenged } }
+
+    func urlSession(_ session: URLSession, task: URLSessionTask,
+                    didReceive challenge: URLAuthenticationChallenge) async -> (URLSession.AuthChallengeDisposition, URLCredential?) {
+        let space = challenge.protectionSpace
+        // TLS のサーバー証明書やプロキシの認証はシステムに任せる
+        guard space.authenticationMethod != NSURLAuthenticationMethodServerTrust,
+              space.authenticationMethod != NSURLAuthenticationMethodClientCertificate,
+              !space.isProxy() else {
+            return (.performDefaultHandling, nil)
+        }
+        lock.withLock {
+            challenged = true
+            response = challenge.failureResponse as? HTTPURLResponse
+        }
+        return (.cancelAuthenticationChallenge, nil)
     }
 }
 
