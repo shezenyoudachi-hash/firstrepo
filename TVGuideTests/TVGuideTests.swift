@@ -264,7 +264,25 @@ final class DataSourceSettingsTests: XCTestCase {
         let defaults = UserDefaults(suiteName: #function)!
         defaults.removePersistentDomain(forName: #function)
         defaults.set("dummy-key", forKey: GuideStore.SettingsKey.apiKey)
-        XCTAssertEqual(GuideStore(defaults: defaults).dataSource, .nhk)
+        XCTAssertEqual(GuideStore(defaults: defaults).enabledSources, [.nhk])
+    }
+
+    func testLegacySingleSourceMigratesToToggle() {
+        let defaults = UserDefaults(suiteName: #function)!
+        defaults.removePersistentDomain(forName: #function)
+        defaults.set(DataSource.xmltv.rawValue, forKey: GuideStore.SettingsKey.dataSource)
+        let store = GuideStore(defaults: defaults)
+        XCTAssertEqual(store.enabledSources, [.xmltv])
+        XCTAssertFalse(store.isUsingSampleData)
+    }
+
+    func testNoSourceUsesSample() async {
+        let defaults = UserDefaults(suiteName: #function)!
+        defaults.removePersistentDomain(forName: #function)
+        let store = GuideStore(defaults: defaults)
+        XCTAssertTrue(store.isUsingSampleData)
+        await store.load()
+        XCTAssertEqual(store.schedule.channels.count, SampleProgramProvider.channels.count)
     }
 
     func testInvalidMirakurunURLShowsError() async {
@@ -275,5 +293,74 @@ final class DataSourceSettingsTests: XCTestCase {
         await store.load()
         XCTAssertNotNil(store.errorMessage)
         XCTAssertTrue(store.schedule.channels.isEmpty)
+    }
+}
+
+@MainActor
+final class ChannelVisibilityTests: XCTestCase {
+    func testMergeSortsByNumberAndRemovesDuplicates() {
+        let nhk = Schedule(channels: [Channel(id: "g1", name: "NHK総合", number: 1),
+                                      Channel(id: "s1", name: "NHK BS", number: 101)], programs: [])
+        let bs = Schedule(channels: [Channel(id: "BSFuji.jp", name: "BSフジ", number: 181),
+                                     Channel(id: "BS11.jp", name: "BS11", number: 211),
+                                     Channel(id: "g1", name: "重複", number: 1)], programs: [])
+        let merged = GuideStore.merge([bs, nhk])
+        XCTAssertEqual(merged.channels.map(\.id), ["g1", "s1", "BSFuji.jp", "BS11.jp"])
+        XCTAssertEqual(merged.channels.first?.name, "重複") // 先に来た取得元を優先
+    }
+
+    func testHideChannelIsPersisted() async {
+        let defaults = UserDefaults(suiteName: #function)!
+        defaults.removePersistentDomain(forName: #function)
+        let store = GuideStore(defaults: defaults, provider: SampleProgramProvider())
+        await store.load()
+        let hidden = store.schedule.channels[0]
+        store.setVisible(hidden, false)
+        XCTAssertFalse(store.visibleChannels.contains(hidden))
+        XCTAssertFalse(store.onAirPrograms(at: store.day.start).contains { $0.channel == hidden })
+
+        let reopened = GuideStore(defaults: defaults, provider: SampleProgramProvider())
+        await reopened.load()
+        XCTAssertEqual(reopened.visibleChannels.count, SampleProgramProvider.channels.count - 1)
+    }
+}
+
+final class XMLTVManyChannelsTests: XCTestCase {
+    /// japanterebi-xmltv のように、チャンネルが多く・重複して定義されている XMLTV
+    func testManyChannelsShowsMainBSOnlyAndRemovesDuplicates() throws {
+        var xml = #"<?xml version="1.0" encoding="utf-8"?><tv>"#
+        let named = ["ＢＳ日テレ", "BS日テレ 4K", "ＢＳ－ＴＢＳ", "ＢＳフジ・181", "BS11 イレブン", "ＢＳ朝日１", "BSテレ東", "BS12トゥエルビ", "ＮＨＫ　ＢＳ"]
+        for (index, name) in named.enumerated() {
+            xml += #"<channel id="bs\#(index)"><display-name>\#(name)</display-name></channel>"#
+        }
+        for index in 0..<40 {
+            xml += #"<channel id="cs\#(index)"><display-name>CS\#(index)</display-name></channel>"#
+        }
+        xml += #"<channel id="bs0"><display-name>ＢＳ日テレ</display-name></channel>"# // 重複
+        xml += #"<programme start="20261007190000 +0900" stop="20261007200000 +0900" channel="bs0"><title>番組</title></programme>"#
+        xml += #"<programme start="20261007190000 +0900" stop="20261007200000 +0900" channel="bs0"><title>番組</title></programme>"#
+        xml += "</tv>"
+
+        let schedule = try XMLTVProgramProvider.parse(Data(xml.utf8))
+        XCTAssertEqual(schedule.channels.count, named.count + 40)
+        XCTAssertEqual(schedule.programs.count, 1)
+
+        let numbers = Dictionary(uniqueKeysWithValues: schedule.channels.map { ($0.name, $0.number) })
+        XCTAssertEqual(numbers["ＢＳ日テレ"], 141)
+        XCTAssertEqual(numbers["BS日テレ 4K"], 1141)
+        XCTAssertEqual(numbers["ＢＳ－ＴＢＳ"], 161)
+        XCTAssertEqual(numbers["ＢＳフジ・181"], 181)
+        XCTAssertEqual(numbers["BS11 イレブン"], 211)
+        XCTAssertEqual(numbers["ＮＨＫ　ＢＳ"], 101)
+
+        let visible = Set(schedule.channels.filter(\.isVisibleByDefault).map(\.name))
+        XCTAssertEqual(visible, ["ＢＳ日テレ", "ＢＳ－ＴＢＳ", "ＢＳフジ・181", "BS11 イレブン", "ＢＳ朝日１", "BSテレ東", "BS12トゥエルビ"])
+        XCTAssertNil(schedule.channels.first { $0.name == "CS0" }?.displayNumber)
+    }
+
+    func testFewChannelsAreAllVisible() throws {
+        let xml = #"<tv><channel id="a"><display-name>局A</display-name></channel><channel id="b"><display-name>局B</display-name></channel></tv>"#
+        let schedule = try XMLTVProgramProvider.parse(Data(xml.utf8))
+        XCTAssertTrue(schedule.channels.allSatisfy(\.isVisibleByDefault))
     }
 }

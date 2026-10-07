@@ -17,7 +17,7 @@ struct GuideGridView: View {
     }
 
     var body: some View {
-        let channels = store.schedule.channels
+        let channels = store.visibleChannels
         let width = Metrics.timeColumnWidth + Metrics.columnWidth * CGFloat(channels.count)
 
         ScrollViewReader { proxy in
@@ -124,9 +124,11 @@ private struct ChannelHeaderRow: View {
                             }
                             .frame(width: 24, height: 14)
                         }
-                        Text("\(channel.number)")
-                            .font(.caption2.monospacedDigit())
-                            .foregroundStyle(.secondary)
+                        if let number = channel.displayNumber {
+                            Text(number)
+                                .font(.caption2.monospacedDigit())
+                                .foregroundStyle(.secondary)
+                        }
                     }
                     Text(channel.name)
                         .font(.subheadline.bold())

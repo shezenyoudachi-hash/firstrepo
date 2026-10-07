@@ -6,14 +6,27 @@ struct XMLTVProgramProvider: ProgramProvider {
     var url: URL
     var session: URLSession = .shared
 
+    /// 1週間分がまとめて入った大きなファイル（数 MB）のことが多いため、
+    /// 一度読み込んだ内容をしばらく使い回し、日付を切り替えるたびにダウンロードしない
+    static let cache = Cache(lifetime: 30 * 60)
+
     func fetchSchedule(for day: BroadcastDay) async throws -> Schedule {
-        let (data, response) = try await session.data(from: url)
-        if let http = response as? HTTPURLResponse, !(200..<300).contains(http.statusCode) {
-            throw ProgramProviderError.badResponse(statusCode: http.statusCode)
+        let schedule: Schedule
+        if let cached = await Self.cache.schedule(for: url) {
+            schedule = cached
+        } else {
+            let (data, response) = try await session.data(from: url)
+            if let http = response as? HTTPURLResponse, !(200..<300).contains(http.statusCode) {
+                throw ProgramProviderError.badResponse(statusCode: http.statusCode)
+            }
+            schedule = try Self.parse(data)
+            await Self.cache.store(schedule, for: url)
         }
-        let schedule = try Self.parse(data)
         return Schedule(channels: schedule.channels, programs: schedule.programs.filter(day.overlaps))
     }
+
+    /// チャンネル数がこれより多い XMLTV では、主要な BS 局だけを最初から表示する
+    static let manyChannelsThreshold = 30
 
     static func parse(_ data: Data) throws -> Schedule {
         let delegate = ParserDelegate()
@@ -22,11 +35,37 @@ struct XMLTVProgramProvider: ProgramProvider {
         guard parser.parse() else {
             throw parser.parserError ?? ProgramProviderError.invalidData
         }
-        let channelIDs = Set(delegate.channels.map(\.id))
-        return Schedule(
-            channels: delegate.channels,
-            programs: delegate.programs.filter { channelIDs.contains($0.channelID) }
-        )
+
+        let hasManyChannels = delegate.channels.count > manyChannelsThreshold
+        let channels = delegate.channels.map { channel in
+            var channel = channel
+            channel.isVisibleByDefault = hasManyChannels ? BSChannel.isMain(channel.number) : true
+            return channel
+        }
+
+        // 同じ番組が重複して入っていることがあるため id で除く
+        let channelIDs = Set(channels.map(\.id))
+        var seen = Set<String>()
+        let programs = delegate.programs.filter { channelIDs.contains($0.channelID) && seen.insert($0.id).inserted }
+        return Schedule(channels: channels, programs: programs)
+    }
+
+    actor Cache {
+        let lifetime: TimeInterval
+        private var entries: [URL: (date: Date, schedule: Schedule)] = [:]
+
+        init(lifetime: TimeInterval) { self.lifetime = lifetime }
+
+        func schedule(for url: URL) -> Schedule? {
+            guard let entry = entries[url], Date.now.timeIntervalSince(entry.date) < lifetime else { return nil }
+            return entry.schedule
+        }
+
+        func store(_ schedule: Schedule, for url: URL) {
+            entries[url] = (.now, schedule)
+        }
+
+        func removeAll() { entries.removeAll() }
     }
 
     /// XMLTV の日時（例: `20261006050000 +0900`）
@@ -116,13 +155,21 @@ struct XMLTVProgramProvider: ProgramProvider {
             }
         }
 
+        private var channelIDs = Set<String>()
+
         private func finishChannel() {
             guard let channelID else { return }
-            // display-name に数字だけのもの（リモコン番号）があれば番号として使う
-            let number = displayNames.lazy.compactMap { Int($0) }.first ?? (channels.count + 1) * 100
-            let name = displayNames.first { Int($0) == nil } ?? displayNames.first ?? channelID
-            channels.append(Channel(id: channelID, name: name, number: number, logoURL: iconURL))
             self.channelID = nil
+            // 同じチャンネルが複数回定義されていることがあるため、最初のものだけ使う
+            guard channelIDs.insert(channelID).inserted else { return }
+
+            let name = displayNames.first { Int($0) == nil } ?? displayNames.first ?? channelID
+            // display-name に数字だけのもの（リモコン番号）があればそれを、BS の主要局は BS の番号を使う。
+            // どちらもなければファイルの順に、番号のあるチャンネルの後ろへ並べる
+            let number = displayNames.lazy.compactMap { Int($0) }.first
+                ?? BSChannel.number(forName: name)
+                ?? 10_000 + channels.count
+            channels.append(Channel(id: channelID, name: name, number: number, logoURL: iconURL))
         }
 
         private func finishProgramme() {
@@ -146,4 +193,34 @@ struct XMLTVProgramProvider: ProgramProvider {
             ))
         }
     }
+}
+
+/// BS 局のチャンネル番号（XMLTV にはチャンネル番号が入っていないことが多いため、名前から推定する）
+enum BSChannel {
+    private static let numbers: [(keyword: String, number: Int)] = [
+        ("NHKBS", 101), ("BS日テレ", 141), ("BS朝日", 151), ("BS-TBS", 161), ("BSTBS", 161),
+        ("BSテレ東", 171), ("BSフジ", 181), ("BS11", 211), ("BS12", 222), ("BS10", 200), ("BSよしもと", 265),
+    ]
+
+    /// 最初から表示する民放 BS
+    private static let main: Set<Int> = [141, 151, 161, 171, 181, 211, 222]
+
+    static func number(forName name: String) -> Int? {
+        let normalized = normalize(name)
+        guard let number = numbers.first(where: { normalized.contains(normalize($0.keyword)) })?.number else {
+            return nil
+        }
+        // 4K 放送は 2K の局と区別して後ろに並べる
+        return normalized.contains("4K") ? number + 1_000 : number
+    }
+
+    /// 全角英数・記号を半角にし、空白を除いて大文字にそろえる（カタカナも半角になるため、比べる側も同じ変換をする）
+    private static func normalize(_ string: String) -> String {
+        (string.applyingTransform(.fullwidthToHalfwidth, reverse: false) ?? string)
+            .replacingOccurrences(of: " ", with: "")
+            .replacingOccurrences(of: "\u{3000}", with: "")
+            .uppercased()
+    }
+
+    static func isMain(_ number: Int) -> Bool { main.contains(number) }
 }

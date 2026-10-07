@@ -43,7 +43,7 @@ private struct OnAirRow: View {
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
             VStack {
-                Text("\(channel.number)")
+                Text(channel.displayNumber ?? "")
                     .font(.title3.bold().monospacedDigit())
                 Text(channel.name)
                     .font(.caption2)

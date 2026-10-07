@@ -2,7 +2,9 @@ import SwiftUI
 
 struct SettingsView: View {
     @Environment(GuideStore.self) private var store
-    @AppStorage(GuideStore.SettingsKey.dataSource) private var dataSource = DataSource.sample
+    @AppStorage(GuideStore.SettingsKey.useNHK) private var useNHK = false
+    @AppStorage(GuideStore.SettingsKey.useXMLTV) private var useXMLTV = false
+    @AppStorage(GuideStore.SettingsKey.useMirakurun) private var useMirakurun = false
     @AppStorage(GuideStore.SettingsKey.apiKey) private var apiKey = ""
     @AppStorage(GuideStore.SettingsKey.area) private var area = Area.default.id
     @AppStorage(GuideStore.SettingsKey.mirakurunURL) private var mirakurunURL = ""
@@ -12,33 +14,33 @@ struct SettingsView: View {
 
     @State private var reloadTask: Task<Void, Never>?
 
+    /// BS・CS の番組表を配信している XMLTV（https://github.com/Animenosekai/japanterebi-xmltv）
+    static let japanterebiURL = "https://animenosekai.github.io/japanterebi-xmltv/guide.xml"
+
     var body: some View {
         NavigationStack {
             Form {
                 Section {
-                    Picker("取得元", selection: $dataSource) {
-                        ForEach(DataSource.allCases) { source in
-                            Text(source.displayName).tag(source)
-                        }
-                    }
+                    Toggle("NHK（総合・Eテレ・BS）", isOn: $useNHK)
+                    Toggle("XMLTV（民放 BS・CS など）", isOn: $useXMLTV)
+                    Toggle("Mirakurun（自宅チューナー）", isOn: $useMirakurun)
                 } header: {
                     Text("番組表データ")
                 } footer: {
-                    Text(dataSourceDescription)
+                    Text("オンにした取得元の番組表を1つにまとめて表示します。どれもオフのときはサンプルデータを表示します。")
                 }
 
-                switch dataSource {
-                case .sample:
-                    EmptyView()
-                case .nhk:
-                    nhkSection
-                case .mirakurun:
-                    mirakurunSection
-                case .xmltv:
-                    xmltvSection
-                }
+                if useNHK { nhkSection }
+                if useXMLTV { xmltvSection }
+                if useMirakurun { mirakurunSection }
 
                 Section {
+                    NavigationLink {
+                        ChannelSelectionView()
+                    } label: {
+                        LabeledContent("表示するチャンネル",
+                                       value: "\(store.visibleChannels.count) / \(store.schedule.channels.count)")
+                    }
                     Button("番組表を再読み込み") {
                         Task { await store.load() }
                     }
@@ -49,25 +51,14 @@ struct SettingsView: View {
                 }
             }
             .navigationTitle("設定")
-            .onChange(of: dataSource) { reload() }
+            .onChange(of: useNHK) { reload() }
+            .onChange(of: useXMLTV) { reload() }
+            .onChange(of: useMirakurun) { reload() }
             .onChange(of: apiKey) { reload() }
             .onChange(of: area) { reload() }
             .onChange(of: mirakurunURL) { reload() }
             .onChange(of: mirakurunChannels) { reload() }
             .onChange(of: xmltvURL) { reload() }
-        }
-    }
-
-    private var dataSourceDescription: String {
-        switch dataSource {
-        case .sample:
-            "地上波 7 局分のダミー番組を表示します。"
-        case .nhk:
-            "NHK の各チャンネルの番組表を取得します（民放は含まれません）。"
-        case .mirakurun:
-            "自宅のチューナーサーバーが受信した EPG から、民放を含む実際の番組表を表示します。"
-        case .xmltv:
-            "XMLTV 形式の番組表 URL を読み込みます。EPGStation などの録画サーバーや EPG 配信サービスで利用できます。"
         }
     }
 
@@ -89,6 +80,24 @@ struct SettingsView: View {
         }
     }
 
+    private var xmltvSection: some View {
+        Section {
+            TextField("https://example.com/epg.xml", text: $xmltvURL)
+                .keyboardType(.URL)
+                .textInputAutocapitalization(.never)
+                .autocorrectionDisabled()
+            if xmltvURL != Self.japanterebiURL {
+                Button("BS・CS の番組表（japanterebi-xmltv）を使う") {
+                    xmltvURL = Self.japanterebiURL
+                }
+            }
+        } header: {
+            Text("XMLTV")
+        } footer: {
+            Text("japanterebi-xmltv は有志が公開している BS・CS の番組表です（地上波の民放は含まれません）。チャンネルが多いため、最初は民放 BS だけを表示します。インターネット上の URL は https のみ対応です。")
+        }
+    }
+
     private var mirakurunSection: some View {
         Section {
             TextField("例: 192.168.1.10:40772", text: $mirakurunURL)
@@ -104,19 +113,6 @@ struct SettingsView: View {
             Text("Mirakurun サーバー")
         } footer: {
             Text("同じ Wi-Fi などから接続できるサーバーのアドレスとポート（標準は 40772）を入力してください。初回はローカルネットワークへのアクセス許可を求められます。")
-        }
-    }
-
-    private var xmltvSection: some View {
-        Section {
-            TextField("https://example.com/epg.xml", text: $xmltvURL)
-                .keyboardType(.URL)
-                .textInputAutocapitalization(.never)
-                .autocorrectionDisabled()
-        } header: {
-            Text("XMLTV")
-        } footer: {
-            Text("インターネット上の URL は https のみ対応です。http はローカルネットワーク内のサーバーに限られます。")
         }
     }
 

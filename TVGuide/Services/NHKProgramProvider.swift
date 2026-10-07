@@ -175,8 +175,10 @@ struct NHKProgramProvider: ProgramProvider {
         return nil
     }
 
+    /// リモコン番号・BS チャンネル番号（4K・8K は 2K の後ろに並べる）
     private static func defaultServicesOrder(_ serviceID: String) -> Int {
-        ["g1", "g2", "e1", "e2", "e3", "s1", "s2", "s5", "s6"].firstIndex(of: serviceID).map { $0 + 1 } ?? 99
+        let numbers = ["g1": 1, "g2": 1, "e1": 2, "e2": 2, "e3": 2, "s1": 101, "s2": 102, "s5": 1101, "s6": 1102]
+        return numbers[serviceID] ?? 999
     }
 
     /// `2026-10-07T05:00:00+09:00`（小数秒・タイムゾーンなしにも対応。なしは日本時間とみなす）
