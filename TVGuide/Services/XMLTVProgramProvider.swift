@@ -36,17 +36,20 @@ struct XMLTVProgramProvider: ProgramProvider {
             throw parser.parserError ?? ProgramProviderError.invalidData
         }
 
+        // 同じ番組が重複して入っていることがあるため id で除く
+        let declaredIDs = Set(delegate.channels.map(\.id))
+        var seen = Set<String>()
+        let programs = delegate.programs.filter { declaredIDs.contains($0.channelID) && seen.insert($0.id).inserted }
+
+        // チャンネルが多いときは主要な BS 局だけ、番組が1件もないチャンネルは最初は表示しない
         let hasManyChannels = delegate.channels.count > manyChannelsThreshold
+        let channelsWithPrograms = Set(programs.map(\.channelID))
         let channels = delegate.channels.map { channel in
             var channel = channel
-            channel.isVisibleByDefault = hasManyChannels ? BSChannel.isMain(channel.number) : true
+            channel.isVisibleByDefault = channelsWithPrograms.contains(channel.id)
+                && (hasManyChannels ? BSChannel.isMain(channel.number) : true)
             return channel
         }
-
-        // 同じ番組が重複して入っていることがあるため id で除く
-        let channelIDs = Set(channels.map(\.id))
-        var seen = Set<String>()
-        let programs = delegate.programs.filter { channelIDs.contains($0.channelID) && seen.insert($0.id).inserted }
         return Schedule(channels: channels, programs: programs)
     }
 

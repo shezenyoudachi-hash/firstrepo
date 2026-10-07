@@ -339,11 +339,15 @@ final class XMLTVManyChannelsTests: XCTestCase {
         xml += #"<channel id="bs0"><display-name>ＢＳ日テレ</display-name></channel>"# // 重複
         xml += #"<programme start="20261007190000 +0900" stop="20261007200000 +0900" channel="bs0"><title>番組</title></programme>"#
         xml += #"<programme start="20261007190000 +0900" stop="20261007200000 +0900" channel="bs0"><title>番組</title></programme>"#
+        // BS12（bs7）以外の BS 局には番組がある。BS12 は番組がないので最初は表示しない
+        for index in [1, 2, 3, 4, 5, 6, 8] {
+            xml += #"<programme start="20261007200000 +0900" stop="20261007210000 +0900" channel="bs\#(index)"><title>番組\#(index)</title></programme>"#
+        }
         xml += "</tv>"
 
         let schedule = try XMLTVProgramProvider.parse(Data(xml.utf8))
         XCTAssertEqual(schedule.channels.count, named.count + 40)
-        XCTAssertEqual(schedule.programs.count, 1)
+        XCTAssertEqual(schedule.programs.count, 8)
 
         let numbers = Dictionary(uniqueKeysWithValues: schedule.channels.map { ($0.name, $0.number) })
         XCTAssertEqual(numbers["ＢＳ日テレ"], 141)
@@ -354,12 +358,16 @@ final class XMLTVManyChannelsTests: XCTestCase {
         XCTAssertEqual(numbers["ＮＨＫ　ＢＳ"], 101)
 
         let visible = Set(schedule.channels.filter(\.isVisibleByDefault).map(\.name))
-        XCTAssertEqual(visible, ["ＢＳ日テレ", "ＢＳ－ＴＢＳ", "ＢＳフジ・181", "BS11 イレブン", "ＢＳ朝日１", "BSテレ東", "BS12トゥエルビ"])
+        XCTAssertEqual(visible, ["ＢＳ日テレ", "ＢＳ－ＴＢＳ", "ＢＳフジ・181", "BS11 イレブン", "ＢＳ朝日１", "BSテレ東"])
         XCTAssertNil(schedule.channels.first { $0.name == "CS0" }?.displayNumber)
     }
 
     func testFewChannelsAreAllVisible() throws {
-        let xml = #"<tv><channel id="a"><display-name>局A</display-name></channel><channel id="b"><display-name>局B</display-name></channel></tv>"#
+        let xml = #"""
+        <tv><channel id="a"><display-name>局A</display-name></channel><channel id="b"><display-name>局B</display-name></channel>
+        <programme start="20261007190000 +0900" stop="20261007200000 +0900" channel="a"><title>A</title></programme>
+        <programme start="20261007190000 +0900" stop="20261007200000 +0900" channel="b"><title>B</title></programme></tv>
+        """#
         let schedule = try XMLTVProgramProvider.parse(Data(xml.utf8))
         XCTAssertTrue(schedule.channels.allSatisfy(\.isVisibleByDefault))
     }
