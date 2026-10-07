@@ -56,6 +56,36 @@ final class NHKProgramProviderTests: XCTestCase {
         XCTAssertEqual(program.duration, 30 * 60)
     }
 
+    /// 実際の v3 レスポンス（2026-10-07 おはよう日本、一部省略）
+    func testDecodeRealV3Response() throws {
+        let json = """
+        {"g1":{"publication":[{
+          "type":"BroadcastEvent","id":"g1-130-2026100727486",
+          "name":"ＮＨＫニュース　おはよう日本　ガザ戦闘開始から３年　今も厳しい人道状況",
+          "description":"▼防災庁発足見据え研修会▼小麦の生産拡大に挑戦",
+          "startDate":"2026-10-07T05:00:00+09:00","endDate":"2026-10-07T06:00:00+09:00",
+          "identifierGroup":{"broadcastEventId":"g1-130-2026100727486","serviceId":"g1",
+            "genre":[{"id":"0000","name1":"ニュース/報道","name2":"定時・総合"},
+                     {"id":"0100","name1":"スポーツ","name2":"スポーツニュース"}]},
+          "misc":{"actList":[
+              {"role":"キャスター","name":"竜田理史","nameRuby":"ﾀﾂﾀﾏｻｼ"},
+              {"role":"キャスター","name":"佐藤茉那","nameRuby":"ｻﾄｳﾏﾅ"},
+              {"role":"気象キャスター","name":"檜山靖洋","nameRuby":"ﾋﾔﾏﾔｽﾋﾛ"}],
+            "freeLine":"朝までに入っている最新ニュースを！"},
+          "about":{"identifierGroup":{"formatGenreTag":[{"id":"01","name":"報道"}]},
+            "eyecatch":{"medium":{"url":"https://img.nhk.jp/ep-medium.jpg","width":1280,"height":720}},
+            "partOfSeries":{"eyecatch":{"medium":{"url":"https://img.nhk.jp/series-medium.jpg"}}}}
+        }]}}
+        """
+        let schedule = try NHKProgramProvider.decode(Data(json.utf8))
+        let program = try XCTUnwrap(schedule.programs.first)
+        XCTAssertEqual(program.id, "nhk-g1-g1-130-2026100727486")
+        XCTAssertEqual(program.genres, [.news, .sports])
+        XCTAssertEqual(program.cast, "キャスター：竜田理史、佐藤茉那\n気象キャスター：檜山靖洋")
+        XCTAssertEqual(program.description, "▼防災庁発足見据え研修会▼小麦の生産拡大に挑戦\n\n朝までに入っている最新ニュースを！")
+        XCTAssertEqual(program.imageURL, URL(string: "https://img.nhk.jp/ep-medium.jpg"))
+    }
+
     func testDecodeMinimalV3() throws {
         let json = """
         {"g1":{"publication":[{"name":"ニュース","description":"",

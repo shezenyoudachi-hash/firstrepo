@@ -11,6 +11,8 @@ struct Program: Identifiable, Hashable, Codable, Sendable {
     let startDate: Date
     let endDate: Date
     let genres: [Genre]
+    /// 番組の画像（取得元が提供している場合）
+    var imageURL: URL? = nil
 
     var duration: TimeInterval { endDate.timeIntervalSince(startDate) }
     var primaryGenre: Genre { genres.first ?? .other }

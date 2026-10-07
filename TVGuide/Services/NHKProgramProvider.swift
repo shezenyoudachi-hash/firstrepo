@@ -108,21 +108,71 @@ struct NHKProgramProvider: ProgramProvider {
                 let id = (item["id"] as? String)
                     ?? (item["broadcastEventId"] as? String)
                     ?? "\(serviceID)-\(Int(start.timeIntervalSince1970))"
+                let misc = item["misc"] as? [String: Any] ?? [:]
+                let about = item["about"] as? [String: Any] ?? [:]
                 programs.append(Program(
                     id: "nhk-\(serviceID)-\(id)",
                     channelID: serviceID,
                     title: title,
                     subtitle: item["subtitle"] as? String ?? "",
-                    description: item["description"] as? String ?? "",
-                    cast: castText(item),
+                    description: descriptionText(item, misc: misc),
+                    cast: actListText(misc["actList"]) ?? castText(item),
                     startDate: start,
                     endDate: end,
-                    genres: genres(in: item)
+                    genres: primaryGenres(item) ?? genres(in: item),
+                    imageURL: imageURL(about)
                 ))
             }
         }
         if channels.isEmpty { throw ProgramProviderError.invalidData }
         return Schedule(channels: channels.sorted { ($0.number, $0.id) < ($1.number, $1.id) }, programs: programs)
+    }
+
+    /// `identifierGroup.genre`（例: [{"id": "0000", "name1": "ニュース/報道", ...}]）
+    private static func primaryGenres(_ item: [String: Any]) -> [Genre]? {
+        guard let list = (item["identifierGroup"] as? [String: Any])?["genre"] else { return nil }
+        let genres = genreValues(list)
+        return genres.isEmpty ? nil : genres
+    }
+
+    /// 番組内容 + 補足（`misc.freeLine`）
+    private static func descriptionText(_ item: [String: Any], misc: [String: Any]) -> String {
+        let description = (item["description"] as? String ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
+        let freeLine = (misc["freeLine"] as? String ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
+        return [description, freeLine].filter { !$0.isEmpty }.joined(separator: "\n\n")
+    }
+
+    /// `misc.actList`（[{"role": "キャスター", "name": "…"}]）を役割ごとにまとめる
+    /// 例: 「キャスター：竜田理史、佐藤茉那\n気象キャスター：檜山靖洋」
+    private static func actListText(_ actList: Any?) -> String? {
+        guard let acts = actList as? [[String: Any]], !acts.isEmpty else { return nil }
+        var roles: [String] = []
+        var namesByRole: [String: [String]] = [:]
+        for act in acts {
+            guard let name = act["name"] as? String, !name.isEmpty else { continue }
+            let role = act["role"] as? String ?? ""
+            if namesByRole[role] == nil { roles.append(role) }
+            namesByRole[role, default: []].append(name)
+        }
+        let lines = roles.map { role in
+            let names = namesByRole[role]!.joined(separator: "、")
+            return role.isEmpty ? names : "\(role)：\(names)"
+        }
+        return lines.isEmpty ? nil : lines.joined(separator: "\n")
+    }
+
+    /// エピソードの画像（`about.eyecatch.medium.url`）、なければシリーズの画像
+    private static func imageURL(_ about: [String: Any]) -> URL? {
+        let sources = [about, about["partOfSeries"] as? [String: Any] ?? [:]]
+        for source in sources {
+            guard let eyecatch = source["eyecatch"] as? [String: Any] else { continue }
+            for size in ["medium", "main", "small"] {
+                if let url = ((eyecatch[size] as? [String: Any])?["url"] as? String).flatMap(URL.init(string:)) {
+                    return url
+                }
+            }
+        }
+        return nil
     }
 
     private static func defaultServicesOrder(_ serviceID: String) -> Int {

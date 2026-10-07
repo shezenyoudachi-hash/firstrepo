@@ -10,6 +10,15 @@ struct ProgramDetailView: View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
+                    if let imageURL = program.imageURL {
+                        AsyncImage(url: imageURL) { image in
+                            image.resizable().scaledToFit()
+                        } placeholder: {
+                            Color.secondary.opacity(0.1)
+                                .aspectRatio(16 / 9, contentMode: .fit)
+                        }
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                    }
                     header
                     if let progress = program.progress() {
                         ProgressView(value: progress) {
