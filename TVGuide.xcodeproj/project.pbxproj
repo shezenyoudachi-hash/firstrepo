@@ -33,6 +33,7 @@
 		C90DE6CF17E10FD623F4F34F /* BraviaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136665B4959C24F9751BC717 /* BraviaClient.swift */; };
 		E3E9F2D1606D09D3E5F0FA70 /* ProgramProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91697F78ECDA955DC11701E /* ProgramProvider.swift */; };
 		F368C819CEBF91E8C0345174 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D52B8B97CE1465B9F14EF4 /* ContentView.swift */; };
+		FE1FA85AFCE4C8EBF7038330 /* BraviaLoopbackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458FA452B9FB9DB7D32923AD /* BraviaLoopbackTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		1DAEC63C9E9B3F3090DC319D /* OnAirView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnAirView.swift; sourceTree = "<group>"; };
 		3D22D9E3B33303ECF6E16ABA /* ChannelSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelSelectionView.swift; sourceTree = "<group>"; };
 		3D5FAD4AC77101527FF41ECE /* MirakurunProgramProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirakurunProgramProvider.swift; sourceTree = "<group>"; };
+		458FA452B9FB9DB7D32923AD /* BraviaLoopbackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraviaLoopbackTests.swift; sourceTree = "<group>"; };
 		4F139F124C824ACE1CBDA612 /* TVGuideTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TVGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50534AC47F534061B4DA0FB4 /* BraviaScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraviaScheduleView.swift; sourceTree = "<group>"; };
 		644103762AF11CBF768B54CD /* TVGuideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVGuideTests.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 		59814BB454423448D5879065 /* TVGuideTests */ = {
 			isa = PBXGroup;
 			children = (
+				458FA452B9FB9DB7D32923AD /* BraviaLoopbackTests.swift */,
 				F5CD1F23891ECB0065A3EBF8 /* BraviaTests.swift */,
 				644103762AF11CBF768B54CD /* TVGuideTests.swift */,
 			);
@@ -269,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE1FA85AFCE4C8EBF7038330 /* BraviaLoopbackTests.swift in Sources */,
 				32343C64F913911E8F3EAA26 /* BraviaTests.swift in Sources */,
 				499C569E033E3C99E8999CE4 /* TVGuideTests.swift in Sources */,
 			);
