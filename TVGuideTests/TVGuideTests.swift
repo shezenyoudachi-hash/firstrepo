@@ -32,27 +32,45 @@ final class GenreTests: XCTestCase {
 }
 
 final class NHKProgramProviderTests: XCTestCase {
-    func testDecode() throws {
+    /// v3 のレスポンス（ラジオ版で確認できている name/description/startDate/endDate と、
+    /// テレビ版で入っている可能性のあるジャンル・出演者）
+    func testDecodeV3() throws {
         let json = """
-        {"list":{"e1":[{"id":"2026100612345","event_id":"12345",
-          "start_time":"2026-10-06T21:00:00+09:00","end_time":"2026-10-06T21:30:00+09:00",
-          "area":{"id":"130","name":"東京"},
-          "service":{"id":"e1","name":"ＮＨＫＥテレ１","logo_s":{"url":"https://example.com/e1.png","width":"100","height":"50"}},
-          "title":"サイエンスZERO","subtitle":"宇宙の謎","content":"番組内容","act":"出演者","genres":["0800"]}],
-          "g1":[{"id":"2026100600001","event_id":"1",
-          "start_time":"2026-10-06T19:00:00+09:00","end_time":"2026-10-06T19:30:00+09:00",
-          "area":{"id":"130","name":"東京"},"service":{"id":"g1","name":"ＮＨＫ総合１"},
-          "title":"ニュース7","subtitle":"","content":"","act":"","genres":["0000"]}]}}
+        {"e1":{"publication":[
+          {"id":"e1-20261007-1","name":"サイエンスZERO","description":"宇宙の謎",
+           "startDate":"2026-10-07T21:00:00+09:00","endDate":"2026-10-07T21:30:00+09:00",
+           "identifierGroup":{"genre":[{"id":"0800","name1":"ドキュメンタリー／教養"}]},
+           "actor":[{"name":"出演者A"},{"name":"出演者B"}]},
+          {"name":"","startDate":"2026-10-07T22:00:00+09:00","endDate":"2026-10-07T22:30:00+09:00"}
+        ]}}
         """
         let schedule = try NHKProgramProvider.decode(Data(json.utf8))
-        XCTAssertEqual(schedule.channels.map(\.id), ["g1", "e1"])
-        XCTAssertEqual(schedule.programs.count, 2)
+        XCTAssertEqual(schedule.channels.map(\.name), ["NHK Eテレ"])
+        XCTAssertEqual(schedule.programs.count, 1)
 
-        let program = try XCTUnwrap(schedule.programs.first { $0.channelID == "e1" })
+        let program = try XCTUnwrap(schedule.programs.first)
         XCTAssertEqual(program.title, "サイエンスZERO")
+        XCTAssertEqual(program.description, "宇宙の謎")
         XCTAssertEqual(program.primaryGenre, .documentary)
+        XCTAssertEqual(program.cast, "出演者A、出演者B")
         XCTAssertEqual(program.duration, 30 * 60)
-        XCTAssertEqual(schedule.channels.last?.logoURL, URL(string: "https://example.com/e1.png"))
+    }
+
+    func testDecodeMinimalV3() throws {
+        let json = """
+        {"g1":{"publication":[{"name":"ニュース","description":"",
+          "startDate":"2026-10-07T19:00:00","endDate":"2026-10-07T19:30:00"}]}}
+        """
+        let schedule = try NHKProgramProvider.decode(Data(json.utf8))
+        let program = try XCTUnwrap(schedule.programs.first)
+        XCTAssertEqual(schedule.channels.first?.name, "NHK総合")
+        // タイムゾーンなしは日本時間
+        XCTAssertEqual(program.startDate, ISO8601DateFormatter().date(from: "2026-10-07T10:00:00Z"))
+        XCTAssertEqual(program.primaryGenre, .other)
+    }
+
+    func testUnexpectedResponseIsError() {
+        XCTAssertThrowsError(try NHKProgramProvider.decode(Data(#"{"error":"x"}"#.utf8)))
     }
 }
 

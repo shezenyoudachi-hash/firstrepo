@@ -20,6 +20,7 @@ struct Schedule: Sendable {
 enum ProgramProviderError: LocalizedError {
     case missingAPIKey
     case badResponse(statusCode: Int)
+    case httpError(statusCode: Int, detail: String)
     case invalidData
     case invalidServerURL
 
@@ -29,6 +30,13 @@ enum ProgramProviderError: LocalizedError {
             "API キーが設定されていません。設定画面から入力してください。"
         case .badResponse(let statusCode):
             "番組表の取得に失敗しました（HTTP \(statusCode)）"
+        case .httpError(let statusCode, let detail):
+            switch statusCode {
+            case 401, 403:
+                "API キーが正しくないか、まだ有効になっていません（HTTP \(statusCode)）\n\(detail)"
+            default:
+                "番組表の取得に失敗しました（HTTP \(statusCode)）\n\(detail)"
+            }
         case .invalidData:
             "番組表データを読み込めませんでした。"
         case .invalidServerURL:

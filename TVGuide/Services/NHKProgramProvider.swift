@@ -1,38 +1,74 @@
 import Foundation
 
-/// NHK 番組表 API（https://api-portal.nhk.or.jp/）から番組を取得する
+/// NHK 番組表 API v3（https://api-portal.nhk.or.jp/）から番組を取得する
 ///
-/// 番組リスト API: `GET /v2/pg/list/{area}/{service}/{date}.json?key={apikey}`
-/// 放送日の 5:00〜翌 5:00 をカバーするため、当日と翌日の 2 日分を取得して結合する。
+/// `GET https://program-api.nhk.jp/v3/papiPgDateTv?service={service}&area={area}&date={yyyy-MM-dd}&key={apikey}`
+///
+/// レスポンスは `{ "g1": { "publication": [ { "name", "description", "startDate", "endDate", ... } ] } }` の形。
+/// v2（2026年2月で提供終了）とは別物なので、ジャンルや出演者などのフィールドは見つかったものだけ使う。
+/// 放送日の 5:00〜翌 5:00 をカバーするため、サービスごとに当日と翌日の 2 日分を取得して結合する。
 struct NHKProgramProvider: ProgramProvider {
     var apiKey: String
     /// 地域コード（例: 130 = 東京）
     var area: String
-    /// サービス（tv = テレビ全サービス）
-    var service: String = "tv"
+    /// 取得するサービス（チャンネル）
+    var services: [String] = NHKProgramProvider.defaultServices
     var session: URLSession = .shared
+
+    static let defaultServices = ["g1", "e1", "s1", "s5"]
+
+    static let serviceNames: [String: String] = [
+        "g1": "NHK総合", "g2": "NHK総合2",
+        "e1": "NHK Eテレ", "e2": "NHK Eテレ2", "e3": "NHK Eテレ3",
+        "s1": "NHK BS", "s2": "NHK BS2",
+        "s5": "NHK BSプレミアム4K", "s6": "NHK BS8K",
+    ]
 
     func fetchSchedule(for day: BroadcastDay) async throws -> Schedule {
         guard !apiKey.isEmpty else { throw ProgramProviderError.missingAPIKey }
 
         let nextDay = BroadcastDay.calendar.date(byAdding: .day, value: 1, to: day.calendarDate)!
-        async let today = fetch(date: day.calendarDate)
-        async let tomorrow = fetch(date: nextDay)
-        let (first, second) = try await (today, tomorrow)
-        let merged = first.merging(second)
+        let requests = services.flatMap { service in [(service, day.calendarDate), (service, nextDay)] }
 
-        let programs = merged.programs.filter(day.overlaps)
-        return Schedule(channels: merged.channels, programs: programs)
+        // 一部のサービスだけ失敗した場合（地域で放送がない等）は、取れた分だけ表示する
+        var schedules: [Schedule] = []
+        var firstError: Error?
+        await withTaskGroup(of: Result<Schedule, Error>.self) { group in
+            for (service, date) in requests {
+                group.addTask {
+                    do {
+                        return .success(try await self.fetch(service: service, date: date))
+                    } catch {
+                        return .failure(error)
+                    }
+                }
+            }
+            for await result in group {
+                switch result {
+                case .success(let schedule): schedules.append(schedule)
+                case .failure(let error): firstError = firstError ?? error
+                }
+            }
+        }
+        if schedules.isEmpty, let firstError { throw firstError }
+
+        let merged = schedules.reduce(Schedule(channels: [], programs: [])) { $0.merging($1) }
+        return Schedule(channels: merged.channels, programs: merged.programs.filter(day.overlaps))
     }
 
-    private func fetch(date: Date) async throws -> Schedule {
-        let url = URL(string: "https://api.nhk.or.jp/v2/pg/list/\(area)/\(service)/\(Self.dateString(date)).json")!
-        var components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
-        components.queryItems = [URLQueryItem(name: "key", value: apiKey)]
+    private func fetch(service: String, date: Date) async throws -> Schedule {
+        var components = URLComponents(string: "https://program-api.nhk.jp/v3/papiPgDateTv")!
+        components.queryItems = [
+            URLQueryItem(name: "service", value: service),
+            URLQueryItem(name: "area", value: area),
+            URLQueryItem(name: "date", value: Self.dateString(date)),
+            URLQueryItem(name: "key", value: apiKey),
+        ]
 
         let (data, response) = try await session.data(from: components.url!)
         if let http = response as? HTTPURLResponse, !(200..<300).contains(http.statusCode) {
-            throw ProgramProviderError.badResponse(statusCode: http.statusCode)
+            let body = String(decoding: data.prefix(300), as: UTF8.self)
+            throw ProgramProviderError.httpError(statusCode: http.statusCode, detail: "\(service): \(body)")
         }
         return try Self.decode(data)
     }
@@ -48,71 +84,117 @@ struct NHKProgramProvider: ProgramProvider {
 
     /// API レスポンスを Schedule に変換する
     static func decode(_ data: Data) throws -> Schedule {
-        let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .iso8601
-        let response = try decoder.decode(Response.self, from: data)
+        guard let root = try JSONSerialization.jsonObject(with: data) as? [String: Any] else {
+            throw ProgramProviderError.invalidData
+        }
 
-        var channels: [String: Channel] = [:]
+        var channels: [Channel] = []
         var programs: [Program] = []
-        // キーの並び（g1, e1, s1 ...）は JSON 上の順序が保証されないため、既知の順に並べる
-        for (serviceID, items) in response.list {
-            for item in items {
-                if channels[serviceID] == nil {
-                    channels[serviceID] = Channel(
-                        id: serviceID,
-                        name: item.service.name,
-                        number: serviceOrder.firstIndex(of: serviceID) ?? serviceOrder.count,
-                        logoURL: item.service.logo_s.flatMap { URL(string: $0.url) }
-                    )
-                }
+        for (serviceID, value) in root {
+            guard let publications = (value as? [String: Any])?["publication"] as? [[String: Any]] else { continue }
+
+            let fallbackName = publications.lazy.compactMap { ($0["publishedOn"] as? [String: Any])?["name"] as? String }.first
+            channels.append(Channel(
+                id: serviceID,
+                name: serviceNames[serviceID] ?? fallbackName ?? serviceID.uppercased(),
+                number: defaultServicesOrder(serviceID)
+            ))
+
+            for item in publications {
+                guard let title = item["name"] as? String, !title.isEmpty,
+                      let start = (item["startDate"] as? String).flatMap(parseDate),
+                      let end = (item["endDate"] as? String).flatMap(parseDate),
+                      end > start else { continue }
+                let id = (item["id"] as? String)
+                    ?? (item["broadcastEventId"] as? String)
+                    ?? "\(serviceID)-\(Int(start.timeIntervalSince1970))"
                 programs.append(Program(
-                    id: item.id,
+                    id: "nhk-\(serviceID)-\(id)",
                     channelID: serviceID,
-                    title: item.title,
-                    subtitle: item.subtitle ?? "",
-                    description: item.content ?? "",
-                    cast: item.act ?? "",
-                    startDate: item.start_time,
-                    endDate: item.end_time,
-                    genres: (item.genres ?? []).map(Genre.init(code:))
+                    title: title,
+                    subtitle: item["subtitle"] as? String ?? "",
+                    description: item["description"] as? String ?? "",
+                    cast: castText(item),
+                    startDate: start,
+                    endDate: end,
+                    genres: genres(in: item)
                 ))
             }
         }
-        let sortedChannels = channels.values.sorted { ($0.number, $0.id) < ($1.number, $1.id) }
-        return Schedule(channels: sortedChannels, programs: programs)
+        if channels.isEmpty { throw ProgramProviderError.invalidData }
+        return Schedule(channels: channels.sorted { ($0.number, $0.id) < ($1.number, $1.id) }, programs: programs)
     }
 
-    private static let serviceOrder = ["g1", "g2", "e1", "e2", "e3", "s1", "s2", "s3", "s4", "s5", "s6"]
-
-    // MARK: - レスポンス定義
-
-    // swiftlint:disable identifier_name
-    struct Response: Decodable {
-        let list: [String: [Item]]
+    private static func defaultServicesOrder(_ serviceID: String) -> Int {
+        ["g1", "g2", "e1", "e2", "e3", "s1", "s2", "s5", "s6"].firstIndex(of: serviceID).map { $0 + 1 } ?? 99
     }
 
-    struct Item: Decodable {
-        let id: String
-        let start_time: Date
-        let end_time: Date
-        let service: Service
-        let title: String
-        let subtitle: String?
-        let content: String?
-        let act: String?
-        let genres: [String]?
+    /// `2026-10-07T05:00:00+09:00`（小数秒・タイムゾーンなしにも対応。なしは日本時間とみなす）
+    static func parseDate(_ string: String) -> Date? {
+        let iso = ISO8601DateFormatter()
+        iso.formatOptions = [.withInternetDateTime]
+        if let date = iso.date(from: string) { return date }
+        iso.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+        if let date = iso.date(from: string) { return date }
+
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.timeZone = BroadcastDay.calendar.timeZone
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        return formatter.date(from: String(string.prefix(19)))
     }
 
-    struct Service: Decodable {
-        let id: String
-        let name: String
-        let logo_s: Logo?
+    /// `genre` キーを入れ子の中まで探し、ジャンルコード（"0100" など）かジャンル名から判定する
+    private static func genres(in object: Any, depth: Int = 0) -> [Genre] {
+        guard depth < 4 else { return [] }
+        var result: [Genre] = []
+        if let dict = object as? [String: Any] {
+            for (key, value) in dict {
+                if key.lowercased().contains("genre") {
+                    result += genreValues(value)
+                } else if value is [String: Any] || value is [Any] {
+                    result += genres(in: value, depth: depth + 1)
+                }
+            }
+        } else if let array = object as? [Any] {
+            for value in array { result += genres(in: value, depth: depth + 1) }
+        }
+        var seen = Set<Genre>()
+        return result.filter { seen.insert($0).inserted }
     }
 
-    struct Logo: Decodable {
-        let url: String
+    private static func genreValues(_ value: Any) -> [Genre] {
+        switch value {
+        case let string as String:
+            if string.count == 4 && string.allSatisfy(\.isHexDigit) {
+                return [Genre(code: string)]
+            }
+            return Genre(categoryName: string).map { [$0] } ?? []
+        case let array as [Any]:
+            return array.flatMap(genreValues)
+        case let dict as [String: Any]:
+            if let id = dict["id"] as? String { return genreValues(id) }
+            return ["name1", "name", "lv1"].compactMap { dict[$0] as? String }.prefix(1).flatMap(genreValues)
+        default:
+            return []
+        }
     }
-    // swiftlint:enable identifier_name
+
+    /// 出演者（`actor` / `act` / `performer`。文字列・配列・{name} のどれでもよい）
+    private static func castText(_ item: [String: Any]) -> String {
+        for key in ["actor", "act", "performer"] {
+            switch item[key] {
+            case let string as String where !string.isEmpty:
+                return string
+            case let array as [Any]:
+                let names = array.compactMap { ($0 as? String) ?? (($0 as? [String: Any])?["name"] as? String) }
+                if !names.isEmpty { return names.joined(separator: "、") }
+            default:
+                continue
+            }
+        }
+        return ""
+    }
 }
 
 private extension Schedule {
