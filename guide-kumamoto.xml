@@ -1,0 +1,2918 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tv generator-info-name="firstrepo/epg/grab_jcom.py" source-info-url="https://tvguide.myjcom.jp">
+  <channel id="RKK.jp" broadcast="terrestrial" service-id="57360" network-id="31858">
+    <display-name>RKK熊本放送</display-name>
+    <display-name>3</display-name>
+  </channel>
+  <channel id="KKT.jp" broadcast="terrestrial" service-id="57376" network-id="31860">
+    <display-name>KKTくまもと県民TV</display-name>
+    <display-name>4</display-name>
+  </channel>
+  <channel id="KAB.jp" broadcast="terrestrial" service-id="57384" network-id="31861">
+    <display-name>KAB熊本朝日放送</display-name>
+    <display-name>5</display-name>
+  </channel>
+  <channel id="TKU.jp" broadcast="terrestrial" service-id="57368" network-id="31859">
+    <display-name>TKUテレビ熊本</display-name>
+    <display-name>8</display-name>
+  </channel>
+  <programme start="20261015235600 +0900" stop="20261016002600 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19154">
+    <title lang="ja">氷の城壁　第17話　本心[字]</title>
+    <desc lang="ja">湊と桃香が付き合っていることを知り、ショックを受ける小雪。そんな中、小雪は優希に連れ出され…?</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261016002600 +0900" stop="20261016005600 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19126">
+    <title lang="ja">追放された転生重騎士はゲーム知識で無双する#16◆スーパーアニメイズムTURBO[字][デ]</title>
+    <desc lang="ja">Chapter 16「不惜身命」▼エルマとルーチェは撤退不可能な極限状態に!残された道は重騎士の規格外の力を発動させること。エルマは一撃を叩き込む一度きりのチャンスを狙う</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261016005600 +0900" stop="20261016010000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19146">
+    <title lang="ja">ぱじゃまでシネマインフォメーション</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">映画</category>
+  </programme>
+  <programme start="20261016010000 +0900" stop="20261016020000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19150">
+    <title lang="ja">ニューかまー★かまいたち&amp;ニューヨークがゲストの気になる“新知識"を全力調査![字]</title>
+    <desc lang="ja">鈴木亜美が今最も知りたい「タンクトップ」&amp;「世界の激辛料理」のニューカマーとは?★アミーゴに着せたいタンクトップを試着しまくる濱家!★世界の激辛料理に屋敷悶絶</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016020000 +0900" stop="20261016023000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19122">
+    <title lang="ja">お買物情報</title>
+    <desc lang="ja">お買物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016023000 +0900" stop="20261016030000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19130">
+    <title lang="ja">お買物情報</title>
+    <desc lang="ja">お買物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016030000 +0900" stop="20261016040000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19078">
+    <title lang="ja">カイモノラボ</title>
+    <desc lang="ja">カイモノラボ</desc>
+  </programme>
+  <programme start="20261016040000 +0900" stop="20261016040100 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19058">
+    <title lang="ja">本日　終了</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016040100 +0900" stop="20261016041500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19166">
+    <title lang="ja">RKKリラックスタイム</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016041500 +0900" stop="20261016042000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19242">
+    <title lang="ja">島田秀平さんのラッキーマーケット</title>
+    <desc lang="ja">島田秀平さんのラッキーマーケット</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016042000 +0900" stop="20261016045000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19222">
+    <title lang="ja">お買物情報</title>
+    <desc lang="ja">お買物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016045000 +0900" stop="20261016052000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19182">
+    <title lang="ja">おはようテレショップ</title>
+    <desc lang="ja">おはようテレショップ</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016052000 +0900" stop="20261016080000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19258">
+    <title lang="ja">THE　TIME,患者情報も漏洩か…2000万件超流出恐れの会社も▽台風30号は?[字][デ]</title>
+    <desc lang="ja">VIVANT“別班員"珠城りょう生出演!▽文京区の督促状に賛否「あけろ!」強い文言と奇抜デザイン▽「侵略外来植物」東京の公園にも▽石原さとみ子育て事情</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016080000 +0900" stop="20261016095500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19238">
+    <title lang="ja">ラヴィット!手越祐也が参戦!ビリビリ新心理戦&amp;中村アンと何のランキングでSHOW[字]</title>
+    <desc lang="ja">▼手越祐也軍VS川島明軍!ビリビリかけ新心理バトル▼1位横浜流星・2位兼近大樹・3位手越祐也…これ何のランキング?▼問題文1文字だけでひらめけ!クイズ1文字</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016095500 +0900" stop="20261016102500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19194">
+    <title lang="ja">お買物情報</title>
+    <desc lang="ja">お買物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016102500 +0900" stop="20261016112000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19282">
+    <title lang="ja">ドラマコレクション　「ライオンの隠れ家」第2話【事件に巻き込まれてる!?】[字][解]</title>
+    <desc lang="ja">弟思いの兄(柳楽優弥)×自閉スペクトラム症の弟(坂東龍汰)×ライオンと名乗る男の子。3人の共同生活が始まったが…完全オリジナル脚本で贈るヒューマンサスペンス!</desc>
+    <category lang="ja">ドラマ</category>
+  </programme>
+  <programme start="20261016112000 +0900" stop="20261016113000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19170">
+    <title lang="ja">3分クッキング[字]【鶏肉とじゃが芋のタッカンマリ風】</title>
+    <desc lang="ja">60年以上に亘り「簡単、便利でおいしい家庭料理」を届ける長寿番組。定番からおもてなしのメニューまで、旬の食材を活かした献立をお届けします。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016113000 +0900" stop="20261016135500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19206">
+    <title lang="ja">ひるおび[字]サイゼ苦渋の値上げ…社長「隙あらば安くしたい」▽行政にも不正アクセス</title>
+    <desc lang="ja">"ニセ警察"電話連発▽"紅葉前線"関東へ</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016135500 +0900" stop="20261016154900 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19226">
+    <title lang="ja">ゴゴスマ【速報…高市総理の任命責任を追及▼物議…東京・文京区の督促状が“怖い"】</title>
+    <desc lang="ja">高市総理の任命責任を追及　“簗氏問題"収束はいつ▼東京・文京区の督促状が“怖い"▼密着…中高生の美容整形▼台風30号が発生　10月下旬なのに列島接近か　(他)(予定)</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016154900 +0900" stop="20261016155500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19274">
+    <title lang="ja">ゲツキン早出し便</title>
+    <desc lang="ja">熊本の話題をいち早くお届け</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016155500 +0900" stop="20261016165000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19174">
+    <title lang="ja">水戸黄門(再)　第18部　第13話「船幽霊の謎を解け」(敦賀)[字]</title>
+    <desc lang="ja">火が消えたように活気のない敦賀の町に入って来た一行は、不気味な修験者が予言する船幽霊騒動に出喰わす。漁師達は出漁も出来ずに苦しい日々。海神様のお告げで…</desc>
+    <category lang="ja">ドラマ</category>
+  </programme>
+  <programme start="20261016165000 +0900" stop="20261016181500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19210">
+    <title lang="ja">[生]Nスタ[字]</title>
+    <desc lang="ja">嬉しいニュースに湧き立つ日も、つらいニュースで落ち着かない日も、夕方テレビをつければそこにある、いつもの顔、いつもの声、あなたのパートナーに、Nスタ。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016181500 +0900" stop="20261016185000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19290">
+    <title lang="ja">[生]NEWSゲツキン　▽注目の熊本市庁舎問題 堤伸輔さん出演▽鍋の季節本格化</title>
+    <desc lang="ja">コメンテーター堤伸輔氏が生出演。熊本市長選挙の争点となる市役所の建て替え問題について聞く。税金を投入する巨額の事業。注目すべきポイントを見ていく。▽県内ニュース</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016185000 +0900" stop="20261016190000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19286">
+    <title lang="ja">おしゃべり!クッキンキッズ</title>
+    <desc lang="ja">子ども達の「できた!」を応援する料理番組。テレビで美味しい料理作りにチャレンジします。子ども達が「作る楽しさ」「食べる喜び」を体験。一生懸命料理に挑戦します。</desc>
+    <category lang="ja">趣味／教育</category>
+  </programme>
+  <programme start="20261016190000 +0900" stop="20261016220000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19298">
+    <title lang="ja">それSnow　Manにやらせて下さいSP★フレンドパークに綾野剛・上白石萌音[字]</title>
+    <desc lang="ja">それスノフレンドパーク3時間SP!綾野剛・上白石萌音・磯村勇斗ら豪華俳優陣が勢ぞろい!高橋尚子&amp;木村沙織ら最強アスリートも参戦しフレパ史上最大の熱戦に…!
+</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016220000 +0900" stop="20261016230400 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19178">
+    <title lang="ja">[新]金曜ドラマ「LOST10」#1　横浜流星×小栗旬×北海道サスペンスエンタテインメント</title>
+    <desc lang="ja">[解][字]横浜流星×小栗旬/北海道を舞台にした"遭難事故"からはじまるヒューマンサスペンスエンタテインメント!刑事と保険調査員の異色バディが予測不能な渦に呑み込まれる!</desc>
+    <category lang="ja">ドラマ</category>
+  </programme>
+  <programme start="20261016230400 +0900" stop="20261016231000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19198">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016231000 +0900" stop="20261016234000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19230">
+    <title lang="ja">A-Studio+【山中柔太朗】母・妹が明かす素顔!&amp;M!LKメンバーへの想い[解][字]</title>
+    <desc lang="ja">▽母&amp;妹が明かす“優しい一面"と“思春期モテエピソード"▽M!LKメンバーへの感謝▽ドラマプロデューサーが感じた“変化と成長"▽恩師が明かす“視野の広さと判断力"</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016234000 +0900" stop="20261017000800 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19254">
+    <title lang="ja">ララLIFE 二階堂ふみ、古着をリメイク!IN カナダ・トロント[字]</title>
+    <desc lang="ja">【MC】三村マサカズ(さまぁ〜ず)青木崇高
+古着大国カナダで二階堂ふみがアップサイクルを体験!
+古着が愛犬のおもちゃやお散歩バッグに大変身!その出来栄えは?</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017000800 +0900" stop="20261017005300 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19218">
+    <title lang="ja">news23[字]なぜ?緊急地震速報を取り消し▽エレンを名乗った歌舞伎町元ホスト逮捕</title>
+    <desc lang="ja">緊急地震速報「マグニチュード9.9の大地震」気象庁が8分後に取り消し▽止まらない個人情報流出…きょうも▽辞めたけど、きょうも国会で追及続く　簗氏の疑惑に新証言も</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017005300 +0900" stop="20261017005800 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19250">
+    <title lang="ja">あるぽのへや</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017005800 +0900" stop="20261017012800 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19294">
+    <title lang="ja">[新]アリタチャンピオン2★くりぃむしちゅー有田が手掛ける新お笑い番組始動</title>
+    <desc lang="ja">くりぃむ有田哲平プロデュース!モグライダー芝とお届けする次世代チャンピオン候補芸人の白熱ネタバトル…しかし!番組独自の審査システムにSnow Man深澤も驚愕の展開に</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017012800 +0900" stop="20261017015800 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19270">
+    <title lang="ja">ジンギス談!　★Mー1王者「たくろう」後編!「真空ジェシカ」が客席から乱入!?</title>
+    <desc lang="ja">ジンギス談!寄席2026の公開収録から、M-1王者「たくろう」の後編!「真空ジェシカ」が客席からサプライズ乱入!放送ギリギリの攻防と、爆笑必至のトークが炸裂!!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017015800 +0900" stop="20261017022800 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19278">
+    <title lang="ja">「東京リベンジャーズ」三天戦争編　第53話「Crack a smile」【アニメイズム】</title>
+    <desc lang="ja">12年後の世界では、かつての東京卍會をも超える、梵天という犯罪組織が暗躍していた。梵天を率いているのがほかならぬマイキーだと知って、タケミチは愕然とするーー。</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261017022800 +0900" stop="20261017025800 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19190">
+    <title lang="ja">お買物情報</title>
+    <desc lang="ja">お買物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017025800 +0900" stop="20261017032800 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19234">
+    <title lang="ja">お買物情報</title>
+    <desc lang="ja">お買物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017032800 +0900" stop="20261017035800 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19266">
+    <title lang="ja">お買物情報</title>
+    <desc lang="ja">お買物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017035800 +0900" stop="20261017035900 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19186">
+    <title lang="ja">本日　終了</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017035900 +0900" stop="20261017040500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19302">
+    <title lang="ja">RKKリラックスタイム</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017040500 +0900" stop="20261017043500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19390">
+    <title lang="ja">お買物情報</title>
+    <desc lang="ja">お買物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017043500 +0900" stop="20261017044000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19366">
+    <title lang="ja">島田秀平さんのラッキーマーケット</title>
+    <desc lang="ja">島田秀平さんのラッキーマーケット</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017044000 +0900" stop="20261017051000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19326">
+    <title lang="ja">おはようテレショップ</title>
+    <desc lang="ja">おはようテレショップ</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017051000 +0900" stop="20261017052500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19330">
+    <title lang="ja">お買物情報</title>
+    <desc lang="ja">お買物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017052500 +0900" stop="20261017053000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19418">
+    <title lang="ja">アニメ「リラックマ」#26[字]</title>
+    <desc lang="ja">気ままにまんぷく日和</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261017053000 +0900" stop="20261017054500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19378">
+    <title lang="ja">JNNニュース[手][字]</title>
+    <desc lang="ja">最新のニュースをお送りします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017054500 +0900" stop="20261017073000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19382">
+    <title lang="ja">夜明けのラヴィット![字]</title>
+    <desc lang="ja">▼お菓子クイズ!▼上白石萌音&amp;向井康二&amp;鈴木福!誰の幼少期の写真?▼身の周りの重さを感じろ!グラムキング▼「無限〇〇」レシピ対決▼手越祐也参戦!ビリビリ新心理戦</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017073000 +0900" stop="20261017092500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19406">
+    <title lang="ja">サタプラ[字]試して乾麺パスタ★新企画!東京駅1080円以下グルメを調査!No.1は?</title>
+    <desc lang="ja">ゲスト磯村勇斗&amp;末澤誠也&amp;カズレーザー★日本vs.海外産『乾麺パスタ』ランキング★『東京駅グルメ』30人が一斉調査&amp;採点しランキング発表★正門×れんこん時短レシピ</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017092500 +0900" stop="20261017093000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19422">
+    <title lang="ja">くまもと、バド熱!</title>
+    <desc lang="ja">「くまもと、バド熱!」は、再春館製薬所や県内のバドミントン選手を取材。熊本のバドミントンの今を熱く伝えます。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017093000 +0900" stop="20261017114500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19350">
+    <title lang="ja">王様のブランチ[字] 超豪華ゲスト生出演!上白石萌音&amp;向井康二・道枝駿佑&amp;安斉星来</title>
+    <desc lang="ja">上白石萌音&amp;向井康二が火曜ドラマの魅力を語る!▽映画「うるわしの宵の月」からは二人の王子が登場!▽絶対行きたい香港バズりスポット!名物ワンタン麺&amp;感動の夜景</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017114500 +0900" stop="20261017115500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19314">
+    <title lang="ja">JNNニュース[字]</title>
+    <desc lang="ja">最新のニュースをお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017115500 +0900" stop="20261017120000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19310">
+    <title lang="ja">熊日ニュース</title>
+    <desc lang="ja">RKKのスタジオから、最新のニュースをわかりやすくお伝えします</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017120000 +0900" stop="20261017121000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19414">
+    <title lang="ja">3分クッキング[字]【プチタルトタタン】</title>
+    <desc lang="ja">60年以上に亘り「簡単、便利でおいしい家庭料理」を届ける長寿番組。定番からおもてなしのメニューまで、旬の食材を活かした献立をお届けします。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017121000 +0900" stop="20261017123500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19402">
+    <title lang="ja">秘密のストレス共有バラエティ　め組の園【婚活女子に聞いたストレス婚活男子SP】[字]</title>
+    <desc lang="ja">★Aぇ! group末澤誠也×藤田ニコル×ダイアン津田★【婚活女子に聞いたストレス婚活男子】島崎遥香×さや香新山&amp;コットン西村【令和のストレスを再現コント化】</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017123500 +0900" stop="20261017133000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19362">
+    <title lang="ja">世界!ニッポン行きたい人応援団　スペシャル(後編)▽相撲を愛してやまない女子選手</title>
+    <desc lang="ja">相撲を愛してやまない女子相撲選手のルルデスさんを日本へご招待!日本で磨き上げた心技体を武器に、いざ南米選手権へ。彼女は南米チャンピオンの座に輝けるのか!?</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017133000 +0900" stop="20261017140000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19358">
+    <title lang="ja">からふる　▽えびとん!?コラボラーメン初披露</title>
+    <desc lang="ja">番組と味千拉麺がタッグを組んで開発中のRKKまつりで販売する特別なラーメン。前回から取り組むえびマー油が完成し、トッピング選びへ。味千史上最強ラーメンスタジオへ!</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017140000 +0900" stop="20261017180000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19426">
+    <title lang="ja">お笑いの日2026★8時間生放送★史上初!キングオブコント敗者復活戦★芸人総選挙</title>
+    <desc lang="ja">19年目の大改革!敗者復活戦から決勝へ進む1組はスマホ国民投票で決定!MCかまいたち濱家&amp;チョコプラ☆芸人総選挙特別編は地上波初タッグ!MCダイアン津田&amp;永野[デ]</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017180000 +0900" stop="20261017215600 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19430">
+    <title lang="ja">キングオブコント2026★コント日本一決定戦!優勝賞金1000万円を掴むのは!?</title>
+    <desc lang="ja">3445組から選出ファイナリスト10組と敗者復活枠1組の11組が激突!審査員は飯塚、秋山、小峠、山内、じろう&amp;新審査員2名は当日発表!MCダウンタウン浜田雅功[字][デ]</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017215600 +0900" stop="20261017220000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19306">
+    <title lang="ja">熊日ニュース</title>
+    <desc lang="ja">RKKのスタジオから、最新のニュースをわかりやすくお伝えします</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017220000 +0900" stop="20261017232400 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19338">
+    <title lang="ja">情報7daysニュースキャスター[字]　キングオブコント王者が生出演!</title>
+    <desc lang="ja">異例の緊急地震速報を取り消し▼相次ぐ個人情報流出 思わぬ手口と被害とは▼簗大臣辞任の余波▼パンダロスのアドベンチャーワールドは今▼インド熱狂!日本人アイドル</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017232400 +0900" stop="20261017233000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19318">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017233000 +0900" stop="20261018000000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19354">
+    <title lang="ja">人生最高レストラン【中村アン】絶対売れたい…駅で寝た下積み時代(秘)話★麻婆豆腐[解][字]</title>
+    <desc lang="ja">▼店の人との会話が苦手…東京で遊びたくて進路決定!?イメージ崩壊(秘)素顔▼幼なじみ両親の純愛物語▼オレ臭い?仲良し・小籔からクレーム▼感動のミシュラン三つ星サラダ</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018000000 +0900" stop="20261018002800 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19342">
+    <title lang="ja">S☆1[字]プロ野球クライマックスシリーズ徹底詳報&amp;激闘MLB!桑田真澄現地取材</title>
+    <desc lang="ja">白熱プロ野球!クライマックスシリーズ徹底詳報!
+激闘MLB!桑田真澄が現地取材
+運命の一日「ドラフト会議」織田翔希
+アジアパラ競技大会&amp;東大式競馬予想</desc>
+    <category lang="ja">スポーツ</category>
+  </programme>
+  <programme start="20261018002800 +0900" stop="20261018005500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19374">
+    <title lang="ja">週刊さんまとマツコ 憧れられたい!野心家ママタレ理想と現実(秘)報告会[字][解]</title>
+    <desc lang="ja">一昨年第一子出産の新米ママ・バービー、実は実業家として大成功!その「奇策」とは!?▽元フジテレビ花形報道キャスター、なりふり構わぬシンママ生活にさんマツが真剣提言</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018005500 +0900" stop="20261018005800 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19370">
+    <title lang="ja">PUSH!!</title>
+    <desc lang="ja"> </desc>
+  </programme>
+  <programme start="20261018005800 +0900" stop="20261018015300 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19398">
+    <title lang="ja">水曜だけど土曜の番組アンコール　▽RKKまつりコラボグルメ完成編▽新ラップソング</title>
+    <desc lang="ja">まさやんとポチョムキンが熊本の懐かしCMをサンプリングして新たなラップソング作る▽RKKまつりで販売…黒酢チキン南蛮専門店たかもとやとのコラボグルメ全貌▽グッズ情報</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018015300 +0900" stop="20261018015800 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19410">
+    <title lang="ja">あるぽのへや</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018015800 +0900" stop="20261018022800 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19394">
+    <title lang="ja">ジャパネットたかたテレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018022800 +0900" stop="20261018025800 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19346">
+    <title lang="ja">お買物情報</title>
+    <desc lang="ja">お買物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018025800 +0900" stop="20261018032800 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19334">
+    <title lang="ja">お買物情報</title>
+    <desc lang="ja">お買物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018032800 +0900" stop="20261018035800 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19386">
+    <title lang="ja">お買物情報</title>
+    <desc lang="ja">お買物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018035800 +0900" stop="20261018035900 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19322">
+    <title lang="ja">本日　終了</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018035900 +0900" stop="20261018042200 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19434">
+    <title lang="ja">RKKリラックスタイム</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018042200 +0900" stop="20261018042500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19554">
+    <title lang="ja">島田秀平さんのラッキーマーケット</title>
+    <desc lang="ja">島田秀平さんのラッキーマーケット</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018042500 +0900" stop="20261018045500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19482">
+    <title lang="ja">ムーブ　「81年目の戦場〜沖縄戦と心の傷〜」</title>
+    <desc lang="ja">81年前の沖縄戦。生き残った人々は、心に深い傷を抱えながら「戦後」と呼ばれる時代を生きてきた。その傷は、子や孫の世代にも影響を与えている。</desc>
+    <category lang="ja">ドキュメンタリー／教養</category>
+  </programme>
+  <programme start="20261018045500 +0900" stop="20261018052500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19466">
+    <title lang="ja">おはようテレショップ</title>
+    <desc lang="ja">おはようテレショップ</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018052500 +0900" stop="20261018053000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19594">
+    <title lang="ja">あるぽのへや</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018053000 +0900" stop="20261018060000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19562">
+    <title lang="ja">お買物情報</title>
+    <desc lang="ja">お買物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018060000 +0900" stop="20261018063000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19534">
+    <title lang="ja">日本のチカラ　「空を、駆ける 〜獣医師ランナー 世界へ〜」[字]</title>
+    <desc lang="ja">静岡市の獣医師・小谷奈穂さんは、険しい山を駆けるスカイランニングの日本チャンピオン。レースには賞金がなく、遠征費や出場費などで給料のほとんどが消えていきますが…</desc>
+    <category lang="ja">ドキュメンタリー／教養</category>
+  </programme>
+  <programme start="20261018063000 +0900" stop="20261018064500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19498">
+    <title lang="ja">お買物情報</title>
+    <desc lang="ja">お買物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018064500 +0900" stop="20261018070000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19458">
+    <title lang="ja">JNNニュース[手]</title>
+    <desc lang="ja">最新のニュースをお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018070000 +0900" stop="20261018073000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19522">
+    <title lang="ja">健康カプセル!ゲンキの時間[解][字]その咳 風邪じゃないかも?長引く咳を見極めるヒント</title>
+    <desc lang="ja">ホコリやカビなどによって引き起こされる「咳」。気道の異常を知らせるサインの可能性もあるのだとか。長引く咳の原因や家庭での咳対策について専門医に教えてもらいます。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018073000 +0900" stop="20261018080000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19490">
+    <title lang="ja">がっちりマンデー!!ヒット連発する社員!ファミマ、ニチレイ、ゴリラシリーズ開発者!?</title>
+    <desc lang="ja">[字]ファミマが誇るパンスイーツを連発するダンディ★大ヒット!ドウシシャのゴリラシリーズ開発者はSNS潜入で社長賞連発!?★ニチレイフーズ激ウマ冷凍食品は全部この人!?</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018080000 +0900" stop="20261018095400 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19442">
+    <title lang="ja">サンデーモーニング[字]AI家電にもサイバー攻撃の脅威▽「仕事で返せ」一転…簗大臣辞任</title>
+    <desc lang="ja">▽簗大臣辞めても残る疑惑…予算に圧力は?“公選法違反"は?▽家庭用AIロボット進化の一方で…サイバー攻撃“乗っ取り"防御策は?▽原油に新たな脅威フーシ派とは?</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018095400 +0900" stop="20261018100000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19446">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018100000 +0900" stop="20261018101500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19538">
+    <title lang="ja">新　窓をあけて九州　『山から始まるまちおこし〜林業3代目社長奮闘記〜』[字]</title>
+    <desc lang="ja">宮崎県高原町の『勝吉木材』3代目社長・勝吉力斗さん。平均年齢36歳の若いチームを率い、TikTokで林業の魅力も発信している。林業を軸に故郷の未来を熱く育む彼の姿を追う</desc>
+    <category lang="ja">ドキュメンタリー／教養</category>
+  </programme>
+  <programme start="20261018101500 +0900" stop="20261018103000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19526">
+    <title lang="ja">世界一の九州が始まる!　『養殖の常識を覆す!奇跡のバイオ水産』[字]</title>
+    <desc lang="ja">長崎は養殖トラフグの生産量全国1位。県総合水産試験場は養殖業者の経営環境の改善などを目指し、世界最先端の技術開発に成功した。最先端生命科学の現場に迫る。</desc>
+    <category lang="ja">ドキュメンタリー／教養</category>
+  </programme>
+  <programme start="20261018103000 +0900" stop="20261018112500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19486">
+    <title lang="ja">ガイアの夜明け　【買い物をあきらめない!〜弱者を守る、小売り新戦略〜】</title>
+    <desc lang="ja">高齢者や車の運転ができない人たちは日々の買い物にも困る、いわゆる「買い物弱者」となってしまう。すべての人に楽しい買い物を提供することはできるのか。その挑戦を追う</desc>
+    <category lang="ja">ドキュメンタリー／教養</category>
+  </programme>
+  <programme start="20261018112500 +0900" stop="20261018113000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19518">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018113000 +0900" stop="20261018113500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19470">
+    <title lang="ja">熊日ニュース</title>
+    <desc lang="ja">RKKのスタジオから、最新のニュースをわかりやすくお伝えします</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018113500 +0900" stop="20261018114500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19610">
+    <title lang="ja">JNNニュース[字]</title>
+    <desc lang="ja">最新のニュースをお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018114500 +0900" stop="20261018115000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19558">
+    <title lang="ja">女性の健康ブライト</title>
+    <desc lang="ja">慈恵病院は料理がすごいプロジェクト　〜スイーツワゴン〜</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018115000 +0900" stop="20261018145400 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19606">
+    <title lang="ja">プリンセス駅伝2026　〜全日本実業団女子駅伝全国統一予選会〜[字][デ]</title>
+    <desc lang="ja">全国への切符は16枚!女子駅伝日本一を決める『クイーンズ駅伝』の出場権をかけた運命の予選会。9月アジア大会 愛知・名古屋で3000m障害5位入賞を果たした齋藤みうも出場!</desc>
+    <category lang="ja">スポーツ</category>
+  </programme>
+  <programme start="20261018145400 +0900" stop="20261018150000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19566">
+    <title lang="ja">ソラクマ</title>
+    <desc lang="ja">“空から見た熊本"=「ソラクマ」と題し季節や地域などによって様々な表情を見せる県内各地の姿をドローンで撮影した映像を中心に送る</desc>
+    <category lang="ja">ドキュメンタリー／教養</category>
+  </programme>
+  <programme start="20261018150000 +0900" stop="20261018162600 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19546">
+    <title lang="ja">サンデー・ジャポン</title>
+    <desc lang="ja">1週間のニュースを総まとめ!爆笑問題&amp;超辛口パネラーに旬なゲスト加え、独自取材と激アツトークでお送りする嵐のような90分!唯一無二のジャーナリズムバラエティ!</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018162600 +0900" stop="20261018163000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19530">
+    <title lang="ja">プリティーウーマン〜素敵なママ達へ〜</title>
+    <desc lang="ja">どろんこ交流会　稲刈り</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018163000 +0900" stop="20261018170000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19598">
+    <title lang="ja">『アオのハコ』Season2　#3　1つのことだよ[字]</title>
+    <desc lang="ja">青さが胸を衝く青春部活ラブストーリー、待望のTVアニメSeason2</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261018170000 +0900" stop="20261018173000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19602">
+    <title lang="ja">日5「夜桜さんちの大作戦」　#41「金級会議」[字][デ]</title>
+    <desc lang="ja">逃走する百を追う凶一郎と太陽。再び攻撃を仕掛けるが取り逃してしまう。桜坊を破壊し太陽を連れ引き返そうとする凶一郎に、突如スパイ協会会長・出雲灰からの呼び出しが…</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261018173000 +0900" stop="20261018174400 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19502">
+    <title lang="ja">Nスタ[字]　横浜市長選挙 有権者の判断は▽台風30号 今後の進路</title>
+    <desc lang="ja">この日のニュースをまとめてお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018174400 +0900" stop="20261018175400 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19450">
+    <title lang="ja">熊日ニュース</title>
+    <desc lang="ja">RKKのスタジオから、最新のニュースをわかりやすくお伝えします</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018175400 +0900" stop="20261018180000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19514">
+    <title lang="ja">Nスタ[字]</title>
+    <desc lang="ja">この日のニュースをまとめてお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018180000 +0900" stop="20261018183000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19494">
+    <title lang="ja">世界遺産/カナダ・ルーネンバーグ旧市街[解][字]</title>
+    <desc lang="ja">ルーネンバーグ旧市街は約270年前にイギリスが築いた植民都市の面影を今も色濃く残す街
+人口2300人程の小さな港町がなぜ世界遺産になったのか…その魅力に迫ります</desc>
+    <category lang="ja">ドキュメンタリー／教養</category>
+  </programme>
+  <programme start="20261018183000 +0900" stop="20261018190000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19570">
+    <title lang="ja">ベスコングルメ★磯村勇斗と小田急線・梅ヶ丘&amp;豪徳寺へ!めざすは極太鴨せいろ![解][字]</title>
+    <desc lang="ja">[デ]小田急線グルメタウンシリーズ後編・豪徳寺&amp;梅ヶ丘を歩く!街に詳しいハリセンボン春菜オススメの3大グルメ「黄金鶏そば」「極上天ぷら定食」「肉厚ぶり照り」が登場!</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018190000 +0900" stop="20261018210000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19614">
+    <title lang="ja">バナナマンのせっかくグルメ★京都・小田原・広島!食欲の秋人気グルメタウンSP[字][デ]</title>
+    <desc lang="ja">Snow Man向井が小田原で濃厚魚介ラーメン&amp;海鮮丼を爆食★秋の京都へ!地元・松田好花がずん飯尾を案内!行列の人気町中華&amp;京大生(秘)特盛り食堂★日村は広島&amp;盛岡</desc>
+    <category lang="ja">バラエティ</category>
+    <icon src="https://tvguide.myjcom.jp/monomedia/sirc/470000/477706/image/e046ff1bfe69bc61edbc7cf4b4e13115.jpg" />
+  </programme>
+  <programme start="20261018210000 +0900" stop="20261018215400 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19478">
+    <title lang="ja">日曜劇場「VIVANT」第21話　帰還を阻む魔の手!?出国への希望、現る![解][字]</title>
+    <desc lang="ja">シャキ城から別班員を助け出した乃木だが、追手である李たちを対処できず通信可能なエリアまで来てしまう。奪還がシンシー本部にも伝わってしまい絶体絶命の局面を迎える。</desc>
+    <category lang="ja">ドラマ</category>
+    <icon src="https://tvguide.myjcom.jp/monomedia/sirc/470000/477612/image/f1361d6e7c5b4fc56717a1d550a19328.jpg" />
+  </programme>
+  <programme start="20261018215400 +0900" stop="20261018215700 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19438">
+    <title lang="ja">熊日ニュース</title>
+    <desc lang="ja">RKKのスタジオから、最新のニュースをわかりやすくお伝えします</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018215700 +0900" stop="20261018220000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19510">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018220000 +0900" stop="20261018225400 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19550">
+    <title lang="ja">日曜日の初耳学[字]『VIVANT』俳優SP迫田孝也×林修◆友人・芳根京子が暴露&amp;妻から手紙</title>
+    <desc lang="ja">『VIVANT』愛され悪役・迫田孝也◆『相棒』出演わずか4秒&amp;大河ドラマ『真田丸』でブレイク◆幼馴染と生中継で赤っ恥&amp;下積み時代から支えた愛妻◆小日向文世&amp;堺雅人未公開</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018225400 +0900" stop="20261018230000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19578">
+    <title lang="ja">めざせ!くまもとの若き匠たち</title>
+    <desc lang="ja">県内建設系の学校で日々頑張っている学生の皆さんの学校生活や実践学習とその成果、卒業後の夢や目標などを紹介。熊本の未来を担う若き匠たちのチャレンジをお届けします。</desc>
+    <category lang="ja">趣味／教育</category>
+  </programme>
+  <programme start="20261018230000 +0900" stop="20261018233000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19454">
+    <title lang="ja">情熱大陸【フードショップヒライ▽即完売!安くておいしい、家族で営む人気惣菜店】[字]</title>
+    <desc lang="ja">開店直前には100人もの行列が!三重県津市の「フードショップヒライ」は家族で営む人気総菜店だ。89歳の店主から5歳のひ孫まで…家族全員で作る、安くておいしい幸せの味。</desc>
+    <category lang="ja">ドキュメンタリー／教養</category>
+  </programme>
+  <programme start="20261018233000 +0900" stop="20261019000000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19582">
+    <title lang="ja">転生貴族、鑑定スキルで成り上がる 第3期[字]　#28「終戦」【アガルアニメ】</title>
+    <desc lang="ja">ひとりじゃない、信じる仲間と共に。</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261019000000 +0900" stop="20261019005000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19506">
+    <title lang="ja">S☆1[字]運「ドラフト会議」怪物二刀流&amp;世代屈指のショート!速報欧州サッカー</title>
+    <desc lang="ja">運命の一日「ドラフト会議」
+▼怪物二刀流&amp;世代屈指のショート
+速報!欧州サッカー&amp;アジアパラ競技大会開幕
+プリンセス駅伝を徹底解説!
+クライミング初の偉業へ!</desc>
+    <category lang="ja">スポーツ</category>
+  </programme>
+  <programme start="20261019005000 +0900" stop="20261019012000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19542">
+    <title lang="ja">いろはに千鳥[再]　老舗旅館で最高の昼食</title>
+    <desc lang="ja">埼玉ロケで千鳥の二人が訪れたのは大自然のなかにある老舗旅館。そこで待っていたのは“最高の昼食"　絶品料理をゲットするために千鳥、勝負に挑む!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261019012000 +0900" stop="20261019015000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19474">
+    <title lang="ja">ジャパネットたかたテレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019015000 +0900" stop="20261019022000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19586">
+    <title lang="ja">Music　B.B.Japan</title>
+    <desc lang="ja">音楽を中心にゲーム・アニメ・Vシンガーなどこれからの時代の先駆けとなるエンターテインメントコンテンツをいち早く全国にお届け!</desc>
+    <category lang="ja">音楽</category>
+  </programme>
+  <programme start="20261019022000 +0900" stop="20261019025000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19590">
+    <title lang="ja">ふわり愛　〜ふわり　どこまでも行く　愛と自由の旅〜</title>
+    <desc lang="ja">ふわり、愛と自由の旅。地元の方や新しい仲間と、これからも大切にしたい物語に出会う。全国の知られざるローカルを巡り、新しい地方の未来を描きます。</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261019025000 +0900" stop="20261019025100 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19462">
+    <title lang="ja">本日　終了</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019040800 +0900" stop="20261019041000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19618">
+    <title lang="ja">放送開始</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019041000 +0900" stop="20261019042000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19726">
+    <title lang="ja">朝からゲツキン再放送</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019042000 +0900" stop="20261019045000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19678">
+    <title lang="ja">お買物情報</title>
+    <desc lang="ja">お買物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019045000 +0900" stop="20261019052000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19638">
+    <title lang="ja">おはようテレショップ</title>
+    <desc lang="ja">おはようテレショップ</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019052000 +0900" stop="20261019080000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19706">
+    <title lang="ja">THE　TIME,[字][デ]</title>
+    <desc lang="ja">安住紳一郎が明るく楽しく丁寧に、そして正直にお伝えします!</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019080000 +0900" stop="20261019095500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19698">
+    <title lang="ja">ラヴィット!キングオブコント王者ネタ生披露&amp;ミスドQにVIVANTシンシー参戦[字]</title>
+    <desc lang="ja">▼VIVANTからシンシー工作員2人が揃って登場
+▼自分で揚げられて大人気の食べ放題!串家物語で絶品アレンジが続々
+▼知って得する!キング・オブ・ミスタードーナツ</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261019095500 +0900" stop="20261019102500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19646">
+    <title lang="ja">お買物情報</title>
+    <desc lang="ja">お買物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019102500 +0900" stop="20261019112000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19682">
+    <title lang="ja">ひるおび[字]</title>
+    <desc lang="ja">あなたを“いたわる"1時間!天気痛・家事の裏ワザ・明日行きたいイベント情報…毎日忙しいあなたをちょっと笑顔にする情報にこだわってお届けします▼復活!亭主改造計画</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019112000 +0900" stop="20261019113000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19622">
+    <title lang="ja">3分クッキング[字]【きのこのみそしぐれ・きのこのごまみそ汁】</title>
+    <desc lang="ja">60年以上に亘り「簡単、便利でおいしい家庭料理」を届ける長寿番組。定番からおもてなしのメニューまで、旬の食材を活かした献立をお届けします。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019113000 +0900" stop="20261019135500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19662">
+    <title lang="ja">ひるおび[字]</title>
+    <desc lang="ja">その日一番の気になるニュースをかみ砕いて解説　生放送ならではの筋書きのない展開で恵俊彰があなたの“知りたい"に全力で応えます!!</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019135500 +0900" stop="20261019154900 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19686">
+    <title lang="ja">ゴゴスマ</title>
+    <desc lang="ja">様々な事が起こる平日の午後、あらゆるジャンルの関心事を「生」にこだわって、MC石井亮次がわかりやすく、「見て、わかった　見て、よかった」となるようにお届け!</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019154900 +0900" stop="20261019155500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19722">
+    <title lang="ja">ゲツキン早出し便</title>
+    <desc lang="ja">熊本の話題をいち早くお届け</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019155500 +0900" stop="20261019165000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19626">
+    <title lang="ja">水戸黄門(再)　第18部　第14話「泣き笑い助太刀志願」(小浜)[字]</title>
+    <desc lang="ja">若狭は小浜で老公一行が泊まった宿屋は、何んと女将たったひとりで切り回している大変な宿。博奕好きの亭主に文句を言いながらも、好いて好かれた気のいい夫婦。</desc>
+    <category lang="ja">ドラマ</category>
+  </programme>
+  <programme start="20261019165000 +0900" stop="20261019181500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19666">
+    <title lang="ja">[生]Nスタ[字]</title>
+    <desc lang="ja">嬉しいニュースに湧き立つ日も、つらいニュースで落ち着かない日も、夕方テレビをつければそこにある、いつもの顔、いつもの声、あなたのパートナーに、Nスタ。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019181500 +0900" stop="20261019185500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19718">
+    <title lang="ja">[生]NEWSゲツキン</title>
+    <desc lang="ja">今月行われるプロ野球ドラフト会議。山鹿市出身で、横浜高校の池田聖摩選手がプロ志望届を提出している。「高校生屈指のショート」の呼び声高い池田選手に夢や目標を聞いた</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019185500 +0900" stop="20261019190000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19630">
+    <title lang="ja">ちびっ子タイム　夢へチャレンジ!</title>
+    <desc lang="ja">御船PHOENIX</desc>
+    <category lang="ja">趣味／教育</category>
+  </programme>
+  <programme start="20261019190000 +0900" stop="20261019205500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19694">
+    <title lang="ja">CDTVライブ!ライブ![字][デ]★なにわ男子★イコラブ★aiko</title>
+    <desc lang="ja">★櫻坂46★Little Glee Monster★緑黄色社会</desc>
+    <category lang="ja">音楽</category>
+  </programme>
+  <programme start="20261019205500 +0900" stop="20261019215400 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19730">
+    <title lang="ja">テレビ×ミセス★緊急生放送!火ドラ「恋とき」上白石&amp;向井&amp;大森が奇跡を起こす!?[字]</title>
+    <desc lang="ja">Mrs. GREEN APPLEが様々なものとコラボするバラエティ★Snow Man向井が大人しりとり珍回答★新企画では上白石「放送できない」いったいなにが!?</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261019215400 +0900" stop="20261019225700 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19742">
+    <title lang="ja">岡田准一とロバート秋山の今さらシロー!上白石萌音とアニメの街中野へ&amp;ミセスに突撃</title>
+    <desc lang="ja">上白石萌音とアニメ&amp;サブカルの街・中野をシロー!チェンソーマン・呪術廻戦を手掛けたMAPPA潜入!村上隆&amp;隆二兄弟がテレビ初共演▼ミセスに岡田秋山が楽曲依頼!?</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261019225700 +0900" stop="20261019230000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19634">
+    <title lang="ja">熊日ニュース</title>
+    <desc lang="ja">RKKのスタジオから、最新のニュースをわかりやすくお伝えします</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019230000 +0900" stop="20261020000100 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19674">
+    <title lang="ja">news23[字]あなたと、あなたの身近な人にとって大切なニュースを</title>
+    <desc lang="ja">どこよりもわかりやすく、わかりやすい言葉で、色んな人の意見、色んな声、色んな視点と共にお伝えします。経験豊富な23ジャーナリストたちが、ニュースを深掘りします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261020000100 +0900" stop="20261020003100 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19734">
+    <title lang="ja">前川清のキヨシこの夜　▽アポ無し夜の街巡り!</title>
+    <desc lang="ja">福岡県古賀市のスナックへ。スナックに野球を見に来るお客さんとホークス談義。お店の前に鎮座する弘法大師には驚きの過去が!?イベントでも大好評の“かしわ飯"も満喫</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261020003100 +0900" stop="20261020010500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19714">
+    <title lang="ja">町中華で飲ろうぜ　▽店主おすすめの「おこげ」▽こぶしサイズの唐揚げ使用「油淋鶏」</title>
+    <desc lang="ja">今回は3期生の彩菜ちゃんが初登場。大田区産業振興会が発刊する「町中華MAP」を片手に、23区屈指の町中華地帯、大田区をめぐります。</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261020010500 +0900" stop="20261020020500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19738">
+    <title lang="ja">クレイジージャーニー☆世界48か国の裁判を傍聴した弁護士&amp;ケロッピー前田の秘宝[字]</title>
+    <desc lang="ja">世界48か国の裁判を傍聴した弁護士▽ブラジルの裁判に衝撃!年間件数1億&amp;テレビ生放送!?▽ザンビアの黒魔術裁判とは!▽ケロッピー前田のお宝!頭蓋骨に穴あける</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261020020500 +0900" stop="20261020023500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19654">
+    <title lang="ja">お買物情報</title>
+    <desc lang="ja">お買物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261020023500 +0900" stop="20261020030500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19650">
+    <title lang="ja">お買物情報</title>
+    <desc lang="ja">お買物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261020030500 +0900" stop="20261020033500 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19690">
+    <title lang="ja">お買物情報</title>
+    <desc lang="ja">お買物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261020033500 +0900" stop="20261020033600 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19642">
+    <title lang="ja">本日　終了</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261020033600 +0900" stop="20261020041000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19746">
+    <title lang="ja">RKKリラックスタイム</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261020041000 +0900" stop="20261020042000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19850">
+    <title lang="ja">朝からゲツキン再放送</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261020042000 +0900" stop="20261020045000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19810">
+    <title lang="ja">お買物情報</title>
+    <desc lang="ja">お買物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261020045000 +0900" stop="20261020052000 +0900" channel="RKK.jp" broadcast="terrestrial" service-id="57360" event-id="19762">
+    <title lang="ja">おはようテレショップ</title>
+    <desc lang="ja">おはようテレショップ</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261015235900 +0900" stop="20261016005400 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17331">
+    <title lang="ja">木曜ドラマ「ダウト -15年目の復讐-」第3話【ついにコウモリの正体が】[字][デ]</title>
+    <desc lang="ja">連続殺人犯コウモリに親を奪われた姉弟。
+15年の時を経て、止まっていた事件が再び動き出すー
+総勢25名の容疑者候補!
+嘘にまみれた真実…“コウモリ”は誰だ!?</desc>
+    <category lang="ja">ドラマ</category>
+  </programme>
+  <programme start="20261016005400 +0900" stop="20261016005900 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17346">
+    <title lang="ja">イケイケイケイティー</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016005900 +0900" stop="20261016012900 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17332">
+    <title lang="ja">LIAR GAME▼#22「罠」</title>
+    <desc lang="ja">「週刊ヤングジャンプ」にて連載された甲斐谷忍による傑作サスペンス作品のTVアニメ化。正直者と元天才詐欺師が嘘と知略のゲームに挑み、人間心理の光と闇を描く。</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261016012900 +0900" stop="20261016015900 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17330">
+    <title lang="ja">らんま1/2[字]▼第26話「爆砕点穴」</title>
+    <desc lang="ja">乱馬やあかねたちが繰り広げるドタバタ格闘ラブコメディー、ここに開幕!
+第26話「爆砕点穴」</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261016015900 +0900" stop="20261016022900 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17348">
+    <title lang="ja">テレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016022900 +0900" stop="20261016023400 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17338">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016023400 +0900" stop="20261016030400 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17357">
+    <title lang="ja">テレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016030400 +0900" stop="20261016030700 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17350">
+    <title lang="ja">ミッドナイトプロムナード「佐野元春」</title>
+    <desc lang="ja">♪新しい世界</desc>
+    <category lang="ja">音楽</category>
+  </programme>
+  <programme start="20261016030700 +0900" stop="20261016033700 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17340">
+    <title lang="ja">テレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016033700 +0900" stop="20261016040000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17345">
+    <title lang="ja">日テレNEWS24</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016040000 +0900" stop="20261016043000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17381">
+    <title lang="ja">テレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016043000 +0900" stop="20261016052000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17376">
+    <title lang="ja">Oha!4 ▽武部新農水相が就任会見</title>
+    <desc lang="ja">▽台風30号が発生▽警察官を書類送検▽バーガーキングで情報漏えい▽プロ野球CSファイナルステージ▽Snow Man岩本照▽石原さとみ</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016052000 +0900" stop="20261016055000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17380">
+    <title lang="ja">見逃しevery.くまもと</title>
+    <desc lang="ja">『news every.くまもと』をダイジェストで送ります。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016055000 +0900" stop="20261016090000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17361">
+    <title lang="ja">ZIP!情報漏えいバーガー店でも/中村倫也を救った俳優/阿部亮平とジブリパーク</title>
+    <desc lang="ja">金曜は阿部亮平▽情報漏えいバーガー店約1118万件なぜ続く企業対応策は▽新潟県警巡査ひき逃げ▽エスカレーターから煙▽観光客困惑 箱根にシカ▽水卜解説ピーク秋花粉</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016090000 +0900" stop="20261016102500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17374">
+    <title lang="ja">DayDay.【新たな台風30号発生▼「空き巣」10月最多 情報流出で加速も】[字]</title>
+    <desc lang="ja">相次ぐ情報漏えい 医療機関や自治体の防災システムでも被害▼札幌の商業施設 エスカレーターから出火で混乱▼連日大盛況 劇団四季「リトルマーメイド」人気の秘密</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016102500 +0900" stop="20261016105500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17372">
+    <title lang="ja">笑点[再][解][字]木久扇＆木久蔵親子のやりたい放題に会場爆笑！演芸は、マキタスポーツ。</title>
+    <desc lang="ja">笑点メンバーが自分の弟子や師匠とペアを組む「師弟ペア大喜利」。木久扇は弟子で息子の木久蔵とペアになり、不思議な言動を連発！演芸は、マキタスポーツの「オトネタ」。</desc>
+    <category lang="ja">劇場／公演</category>
+  </programme>
+  <programme start="20261016105500 +0900" stop="20261016112500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17370">
+    <title lang="ja">テレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016112500 +0900" stop="20261016113000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17385">
+    <title lang="ja">Life+</title>
+    <desc lang="ja">日々の生活に役立つ情報をお昼前のひとときに毎日お届け。キャンペーンやイベント、映画情報なども盛り込みながら、旬な情報を発信します。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016113000 +0900" stop="20261016115500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17363">
+    <title lang="ja">NNN ストレイトニュース・天気予報[字]</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016115500 +0900" stop="20261016135500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17375">
+    <title lang="ja">ヒルナンデス！夫婦円満の秘訣大調査！鬼怒川紅葉旅!!▼有名人ファミリー探偵![デ]</title>
+    <desc lang="ja">陣内智則＆野々村友紀子が秋の鬼怒川へ！世界一の絶品牛ステーキ&amp;1泊5食付きの太っ腹宿を満喫!!▼タイムマシーン３号が有名人の家族を捜査！超有名人の息子が登場!!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016135500 +0900" stop="20261016155000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17383">
+    <title lang="ja">ニュースto【台風30号が発生!列島直撃も?▽なんで炎上!?ニュース】[字]</title>
+    <desc lang="ja">「台風30号」が発生!列島直撃の可能性も?最新進路を詳しく▽思わぬ批判が殺到！なんで炎上!?ニュース</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016155000 +0900" stop="20261016164500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17378">
+    <title lang="ja">every.[字]緊急地震速報“取り消し”M9.9と過大推定▼王将“社長射殺”男無罪</title>
+    <desc lang="ja">▼巨大地震と誤り…気象庁異例の取り消しナゼ▼餃子の王将“社長射殺”暴力団幹部に無罪判決▼大谷１１６打席ぶりＨＲも…敗退▼スシ×エンタメ…新たな仕掛けで外国人魅了</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016164500 +0900" stop="20261016181500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17369">
+    <title lang="ja">[生]金チカっ！[字]▼ゴールド免許ばってん城次の安全運転検証！秋の事故対策！</title>
+    <desc lang="ja">秋は交通事故が増える季節！運転歴５０年、自信満々のばってん城次、本当に安全運転できている？県警や自動車学校でシニア世代が長く安全に運転するためのポイントを学ぶ!</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016181500 +0900" stop="20261016190000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17384">
+    <title lang="ja">[生]news every.くまもと▼八代巨額汚職事件 賄賂隠しの男初公判</title>
+    <desc lang="ja">【キャスター】緒方太郎、永島由菜▼八代巨額汚職事件 賄賂隠しの男初公判▼県都決戦へ 熊本市長選ポスター掲示板▼カヌー日本代表×研究者 二刀流高校生最後のレースへ</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016190000 +0900" stop="20261016195600 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17367">
+    <title lang="ja">くりぃむしちゅーの熊本どぎゃん!?▼上田晋也が水道町のディープなレトロビルへ！</title>
+    <desc lang="ja">上田晋也が水道町のレトロビルを散策▼完全予約制の帽子店で秋のイメチェン!?▼欧州食材専門店で爆買い▼タイの王さまが愛した絶品カレーに感動!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016195600 +0900" stop="20261016205400 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17371">
+    <title lang="ja">沸騰ワード[字]航空自衛隊!主力戦闘機F-2パイロット精鋭育てる(秘)養成訓練ＴＶ初潜入</title>
+    <desc lang="ja">日本の領空侵犯への緊急発進25年度595回!国防最前線を守る主力戦闘機F-2の全貌ついにTV初公開!最高マッハ2の超加速を宮城県松島基地でカズレーザーが初体験</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016205400 +0900" stop="20261016210000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17359">
+    <title lang="ja">イケイケイケイティー</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016210000 +0900" stop="20261016225400 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17373">
+    <title lang="ja">金曜ロードショー「インサイド・ヘッド２」初放送★ピクサー歴代No.１ヒット作[二][字][デ]</title>
+    <desc lang="ja">思春期を迎えた女の子の頭の中に新たな感情が現れ大混乱★本編ノーカット放送</desc>
+    <category lang="ja">映画</category>
+  </programme>
+  <programme start="20261016225400 +0900" stop="20261016230000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17360">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016230000 +0900" stop="20261016233000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17377">
+    <title lang="ja">薬屋のひとりごと FRIDAY ANIME NIGHT[字][デ]</title>
+    <desc lang="ja">後宮謎解きエンターテインメントが今、再び開幕!
+#51「麺麭がなければ」</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261016233000 +0900" stop="20261016235900 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17365">
+    <title lang="ja">桃源暗鬼〜日光・華厳の滝編〜 FRIDAY ANIME NIGHT[字]</title>
+    <desc lang="ja">新世代ダークヒーロー鬼譚!
+#3意義</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261016235900 +0900" stop="20261017003000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17362">
+    <title lang="ja">news zero[字]【速報】緊急地震速報“取り消し”…気象庁が3度目の会見</title>
+    <desc lang="ja">“スパイ容疑”拘束の日本人記者…在露日本大使館の関係者が面会▼ソフトバンクが日本S進出!
+▼【密着】自転車界エース…太田海也▼「餃子の王将」社長射殺事件に無罪判</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017003000 +0900" stop="20261017005900 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17391">
+    <title lang="ja">[新]恋愛番組「星の見える町で」都会女性が地方男性と出会い恋する…移住、決断できる?</title>
+    <desc lang="ja">「移住」と「恋」がテーマの番組。都会暮らしに悩む５人の女性が自然豊かな町へ。地元で暮らす男性と出会い「運命の恋」と「新しい自分」を探す、大人の恋愛ドキュメント。</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017005900 +0900" stop="20261017015600 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17386">
+    <title lang="ja">バズリズム０２▼世界で活躍!SiMのロックな最新グルメライフ！家系＆激辛ラーメン</title>
+    <desc lang="ja">世界で活躍中!SiMのロックな最新グルメライフ！朝５時にカップ焼きそば爆食！自宅で家系ラーメン＆オフの日に激辛ラーメンなど今の食生活を深掘り▼鈴木伸之&amp;ロイロム</desc>
+    <category lang="ja">音楽</category>
+  </programme>
+  <programme start="20261017015600 +0900" stop="20261017022100 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17382">
+    <title lang="ja">しんごの芽【チャーハン食べて性格診断】</title>
+    <desc lang="ja">料理は作り手の性格が出るのか？一般人が作った「チャーハン」を食べるだけで一流料理人が作り手の性格を診断！スタジオでは激怒する香取をなだめるくるま…</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017022100 +0900" stop="20261017025100 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17390">
+    <title lang="ja">テレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017025100 +0900" stop="20261017025400 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17379">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017025400 +0900" stop="20261017032400 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17388">
+    <title lang="ja">テレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017032400 +0900" stop="20261017032700 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17387">
+    <title lang="ja">ミッドナイトプロムナード「佐野元春」</title>
+    <desc lang="ja">♪新しい世界</desc>
+    <category lang="ja">音楽</category>
+  </programme>
+  <programme start="20261017032700 +0900" stop="20261017035700 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17366">
+    <title lang="ja">テレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017035700 +0900" stop="20261017042400 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17364">
+    <title lang="ja">日テレNEWS24</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017042400 +0900" stop="20261017045300 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17411">
+    <title lang="ja">テレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017045300 +0900" stop="20261017045600 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17401">
+    <title lang="ja">熊本市民チャンネル[再]</title>
+    <desc lang="ja">熊本市の取り組みやお知らせを紹介する熊本市の広報番組。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017045600 +0900" stop="20261017052600 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17392">
+    <title lang="ja">テレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017052600 +0900" stop="20261017055500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17406">
+    <title lang="ja">それいけ！アンパンマン「カマンベールくんとけむりいぬ・他」[解][字]</title>
+    <desc lang="ja">「カマンベールくんとけむりいぬ」
+「ドキンちゃんと氷の女王」</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261017055500 +0900" stop="20261017082500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17399">
+    <title lang="ja">シューイチ[字]緊急地震速報取り消し何が／高騰の葉物野菜工夫は／衝撃！テスラ空飛ぶ車</title>
+    <desc lang="ja">進化する秋のアフタヌーンティーを楽しみ尽くす人々…食べ放題も!?／巨人選手の絵心調査！画伯は誰だ／ドラマ「俺たちの箱根駅伝」コラボ第2弾/大谷3ランも…敗退</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017082500 +0900" stop="20261017092500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17434">
+    <title lang="ja">イッテＱ【お祭りSP】宮川監督初陣!2代目手越がイギリス羊毛袋レース参戦[再][字]</title>
+    <desc lang="ja">手越＆オーシャンズ金子＆宮川ボーイズがイギリスへ【W杯の熱狂に負けないお祭りブルーの熱量】
+27kgの巨大羊毛袋を担ぎ魂の疾走！！宮川監督に勝利を!!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017092500 +0900" stop="20261017102000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17408">
+    <title lang="ja">サタココ▼スザンヌが絶品グルメをご紹介!熟成肉&amp;中華▼HKT48柿収穫体験!</title>
+    <desc lang="ja">スザンヌが絶品グルメをご紹介！熟成肉＆焼き鳥＆中華▼身近なAI大調査!▼旬の味覚!HKT48が柿の収穫体験!</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017102000 +0900" stop="20261017111500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17396">
+    <title lang="ja">金曜ミステリークラブ!!![字]韓国最悪の未解決事件…33年かけ犯人判明も警察が謝罪</title>
+    <desc lang="ja">大ヒット映画にもなった凶悪ミステリー…事件発覚から33年後に真犯人が判明!だが…男の口から韓国中を揺るがす衝撃の事実が!?警察が謝罪する事態に…なぜだ?</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017111500 +0900" stop="20261017112500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17418">
+    <title lang="ja">神保シェフのくまもとたべciao!「栗と鶏手羽先のうま煮」</title>
+    <desc lang="ja">神保佳永シェフが熊本食材をおいしく料理!
+産地から旬だからこその食べ方なども紹介します。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017112500 +0900" stop="20261017113000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17413">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017113000 +0900" stop="20261017114000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17416">
+    <title lang="ja">NNN ストレイトニュース[字]</title>
+    <desc lang="ja">最新のニュースをストレートに！ 必要とされる情報を、コンパクトにまとめてお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017114000 +0900" stop="20261017115500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17420">
+    <title lang="ja">KICK OFF!KUMAMOTO</title>
+    <desc lang="ja">熊本県を拠点とするプロサッカーチーム「ロアッソ熊本」の情報を中心に県内のキッズ・ジュニア、中高生などのチームを取り上げ、熊本県民とサッカーの接点を作る。</desc>
+    <category lang="ja">ドキュメンタリー／教養</category>
+  </programme>
+  <programme start="20261017115500 +0900" stop="20261017133000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17393">
+    <title lang="ja">サタデーLIVE ニュース ジグザグ▽農相更迭ウラ側▽個人情報売買の実態[字]</title>
+    <desc lang="ja">独自解説！簗氏“更迭”高市首相の心境変化のウラ側▽まるで通販サイト？個人情報を売買する闇市場の実態を取材！トクリュウが悪用か▽ロシアで日本人記者拘束…思惑は?</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017133000 +0900" stop="20261017153000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17436">
+    <title lang="ja">★SAPPOROスポーツスペシャル 第103回 箱根駅伝予選会[字]</title>
+    <desc lang="ja">▼正月の箱根駅伝出場の20校が今日決まる!!</desc>
+    <category lang="ja">スポーツ</category>
+  </programme>
+  <programme start="20261017153000 +0900" stop="20261017160000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17404">
+    <title lang="ja">デカ盛りハンター【栗山千明が大興奮！道とん堀5.5kg巨大絶品お好み焼きバトル！】</title>
+    <desc lang="ja">総重量5.5kg・幅1mの道とん堀・人気デカ盛りお好み焼き▼怪物らすかるVS元関取大翔鵬率いる力士チームが10万円バトル▼超重量級の食べっぷりに栗山千明も大興奮!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017160000 +0900" stop="20261017165500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17423">
+    <title lang="ja">所さんの学校では教えてくれないそこんトコロ！【断崖絶壁で「幻の高級食材」＆野人】</title>
+    <desc lang="ja">世界の超危険なハンティングに挑戦！ネパールの断崖絶壁で狙う「幻の高級食材」▼野人谷田VS超巨大「洞窟の主」を追え！▼落下！落雷！恐怖経験で安全を守る謎の研修施設</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017165500 +0900" stop="20261017170000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17410">
+    <title lang="ja">くまもと県民の日[再]</title>
+    <desc lang="ja">KKTが11月28日・29日に開催する大型イベント「くまもと県民の日」！去年大反響のあの祭典が今年はどうなる!?ワクワクの最新情報をいち早くお届けします！</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017170000 +0900" stop="20261017172000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17398">
+    <title lang="ja">news every.サタデー[字]</title>
+    <desc lang="ja">土曜日の最新ニュースと気象情報を詳しく分かりやすくお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017172000 +0900" stop="20261017173000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17402">
+    <title lang="ja">KKTニュース・天気</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017173000 +0900" stop="20261017180000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17435">
+    <title lang="ja">朱色の仮面 第２話「武神の仮面」[字][デ]</title>
+    <desc lang="ja">立ち向かえ。強大な敵にーー。己の運命にーー。仮面バトルファンタジー、開幕!</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261017180000 +0900" stop="20261017183000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17415">
+    <title lang="ja">名探偵コナン「背中を押す手」[字][デ]</title>
+    <desc lang="ja">毛利探偵事務所に、婚約者が命を狙われているという男性が依頼に来る。婚約者を脅迫する犯人の目的は、結婚をやめさせること。コナンは、ある人物を警戒するが……。</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261017183000 +0900" stop="20261017190000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17431">
+    <title lang="ja">満天☆青空レストラン 連島ごぼう！生でかじれる驚きの柔らかさと純白の姿![解][字]</title>
+    <desc lang="ja">「岡山県倉敷市」で見つけた極上食材は、アクが少なくシャキシャキで筋が全く残らない「連島ごぼう」！甘辛煮やポタージュなど、絶品料理の数々に柏木由紀も大感動!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017190000 +0900" stop="20261017195600 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17394">
+    <title lang="ja">嗚呼!!みんなの動物園[字]譲渡会まであと８日！みりちゃむシャー猫たくあんを初抱っこ</title>
+    <desc lang="ja">譲渡会目前！みりちゃむが預かるビビり＆シャー猫たくあんとメンマ！ついにたくあんは初抱っこに成功！さらにちゃむ姉も一目置くシャー猫マスターが２匹のもとへ!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017195600 +0900" stop="20261017205400 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17424">
+    <title lang="ja">笑コラ![字]M!LKも酔っ払いも園児も皆でカメラに向かってごめんなさい秋の謝罪祭り</title>
+    <desc lang="ja">M!LK・俺たちの箱根駅伝高橋克典・山田杏奈がカメラに向かってごめんなさいSP!ベロベロの酔っ払い・天才園児も続々登場！ダーツの旅は福島県でシュール村人大集合</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017205400 +0900" stop="20261017210000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17397">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017210000 +0900" stop="20261017215400 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17405">
+    <title lang="ja">俺たちの箱根駅伝#02【池井戸潤×大泉洋】学生連合チーム始動…早くも分裂![解][字][デ]</title>
+    <desc lang="ja">予選敗退した選手の”寄せ集め”とも言われる学生連合チームが始動。監督の目標を前に、選手達は真っ二つ！一方、大日テレビでもリーダーの指示を巡り、チームに亀裂が…!!</desc>
+    <category lang="ja">ドラマ</category>
+  </programme>
+  <programme start="20261017215400 +0900" stop="20261017220000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17419">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017220000 +0900" stop="20261017225400 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17427">
+    <title lang="ja">追跡取材 news LOG[字] 箱根駅伝予選会17秒差リベンジ誓う▽台風３０号進路</title>
+    <desc lang="ja">運命の結果発表…夢の箱根路へ“歓喜と涙”▽野菜高騰「白菜800円超」のウラで…農家の窮地▽簗前農水相…説明は?地元支援者に“おわび”も</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017225400 +0900" stop="20261017230000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17430">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017230000 +0900" stop="20261017233000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17400">
+    <title lang="ja">アナザースカイ[字]相川七瀬の人生を変えたブラジル！イグアスの滝、祭り、運命の出逢い</title>
+    <desc lang="ja">デビュー曲『夢見る少女じゃいられない』がブラジルで愛されている。誰もが相川七瀬を歓迎する訳…ブラジルと相川七瀬を結ぶ奇跡の数々。イグアスの滝の水量に感動…</desc>
+    <category lang="ja">ドキュメンタリー／教養</category>
+    <icon src="https://tvguide.myjcom.jp/monomedia/sirc/470000/477382/image/4ff56ed494db59ec209f517a2405787f.jpg" />
+  </programme>
+  <programme start="20261017233000 +0900" stop="20261017235500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17433">
+    <title lang="ja">サクサクヒムヒム★胸キュンの宝庫【少女漫画】恋愛のバイブルを深掘り![字]</title>
+    <desc lang="ja">少女漫画の「胸キュン」の秘密を徹底解剖！「壁ドン」をはじめ、女性がして欲しいしぐさが詰まった恋愛の教科書！少女漫画の共通点は「結末は一択！？」あるあるも登場!</desc>
+    <category lang="ja">バラエティ</category>
+    <icon src="https://tvguide.myjcom.jp/monomedia/sirc/470000/477387/image/eb95fdf18afb0d1b9cfe9475189a1520.jpg" />
+  </programme>
+  <programme start="20261017235500 +0900" stop="20261018005500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17429">
+    <title lang="ja">Going![字]総力特集!箱根駅伝予選会「歓喜と涙の舞台裏」▼DeNA史上初の快挙</title>
+    <desc lang="ja">▼箱根駅伝本選への切符を掴み取る10校は!?運命の予選会ドラマ総力特集▼DeNAがCSファイナル突破！歓喜のビールかけ＆高橋由伸が徹底解説▼フェンシングＷ杯</desc>
+    <category lang="ja">スポーツ</category>
+  </programme>
+  <programme start="20261018005500 +0900" stop="20261018012000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17403">
+    <title lang="ja">太田上田 〜夏の妖怪マッチング〜</title>
+    <desc lang="ja">【爆笑問題・太田光】【くりぃむしちゅー・上田晋也】が
+視聴者からの質問や相談をきっかけに好き勝手おしゃべり
+社会問題からプライベートまで…自由自在にぶった斬る!!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018012000 +0900" stop="20261018021500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17395">
+    <title lang="ja">サタココ[再]スザンヌが絶品グルメをご紹介!熟成肉&amp;中華▼HKT48柿収穫体験!</title>
+    <desc lang="ja">スザンヌが絶品グルメをご紹介！熟成肉＆焼き鳥＆中華▼身近なAI大調査!▼旬の味覚!HKT48が柿の収穫体験!</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018021500 +0900" stop="20261018024500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17417">
+    <title lang="ja">パチゲットテレビ</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">趣味／教育</category>
+  </programme>
+  <programme start="20261018024500 +0900" stop="20261018031500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17432">
+    <title lang="ja">テレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018031500 +0900" stop="20261018033000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17421">
+    <title lang="ja">KICK OFF!KUMAMOTO[再]</title>
+    <desc lang="ja">熊本県を拠点とするプロサッカーチーム「ロアッソ熊本」の情報を中心に県内のキッズ・ジュニア、中高生などのチームを取り上げ、熊本県民とサッカーの接点を作る。</desc>
+    <category lang="ja">ドキュメンタリー／教養</category>
+  </programme>
+  <programme start="20261018033000 +0900" stop="20261018040000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17407">
+    <title lang="ja">日テレポシュレ</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018040000 +0900" stop="20261018040300 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17422">
+    <title lang="ja">ミッドナイトプロムナード「佐野元春」</title>
+    <desc lang="ja">♪新しい世界</desc>
+    <category lang="ja">音楽</category>
+  </programme>
+  <programme start="20261018040300 +0900" stop="20261018040800 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17414">
+    <title lang="ja">日テレNEWS24</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018040800 +0900" stop="20261018043800 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17464">
+    <title lang="ja">テレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018043800 +0900" stop="20261018050800 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17450">
+    <title lang="ja">テレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018050800 +0900" stop="20261018051000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17438">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018051000 +0900" stop="20261018054000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17446">
+    <title lang="ja">テレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018054000 +0900" stop="20261018054500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17468">
+    <title lang="ja">２４時間テレビチャリティー・リポート[手][字]</title>
+    <desc lang="ja">「２４時間テレビ」の趣旨にのっとり、ボランティア活動などを取材。様々な福祉活動を紹介しています。</desc>
+    <category lang="ja">福祉</category>
+  </programme>
+  <programme start="20261018054500 +0900" stop="20261018061500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17437">
+    <title lang="ja">テレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018061500 +0900" stop="20261018063000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17472">
+    <title lang="ja">NNNニュースサンデー[手]</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">福祉</category>
+  </programme>
+  <programme start="20261018063000 +0900" stop="20261018070000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17448">
+    <title lang="ja">テレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018070000 +0900" stop="20261018073000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17471">
+    <title lang="ja">所さんの目がテン！[字]シンプルだけど完璧な美味しさ！世界で人気なピザの秘密</title>
+    <desc lang="ja">世界一の職人が焼くマルゲリータの美味しさを徹底解明！焼き方や具材の構成に秘密が？日本独自の照り焼きチキンピザの美味しさの理由とは？オリジナル和風ピザ作りに挑戦!</desc>
+    <category lang="ja">ドキュメンタリー／教養</category>
+  </programme>
+  <programme start="20261018073000 +0900" stop="20261018102500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17463">
+    <title lang="ja">シューイチ[字][デ]密着!箱根駅伝予選会出場10校は?▽見取り図盛山のAIドライブ</title>
+    <desc lang="ja">磯村勇斗＆末澤誠也＆綾野剛が息フ〜！ゲームで勝負▽21年ぶりに予選会出場の東洋は？中山は大東文化大学へ▽盛山が浅草＆六本木でAIヒデちゃんと外国人の友だちを作る</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018102500 +0900" stop="20261018112500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17443">
+    <title lang="ja">一茂×かまいたちゲンバ▼最高のカレーパン６年連続金賞＆定番スイーツ満載の店[字]</title>
+    <desc lang="ja">▼ちょうどいい街・船橋で最高金賞受賞のカレーパン▼大人気！シャトレーゼで全国唯一のスイーツビュッフェ▼いま話題の新ラケットスポーツ・ピックルボールで一茂VS山内</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018112500 +0900" stop="20261018113000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17470">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018113000 +0900" stop="20261018114000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17441">
+    <title lang="ja">NNN ストレイトニュース[字]</title>
+    <desc lang="ja">最新のニュースをストレートに！ 必要とされる情報を、コンパクトにまとめてお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018114000 +0900" stop="20261018123500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17442">
+    <title lang="ja">上沼・高田のクギズケ！ 簗氏辞任…高市首相の説明責任は▽石原伸晃が初出演[字]</title>
+    <desc lang="ja">道路予算カット発言&amp;公職選挙法違反!?高市政権では初の閣僚辞任の影響は？▽石原伸晃が明かす「石原家のとんでも伝説」▽芝翫＆三田に新情報!?▽秋の衝撃映像ベスト3</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018123500 +0900" stop="20261018133000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17462">
+    <title lang="ja">カンブリア宮殿【古いマンションも素敵に変わる！“常識破り”の住宅設備メーカー】</title>
+    <desc lang="ja">新築マンションが高騰する中、中古を購入してリノベーションする人が増えている。悩むのが、キッチンや洗面台、浴室。デザイン性とコスパで人気の住宅設備メーカーを取材!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018133000 +0900" stop="20261018150000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17458">
+    <title lang="ja">そこまで言って委員会NP 竹田恒泰vs蓬莱大介!異常気象で大論争バトル![字]</title>
+    <desc lang="ja">竹田恒泰vs蓬莱大介!異常気象でガチンコ大激論に…「地球温暖化」は陰謀か？▽コメ政策で大激論▽日本の自動車がピンチ？新たな産業は</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018150000 +0900" stop="20261018160000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17477">
+    <title lang="ja">イッテＱ【お祭り男宮川＆二代目手越】フィンランドで丸太乗り川を下る木材選手権[再][字]</title>
+    <desc lang="ja">世界遺産駅伝はロッチ中岡がスペイン⇒出川＆ガールズが待つフランスへ襷リレー
+お祭り男・宮川＆若旦那・手越がフィンランド丸太乗り激流祭りに参戦!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018160000 +0900" stop="20261018162500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17478">
+    <title lang="ja">サクサクヒムヒム【ドン・キホーテ】集う奇跡の２ショット！佐久間と堂本剛が沼る[再][字]</title>
+    <desc lang="ja">あの堂本剛がハマる？【ドン・キホーテ】の秘密に迫る！激安商品から個性的すぎるオリジナル商品までを常連のギャル曽根・鈴木拓が伝授し話題のドンキ飯にスタジオ大歓声!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018162500 +0900" stop="20261018163000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17451">
+    <title lang="ja">イケイケイケイティー</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018163000 +0900" stop="20261018172500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17460">
+    <title lang="ja">くりぃむしちゅーの熊本どぎゃん!?[再]上田晋也・国宝通潤橋の放水に大興奮!</title>
+    <desc lang="ja">上田晋也が念願の国宝・通潤橋へ。豪快な放水に大興奮！知られざる幼少期の思い出が飛び出す▼秘伝スパイスのやみつきチキンにかぶりつく▼八朔祭大造り物の制作をお手伝い</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018172500 +0900" stop="20261018173000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17444">
+    <title lang="ja">KKTニュース</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018173000 +0900" stop="20261018180000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17466">
+    <title lang="ja">笑点[解][字][デ]清水ミチコ＆ナイツがテレビ初のコラボ漫才！一之輔、ちいかわ以下の扱い？</title>
+    <desc lang="ja">永久保存版！清水ミチコとナイツが一日限定トリオ「ミナイツ」を結成！「高田文夫のラジオビバリー昼ズ」とのコラボ漫才に会場大爆笑！大喜利は、ちいかわ&gt;○○&gt;一之輔?</desc>
+    <category lang="ja">劇場／公演</category>
+  </programme>
+  <programme start="20261018180000 +0900" stop="20261018185500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17475">
+    <title lang="ja">真相報道バンキシャ！[字]桝太一＆石川みなみが１週間の出来事を詳しく</title>
+    <desc lang="ja">バンキシャ！は毎週、注目されている事件・出来事について、他にない切り口で検証を加える番組です。今週もご期待ください!</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018185500 +0900" stop="20261018190000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17447">
+    <title lang="ja">博士は今日も嫉妬する 人生が楽しくなる最新テクノロジー[字]</title>
+    <desc lang="ja">最新技術の研究に没頭するがなかなかうまくいかない…そんな博士が思わず嫉妬する明日が楽しくなる最新テクノロジーをご紹介！！▽食糧危機を救うスーパーフード</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018190000 +0900" stop="20261018195800 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17457">
+    <title lang="ja">ザ!鉄腕!DASH!!▽築城計画に石原良純参戦!3つの日本一を持つ丸亀城に潜入[字]</title>
+    <desc lang="ja">無人島に城を建てる夢のプロジェクト！伝統の石垣修復現場にバラエティー初潜入！城島＆森本が城づくり大調査！巨大な石割れる!?▽海の女王を巨大パチンコで捕獲狙う</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018195800 +0900" stop="20261018205400 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17439">
+    <title lang="ja">イッテQ!大好評!お遍路ツアー第2弾あさこ大島奴オカリナ煩悩まみれの爆笑珍道中[字]</title>
+    <desc lang="ja">みやぞん台湾で超難関！空舞うスポーツカイト団体芸に挑戦！風と交差する凧糸に悪戦苦闘…果たして習得なるか!?▼女芸人お遍路ツアーin高知!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018205400 +0900" stop="20261018210000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17449">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018210000 +0900" stop="20261018215400 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17455">
+    <title lang="ja">ゴールデンストーンズ▽間宮祥太朗＆ついに揃ったオリエンタルラジオ初参戦SP[字]</title>
+    <desc lang="ja">間宮祥太朗＆オリエンタルラジオ緊急参戦!!人気芸人のガチ演技が話題のダジャレ授賞式で謎の”パーフェクトヒューマンタイム”発生!!9人が踊りまくる大パニックの60分!!</desc>
+    <category lang="ja">バラエティ</category>
+    <icon src="https://tvguide.myjcom.jp/monomedia/sirc/470000/477418/image/b107523ad3e0fc6e6ba34f9bdd579e8c.jpg" />
+  </programme>
+  <programme start="20261018215400 +0900" stop="20261018220000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17473">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018220000 +0900" stop="20261018223000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17459">
+    <title lang="ja">おしゃれクリップ[解][字]池松壮亮が大絶賛する俳優！二児の父・中村蒼３５歳の素顔</title>
+    <desc lang="ja">朝ドラ・大河にヒット映画出演続々！俳優・中村蒼▼今明かす芸能界入りの真実…オーディションに「落ちろ」と願っていた▼池松壮亮・柄本時生が素顔暴露「中身は小学生」</desc>
+    <category lang="ja">バラエティ</category>
+    <icon src="https://tvguide.myjcom.jp/monomedia/sirc/470000/477419/image/a0f386b01c975fe9ed86e2b1ae06d2f2.jpg" />
+  </programme>
+  <programme start="20261018223000 +0900" stop="20261018232500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17453">
+    <title lang="ja">ハイド＆シーク ０秒前の彼女#03「恋人を返す条件は国家への反逆行為」[解][字][デ]</title>
+    <desc lang="ja">福士蒼汰×注目ミステリー作家原作！死んだはずの恋人から突然の電話。爆弾テロの濡れ衣を着せられ警察から逃げながら恋人を探す！国家陰謀を巡る極限の隠れんぼ!</desc>
+    <category lang="ja">ドラマ</category>
+    <icon src="https://tvguide.myjcom.jp/monomedia/sirc/470000/477420/image/b593ef3210e9403f38e8855c2964e8e0.jpg" />
+  </programme>
+  <programme start="20261018232500 +0900" stop="20261018235500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17476">
+    <title lang="ja">ダウンタウンのガキの使い！クイズ王が２連敗のリベンジかけ挑戦状！吉本常識クイズ[字]</title>
+    <desc lang="ja">クイズ王2連敗からの逆襲!吉本常識クイズ!見取り図を迎えたメンバーがQuizKnockと激突！吉本の雑学から芸人の楽曲まで白熱の早押し対決！勝つのはどっちだ!?</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018235500 +0900" stop="20261019005500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17465">
+    <title lang="ja">Going![字]M!LKと一緒にKARADAWEEK▼体操・橋本×岡×内村SP特集</title>
+    <desc lang="ja">▼プロ野球CS決着?▼ソフトバンク栗原陵矢に井桁弘恵が取材！井桁母との意外な関係▼内村航平×橋本大輝×岡慎之助 金メダリスト座談会▼M!LKと1日1分「滅!」?</desc>
+    <category lang="ja">スポーツ</category>
+  </programme>
+  <programme start="20261019005500 +0900" stop="20261019012500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17456">
+    <title lang="ja">NNNドキュメント’２６「縁組み家族 こどもの権利にオトナはどうこたえる」[解][字]</title>
+    <desc lang="ja">特別養子縁組で育ち、12歳で実母と再会する少女。育て親はルーツをどう伝えるか葛藤する。法律で明文化されない出自を知る権利。家族の日々から課題を浮き彫りにする。</desc>
+    <category lang="ja">ドキュメンタリー／教養</category>
+  </programme>
+  <programme start="20261019012500 +0900" stop="20261019013000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17452">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019013000 +0900" stop="20261019020000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17467">
+    <title lang="ja">テレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019020000 +0900" stop="20261019023000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17440">
+    <title lang="ja">通販番組</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019023000 +0900" stop="20261019030000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17474">
+    <title lang="ja">日テレポシュレ</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019030000 +0900" stop="20261019030300 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17445">
+    <title lang="ja">ミッドナイトプロムナード「佐野元春」</title>
+    <desc lang="ja">♪新しい世界</desc>
+    <category lang="ja">音楽</category>
+  </programme>
+  <programme start="20261019030300 +0900" stop="20261019040000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17461">
+    <title lang="ja">日テレNEWS24</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019040000 +0900" stop="20261019043000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17502">
+    <title lang="ja">テレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019043000 +0900" stop="20261019055000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17491">
+    <title lang="ja">Oha!4 NEWS LIVE</title>
+    <desc lang="ja">あなたにつながるニュースをお届け！▽最新ニュースや気象情報を”どこよりも早く”詳しく！スポーツ・カルチャーもたっぷり！「自分のニュースに、変わるあさ。」</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019055000 +0900" stop="20261019090000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17485">
+    <title lang="ja">ZIP!</title>
+    <desc lang="ja">▽最新のニュース、エンタメ、トレンドなど「時事性のある情報」に加え、ZIP!独自の「オリジナルコンテンツ」も多数用意し、日本の朝に「見たい」をお届けします!</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019090000 +0900" stop="20261019105500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17496">
+    <title lang="ja">DayDay.【MCは武田真一と山里亮太!情報&amp;エンタメ＆おしゃべり】[字]</title>
+    <desc lang="ja">ＭＣは武田＆山里！爽快・情報エンタメトークショー▽身近な話題や共感ネタを深ぼり▽視聴者とリアルタイムでつながる即興アンケート！▽最新の天気</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019105500 +0900" stop="20261019112500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17508">
+    <title lang="ja">テレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019112500 +0900" stop="20261019113000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17489">
+    <title lang="ja">イケイケイケイティー</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019113000 +0900" stop="20261019115500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17504">
+    <title lang="ja">NNN ストレイトニュース・天気予報[字]</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019115500 +0900" stop="20261019135500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17506">
+    <title lang="ja">ヒルナンデス!小峠&amp;TAKAHIROが箱根で路線バス▼超VIPの家宝を調査![デ]</title>
+    <desc lang="ja">ピンポンなったら降りる旅！紅葉間近の箱根を舞台に路線バスで新名物探し!▼CMでおなじみ西村社長の総工費30億円豪邸にコットンが潜入！どんなお宝が??</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261019135500 +0900" stop="20261019155000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17503">
+    <title lang="ja">ニュースto[字]</title>
+    <desc lang="ja">【メインMC黒木千晶・金曜MC村上信五】ミヤネ屋の後枠▽昼の報道情報番組!!ニュースをもっと身近に。ニュースと“あなた”の暮らしをつなぐ。様々な世代とホンネ議論。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019155000 +0900" stop="20261019181500 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17500">
+    <title lang="ja">every.[字] 鈴江奈々&amp;森圭介がきょうを分かりやすく</title>
+    <desc lang="ja">鈴江奈々、森圭介が“今”を伝えます！ニュースを分かりやすく、いち早く…ネットの話題＆流行＆スポーツ＆芸能＆グルメからお得な生活情報まで満載!!</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019181500 +0900" stop="20261019190000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17483">
+    <title lang="ja">[生]news every.くまもと▼熊本地震復興コンサート▼外国人バス運転士に密着</title>
+    <desc lang="ja">【キャスター】緒方太郎、永島由菜▼地震復興コンサートに南こうせつさんや木梨憲武さんなど▼高校いじめ 調査委員会が結果報告▼奮闘！デビュー目指す外国人運転士に密着</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019190000 +0900" stop="20261019200000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17487">
+    <title lang="ja">有吉ゼミ▼グルメすぎる玉ノ井部屋と田子ノ浦部屋の超豪華！爆食決起集会に密着SP[字]</title>
+    <desc lang="ja">総重量70kg超え!玉ノ井部屋の肉祭り決起集会!濃厚焼豚ラーメンちゃんこ鍋＆自家製コンソメのオニオングラタンスープ▼田子ノ浦部屋の本格手打ちうどん＆冷や汁</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261019200000 +0900" stop="20261019210000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17509">
+    <title lang="ja">世界まる見え！○○なのに××▼橋本環奈驚き！世界一周なのに飛行機使わない冒険家[字]</title>
+    <desc lang="ja">通学路なのにほぼ垂直の崖を登るフィリピンの子ども達に萩原利久・ゆうちゃみ感動▼首に紐が巻かれ鬱血で顔が腫れた野良犬のエジプト〜カナダ大救出作戦に橋本環奈ハラハラ</desc>
+    <category lang="ja">バラエティ</category>
+    <icon src="https://tvguide.myjcom.jp/monomedia/sirc/470000/477483/image/7ee811190ec5cb481e0da231da35ef34.jpg" />
+  </programme>
+  <programme start="20261019210000 +0900" stop="20261019225400 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17510">
+    <title lang="ja">大悟の芸人領収書ＳＰ[字]小栗旬参戦！私生活の領収書でトーク！大悟の承認で全額返金</title>
+    <desc lang="ja">初のゴールデン進出豪華2時間SP!芸人たちの領収書トークに小栗旬も爆笑▼ママ友から愛のお叱り連続で泣きそう!?大悟は洗い物できる？▼売れっ子芸人達の人生設計とは?</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261019225400 +0900" stop="20261019230000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17501">
+    <title lang="ja">知って得する女性の健康「マタニティスポーツ(2)プール」</title>
+    <desc lang="ja">女性の健康妊娠・出産・子育てに関する最新情報をお届けします。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019230000 +0900" stop="20261019235900 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17507">
+    <title lang="ja">news zero[字]【櫻井取材】台風の爪痕残る千葉へ</title>
+    <desc lang="ja">台風３０号の最新進路・列島に影響は？▽サイバー攻撃の余波▽体操岡慎之助×櫻井…世界体操金へ大技解禁</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019235900 +0900" stop="20261020005400 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17498">
+    <title lang="ja">プラチナイト「大悟の芸人領収書」＆ドラマDEEP「十六夜膳房」#2[字]</title>
+    <desc lang="ja">▼＜ドラマ＞焼豚高菜ラーメン…80年代アイドルの苦悩。突然の引退のワケとは?</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261020005400 +0900" stop="20261020005900 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17493">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261020005900 +0900" stop="20261020012900 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17494">
+    <title lang="ja">吉田と粗品と▼働きすぎは悪い事？仕事を詰め込んでしまう女性医師</title>
+    <desc lang="ja">朝6時からバイト!高収入なのに“働きすぎ”が制御できない40歳女性医師が登場。家族の時間を優先したいが休めない…「休む」決意をした吉田がワケを激白!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261020012900 +0900" stop="20261020015900 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17492">
+    <title lang="ja">THEフィッシング「静岡県・松崎町」</title>
+    <desc lang="ja">異次元アドベンチャー
+カヤックフィッシング</desc>
+    <category lang="ja">趣味／教育</category>
+  </programme>
+  <programme start="20261020015900 +0900" stop="20261020022900 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17484">
+    <title lang="ja">テレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261020022900 +0900" stop="20261020023400 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17495">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261020023400 +0900" stop="20261020030400 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17505">
+    <title lang="ja">テレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261020030400 +0900" stop="20261020030700 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17499">
+    <title lang="ja">ミッドナイトプロムナード「yosugala」</title>
+    <desc lang="ja">♪ラムネ</desc>
+    <category lang="ja">音楽</category>
+  </programme>
+  <programme start="20261020030700 +0900" stop="20261020035000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17511">
+    <title lang="ja">放送休止</title>
+    <desc lang="ja"> </desc>
+  </programme>
+  <programme start="20261020035000 +0900" stop="20261020040000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17541">
+    <title lang="ja">放送休止</title>
+    <desc lang="ja"> </desc>
+  </programme>
+  <programme start="20261020040000 +0900" stop="20261020043000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17514">
+    <title lang="ja">テレビショッピング</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261020043000 +0900" stop="20261020055000 +0900" channel="KKT.jp" broadcast="terrestrial" service-id="57376" event-id="17535">
+    <title lang="ja">Oha!4 NEWS LIVE</title>
+    <desc lang="ja">あなたにつながるニュースをお届け！▽最新ニュースや気象情報を”どこよりも早く”詳しく！スポーツ・カルチャーもたっぷり！「自分のニュースに、変わるあさ。」</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261015231500 +0900" stop="20261016001500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5357">
+    <title lang="ja">アメトーーク!　芸人矢印トーーク 〜実は前から思ってたけど…〜[字]</title>
+    <desc lang="ja">▽同世代芸人が前から思ってた事を言い合う▽ゆずるvsオズ伊藤vsしんいち▽熊プロvsパンポテ谷▽井口軍団…檜原&amp;高学歴後輩▽スパイク松浦と恋の展開?</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016001500 +0900" stop="20261016004500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5358">
+    <title lang="ja">ヒロシのひとりキャンプのすすめ▼恥骨村録音合宿(5)▼ヒロシ自宅で焼き鳥パーティー</title>
+    <desc lang="ja">恥骨村CD録音合宿第五夜!
+自宅バルコニーで焼き鳥パーティー開催!
+阿諏訪が教える!家でもお店並みになる!美味しい焼き鳥の焼き方講座
+さらに今回もお金で揉める・・</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016004500 +0900" stop="20261016005000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5359">
+    <title lang="ja">KABウェザーライン</title>
+    <desc lang="ja">熊本県内を中心にお天気情報をお届けします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016005000 +0900" stop="20261016012000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5360">
+    <title lang="ja">ぺこぱのぱこぺ 〜あじさい寺で願掛け&amp;体操教室で前方宙返りに挑戦!〜</title>
+    <desc lang="ja">「ぺこぱ」の2人が山口を本気で遊ぶ!風まかせヒューマンドキュメンタリー</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016012000 +0900" stop="20261016015000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5361">
+    <title lang="ja">musicる　TV</title>
+    <desc lang="ja">アーティストのリアルに密着!「ヒャダイン」「内田真礼」がお送りする音楽ドキュメント番組!</desc>
+    <category lang="ja">音楽</category>
+  </programme>
+  <programme start="20261016015000 +0900" stop="20261016015500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5362">
+    <title lang="ja">ケービィーch(5)▼KABのイチオシ番組を紹介します♪</title>
+    <desc lang="ja">KABのおすすめの番組を紹介します。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016015500 +0900" stop="20261016022500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5363">
+    <title lang="ja">洋楽天国+</title>
+    <desc lang="ja">洋楽の最新ミュージック・ビデオをはじめ話題の作品をノンジャンルで紹介。またアーティストのインタビューやライブ映像などもお届けします!</desc>
+    <category lang="ja">音楽</category>
+  </programme>
+  <programme start="20261016022500 +0900" stop="20261016025500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5364">
+    <title lang="ja">お買い物情報</title>
+    <desc lang="ja">お買い物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016025500 +0900" stop="20261016032500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5365">
+    <title lang="ja">お買い物情報</title>
+    <desc lang="ja">お買い物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016032500 +0900" stop="20261016035500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5366">
+    <title lang="ja">お買い物情報</title>
+    <desc lang="ja">お買い物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016035500 +0900" stop="20261016040000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5367">
+    <title lang="ja">クロージング</title>
+    <desc lang="ja"> </desc>
+  </programme>
+  <programme start="20261016040000 +0900" stop="20261016045000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5369">
+    <title lang="ja">おはよう天気</title>
+    <desc lang="ja">熊本県内各地のお天気、気象情報をお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016045000 +0900" stop="20261016052000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5370">
+    <title lang="ja">お買い物情報</title>
+    <desc lang="ja">お買い物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016052000 +0900" stop="20261016052500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5371">
+    <title lang="ja">おはようケービィー</title>
+    <desc lang="ja">1日のスタートをケービィーダンスで!</desc>
+  </programme>
+  <programme start="20261016052500 +0900" stop="20261016080000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5372">
+    <title lang="ja">グッド!モーニング[デ][字]</title>
+    <desc lang="ja">富士メガソーラー計画 景観懸念で中止要求も▽農水相後任に武部氏▽株急落3番目下げ幅▽スガキヤ関東再進出▽ドラ1候補が米挑戦(他)</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016080000 +0900" stop="20261016095500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5373">
+    <title lang="ja">羽鳥慎一モーニングショー[字]</title>
+    <desc lang="ja">簗氏辞任も広がる波紋 高市総理の任命責任は…新大臣就任も野党追及▽台風30号異例ペース▽ラーメン店倒産最多 元木さん語るしくじり</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016095500 +0900" stop="20261016104000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5374">
+    <title lang="ja">くまパワ+[再]▼WANIMA 1CHANCE FESTIVAL密着▼開催直前のPINK VOLFES情報も</title>
+    <desc lang="ja">▼WANIMA 1CHANCE FESTIVAL 2026に密着
+▼5回目の開催となった今回、WANIMAの思いとは
+▼開催直前のPINK VOLFES情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016104000 +0900" stop="20261016130000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5375">
+    <title lang="ja">大下容子ワイド!スクランブル[字]</title>
+    <desc lang="ja">米団体ロシアに記者解放を要求…中朝露連携で日本は▽スターリンクが制限…ウクライナ戦線影響▽アメリカ新報道官素顔▽撮り鉄が勝手に伐採(他)</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016130000 +0900" stop="20261016133000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5376">
+    <title lang="ja">徹子の部屋　赤楚衛二[字]</title>
+    <desc lang="ja">〜話題の実力派俳優が初登場!父の勧めで「剣道」を〜赤楚衛二さんが今日のゲストです。</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016133000 +0900" stop="20261016134500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5377">
+    <title lang="ja">DAIGOも台所　〜きょうの献立　何にする?〜鶏とさつまいものオーロラソース[字]</title>
+    <desc lang="ja">冷蔵庫の食材管理もしながら、家族の好みや栄養バランス、肉・魚・野菜のローテーションも考えて献立を決めるのは大変…今日は料理初心者でも一人で作れる簡単レシピを紹介</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016134500 +0900" stop="20261016135000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5378">
+    <title lang="ja">知っ得!見聞録</title>
+    <desc lang="ja">気になる情報をいち早く!新商品やイベント情報、プレゼント・キャンペーン情報など、皆さまの生活の役に立つ、知って得する情報をお届けします!</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016135000 +0900" stop="20261016142000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5379">
+    <title lang="ja">お買い物情報</title>
+    <desc lang="ja">お買い物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016142000 +0900" stop="20261016145200 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5380">
+    <title lang="ja">ぽっかぽか2</title>
+    <desc lang="ja">「素直なままでいいですか?」(4)</desc>
+    <category lang="ja">ドラマ</category>
+  </programme>
+  <programme start="20261016145200 +0900" stop="20261016155000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5381">
+    <title lang="ja">臨場　続章　#04[再]</title>
+    <desc lang="ja">『似顔絵』代議士秘書が殺害された!犯行時刻に退室した人物の似顔絵は、実在の女性と似すぎていた!そして、倉石(内野聖陽)は、消えたラップが気になるが・・・</desc>
+    <category lang="ja">ドラマ</category>
+  </programme>
+  <programme start="20261016155000 +0900" stop="20261016164800 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5382">
+    <title lang="ja">相棒　season3#16[再]</title>
+    <desc lang="ja">警視庁の窓際、“特命係"には二人だけ刑事がいる!クールで頭脳明晰な“杉下右京"と単純明快でホットな“亀山薫"が抜群のコンビネーションで難事件を解決!まさに相棒!</desc>
+    <category lang="ja">ドラマ</category>
+  </programme>
+  <programme start="20261016164800 +0900" stop="20261016181500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5383">
+    <title lang="ja">スーパーJチャンネル　井澤健太朗と森山みなみが&lt;ニュースのハテナ&gt;を深掘り[字]</title>
+    <desc lang="ja">消費減税巡り論戦…野党から「給付案」続々▽台風30号最新進路&amp;「奥日光」紅葉見頃へ▽王将銃撃事件で判決▽米AIバブル懸念?▽カキてんこ盛り!都内で行列の地元メシ</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016181500 +0900" stop="20261016190000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5384">
+    <title lang="ja">[生]くまもとLive touch▼アミュ探検型グルメイベント▼耐震補強のあれこれ</title>
+    <desc lang="ja">▼市電・チャリチャリでめぐるアミュの探検型イベント!古町・新町でグルメを楽しむ!
+▼ジャパンにも選出!少年野球のキラリ星
+▼住宅の耐震補強　方法は?補助は?</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016190000 +0900" stop="20261016195400 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5385">
+    <title lang="ja">ザワつく!金曜日　新企画!下からどんどん当てましょう選手権[字]</title>
+    <desc lang="ja">長嶋一茂&amp;石原良純&amp;高嶋ちさ子のなんでもややこしくしちゃう3人が好き勝手に喋りまくる!愉快!痛快!言いたい放題バラエティー!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016195400 +0900" stop="20261016200000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5386">
+    <title lang="ja">DO YOU のうぎょう?クエスチョン▼北稜高校</title>
+    <desc lang="ja">北稜高校には、「園芸科」「造園科」「商業科」「家政科」の4学科あります。
+専門的な知識や技術を学ぶ生徒たちの授業や、農業を通した地域との交流について紹介します。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016200000 +0900" stop="20261016205400 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5387">
+    <title lang="ja">マツコ&amp;有吉　かりそめ天国　もう中学生がブリトー工場にテレビ初潜入![字]</title>
+    <desc lang="ja">番組に届いた視聴者からの「耳に入れたい話」を肴にマツコ&amp;有吉が独自の視点で話していくトークバラエティ!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016205400 +0900" stop="20261016205700 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5388">
+    <title lang="ja">KABウェザーライン</title>
+    <desc lang="ja">熊本県内を中心にお天気情報をお届けします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016205700 +0900" stop="20261016210000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5389">
+    <title lang="ja">きて!みて!</title>
+    <desc lang="ja">KABおすすめの情報がずらり。最新のコンサートや演劇、スポーツイベントまで「きて!」「みて!」楽しいイベントをお伝えします。番組先行チケットも実施。お見逃しなく!</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016210000 +0900" stop="20261016215400 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5390">
+    <title lang="ja">ミュージックステーション　RADWIMPS・あいみょんが新曲TV初!EBiDAN「Yes! 東京」[字]</title>
+    <desc lang="ja">RADWIMPSが話題の映画主題歌TV初披露▽あいみょんがドラマ主題歌▽EBiDAN1億回再生突破大ヒット曲「Yes! 東京」▽なにわ男子が王道ラブソングTV初披露▽AI・櫻坂46・sumika</desc>
+    <category lang="ja">音楽</category>
+  </programme>
+  <programme start="20261016215400 +0900" stop="20261016231000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5391">
+    <title lang="ja">報道ステーション　緊急地震速報を取り消し「2つの誤りあった」M9.9と過大推定[字]</title>
+    <desc lang="ja">「王将」社長射殺事件、直接証拠なし…判決▽“台風30号"進路は…浸水の町、排水完了も▽参院予算委に新大臣▽ドジャース…大谷翔平</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016231000 +0900" stop="20261016231500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5392">
+    <title lang="ja">くまもと情報ステーション</title>
+    <desc lang="ja">旬な情報をお届けするくまもと情報ステーション。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016231500 +0900" stop="20261017001500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5393">
+    <title lang="ja">朝メシまで。　傑作選[字]</title>
+    <desc lang="ja">巨大空港で昼夜を問わず奮闘する税関職員!荷物検査で不正薬物などを調べるプロ集団や、不審者を尾行して空港を守る仕事人など、緊迫の現場に密着!!感動の朝メシとは!?</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017001500 +0900" stop="20261017004500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5394">
+    <title lang="ja">キッチンカー大作戦![字]</title>
+    <desc lang="ja">爆売れキッチンカーグルメを開発せよ!企画・監修秋元康&amp;グルメ賢者&amp;天才シェフがヒットメニューを発明!放送後、実際にキッチンカーで販売!見届け人はヒロミ&amp;指原莉乃</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017004500 +0900" stop="20261017011500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5397">
+    <title lang="ja">夫が寝たあとに</title>
+    <desc lang="ja">ママ会トークバラエティ“夫が寝たあとに"
+3児のママでMCの藤本美貴と横澤夏子がママトーク全開!!パパも思わず覗き見したくなる本音が盛りだくさん!?</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017011500 +0900" stop="20261017013000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5398">
+    <title lang="ja">ラブ!!Jリーグ[字]</title>
+    <desc lang="ja">りんたろー。&amp;せいやがJリーグの魅力を“LOVE"全開でお届けするサッカー番組!!
+ダンス&amp;ボーカルグループ・MAZZELのKAIRYUが番組初登場!</desc>
+    <category lang="ja">スポーツ</category>
+  </programme>
+  <programme start="20261017013000 +0900" stop="20261017014000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5399">
+    <title lang="ja">ナビステ▼暮らしに役立つ話題・情報をナビゲート♪</title>
+    <desc lang="ja">NAVI　Station(ナビステ)。新商品やキャンペーンのお知らせ、フェアがイベント案内など暮らしを豊かにする情報満載の10分!うれしいプレゼントも!?</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017014000 +0900" stop="20261017021000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5400">
+    <title lang="ja">ワールドプロレスリング</title>
+    <desc lang="ja">新日本プロレス秋の神戸決戦!至宝IWGPヘビー級王座を懸けて、王者・辻陽太に47歳のベテラン後藤洋央紀が挑戦!王者の覚悟とベテランの意地が交錯する!</desc>
+    <category lang="ja">スポーツ</category>
+  </programme>
+  <programme start="20261017021000 +0900" stop="20261017024000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5401">
+    <title lang="ja">お買い物情報</title>
+    <desc lang="ja">お買い物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017024000 +0900" stop="20261017031000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5402">
+    <title lang="ja">お買い物情報</title>
+    <desc lang="ja">お買い物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017031000 +0900" stop="20261017034000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5403">
+    <title lang="ja">お買い物情報</title>
+    <desc lang="ja">お買い物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017034000 +0900" stop="20261017034500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5404">
+    <title lang="ja">クロージング</title>
+    <desc lang="ja"> </desc>
+  </programme>
+  <programme start="20261017040000 +0900" stop="20261017045000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5405">
+    <title lang="ja">おはよう天気</title>
+    <desc lang="ja">熊本県内各地のお天気、気象情報をお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017045000 +0900" stop="20261017052000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5406">
+    <title lang="ja">お買い物情報</title>
+    <desc lang="ja">お買い物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017052000 +0900" stop="20261017055000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5407">
+    <title lang="ja">おねがいアイプリ　とどけ!ピュアハート</title>
+    <desc lang="ja">芸術の秋。おねがい広場ではアートフェスティバルが開催され、大盛り上がり。だが、あおい・おりびあ・エマは早く三人でのライブを成功させなければと焦っていた。</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261017055000 +0900" stop="20261017060000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5408">
+    <title lang="ja">ANNニュース[字][手]</title>
+    <desc lang="ja">正確なニュース・情報をいち早くお伝えするANNニュース!テレビ朝日系列の放送局26局が総力をあげ、緻密な取材にもとづいたニュースを最新機材を駆使して放送します。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017060000 +0900" stop="20261017080000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5409">
+    <title lang="ja">グッド!モーニング[デ][字]</title>
+    <desc lang="ja">餃子の王将社長射殺で現場のたばこの吸い殻決め手にならず無罪▽クレーンゲーム景品に物価高で野菜や卵人気▽冬到来前に灯油高騰(他)</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017080000 +0900" stop="20261017093000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5410">
+    <title lang="ja">朝だ!生です旅サラダ　津田健次郎が岩手で世界遺産巡り!&amp;世界自然遺産の名峰へ[デ][字]</title>
+    <desc lang="ja">海外・国内の豪華な旅から、気軽な温泉旅や身近な日帰り旅まで…幅広い旅のスタイルを提案する情報番組。毎週素敵なゲストが登場!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017093000 +0900" stop="20261017110000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5411">
+    <title lang="ja">教えて!ニュースライブ　正義のミカタ　大臣辞任…高市政権の今後は?▽ロシア拘束</title>
+    <desc lang="ja">簗大臣辞任…高市総理の判断は遅すぎた!?ロシアが日本人記者を拘束!問われる日本の外交姿勢…▽フランスで大規模学生デモ発生!原因は?日本も対岸の火事ではない!?</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017110000 +0900" stop="20261017114500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5412">
+    <title lang="ja">くまパワ+▼美食探訪で驚きの店が続々▼ワクワクのハロウィンイベント</title>
+    <desc lang="ja">▼今週は美食探訪SP
+▼射撃ができるレストランとは
+▼ワクワクのハロウィンイベント</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017114500 +0900" stop="20261017120000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5413">
+    <title lang="ja">ANNニュース[字]</title>
+    <desc lang="ja">正確なニュース・情報をいち早くお伝えするANNニュース!テレビ朝日系列の放送局26局が総力をあげ、緻密な取材にもとづいたニュースを最新機材を駆使して放送します。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017120000 +0900" stop="20261017133000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5414">
+    <title lang="ja">熊本ラーメン総選挙2025(再)▼最新ランキングは10月21日(水)放送!</title>
+    <desc lang="ja">KAB公式HPで「熊本県のおすすめのラーメン店」を募集。過去最多の投票が集まる中、県民の心を掴んだTOP15を大発表!3代目王者が決まる!</desc>
+  </programme>
+  <programme start="20261017133000 +0900" stop="20261017142500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5415">
+    <title lang="ja">ちょっとバカリハカってみた</title>
+    <desc lang="ja">超緊急 日本最大の病院に48時間密着 患者が何人来るか計ってみた</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017142500 +0900" stop="20261017143000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5416">
+    <title lang="ja">KABウェザーライン</title>
+    <desc lang="ja">熊本県内を中心にお天気情報をお届けします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017143000 +0900" stop="20261017152500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5417">
+    <title lang="ja">富士通レディースゴルフ2026　第3日[字]</title>
+    <desc lang="ja">国内女子ゴルフツアーも残り7試合。
+大会3勝でホステスプロ、メジャー女王でもある古江彩佳が参戦!
+年間女王争いトップをひた走る桑木志帆に待ったをかけるのは…!?</desc>
+    <category lang="ja">スポーツ</category>
+  </programme>
+  <programme start="20261017152500 +0900" stop="20261017162500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5418">
+    <title lang="ja">ナゼそこ?+ 9人の子ども&amp;借金1000万超…長野の山奥へ移住!令和のビッグダディSP</title>
+    <desc lang="ja">長野と新潟の県境、たった5世帯の秘境集落に、都会から移住した合計9人の子を持つ父。1000万超の借金を抱え、ナゼ山奥へ移住?令和のビッグダディ波瀾万丈人生。</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017162500 +0900" stop="20261017163000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5419">
+    <title lang="ja">KABウェザーライン</title>
+    <desc lang="ja">熊本県内を中心にお天気情報をお届けします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017163000 +0900" stop="20261017170000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5420">
+    <title lang="ja">クレヨンしんちゃん　【流れ板しんのすけ 温泉旅館をバズらせるゾ】(他)[デ][解][字]</title>
+    <desc lang="ja">決まった店には雇われぬ。腕一本の料理人。西へ東へ流れゆく。誰が呼んだか、誰も呼んでないか。流れ板・しんのすけ</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261017170000 +0900" stop="20261017173000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5421">
+    <title lang="ja">ドラえもん　【鳥タクシー】【カンヅメカンでまんがを】[デ][字]</title>
+    <desc lang="ja">ヘイ鳥タクシー!ハシビロコウに乗ってどこへいく?【鳥タクシー】のび太が漫画家に!?【カンヅメカンでまんがを】</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261017173000 +0900" stop="20261017175500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5422">
+    <title lang="ja">ANNスーパーJチャンネル[字]</title>
+    <desc lang="ja">真夏日か…広く秋晴れ行楽日和に(他)</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017175500 +0900" stop="20261017180000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5423">
+    <title lang="ja">KABウェザーライン</title>
+    <desc lang="ja">熊本県内を中心にお天気情報をお届けします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017180000 +0900" stop="20261017183000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5424">
+    <title lang="ja">人生の楽園　手作りの器でもてなす 笑顔カフェ　〜和歌山・有田市[字]</title>
+    <desc lang="ja">陶芸を趣味としてきた吉田安子さんと静男さん。安子さんは、二人で手がけてきた器に季節の料理を盛り付けて振る舞うカフェを始めた。温かな人柄が伝わるもてなしが評判だ</desc>
+    <category lang="ja">ドキュメンタリー／教養</category>
+  </programme>
+  <programme start="20261017183000 +0900" stop="20261017185600 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5425">
+    <title lang="ja">[新]土曜くりぃむ雑学　雑学大好きな上田一家が繰り広げる雑学バラエティがスタート![字]</title>
+    <desc lang="ja">▼今夜レギュラースタート!雑学を愛する上田一家が様々な切り口の雑学を語り合う雑学バラエティ!今夜は明日人に話したくなる雑学12連発!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017185600 +0900" stop="20261017205400 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5426">
+    <title lang="ja">サンド&amp;芦田愛菜の博士ちゃん　負の世界遺産アウシュビッツ…サンドが潜入リポート[字]</title>
+    <desc lang="ja">海外プロジェクト第9弾…かつて罪なき人が虐殺された「アウシュビッツ」…
+「負の世界遺産」として後世に残されたこの場所で、サンドウィッチマンは何を語るのか…</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017205400 +0900" stop="20261017215700 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5427">
+    <title lang="ja">サタデーステーション[字]</title>
+    <desc lang="ja">高島彩▽秋晴れで各地混雑…思わぬトラブルや異変も▽来週は秋雨&amp;台風30号警戒…最新進路は?異常気象は冬も続く?▽クマ人身事故相次ぐ▽箱根駅伝予選会…激闘の結末</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017215700 +0900" stop="20261017220000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5428">
+    <title lang="ja">ケービィーch(5)▼KABのイチオシ番組を紹介します♪</title>
+    <desc lang="ja">KABのおすすめの番組を紹介します。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017220000 +0900" stop="20261017225400 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5429">
+    <title lang="ja">[新]あにいもうと　#1[解][字]</title>
+    <desc lang="ja">≪許されざる恋≫は≪悲劇の始まり≫だった…消せない罪を背負った2組の【兄・妹】が愛と疑惑に翻弄されていく、禁断のラブ・サスペンスが遂に開幕!!</desc>
+    <category lang="ja">ドラマ</category>
+  </programme>
+  <programme start="20261017225400 +0900" stop="20261017230000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5430">
+    <title lang="ja">KABウェザーライン</title>
+    <desc lang="ja">熊本県内を中心にお天気情報をお届けします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017230000 +0900" stop="20261017233000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5431">
+    <title lang="ja">はだかんぼうたち　#3[字]</title>
+    <desc lang="ja">【江國香織×松田元太】体を重ね、朝を迎えた鯖崎(松田元太)と桃(加藤ローサ)。桃の決断に、鯖崎は当感。2人の想いは複雑に交錯し、乱反射し、危険度を増していく!</desc>
+    <category lang="ja">ドラマ</category>
+  </programme>
+  <programme start="20261017233000 +0900" stop="20261018000000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5432">
+    <title lang="ja">#ゾンビさがしてます　#3【イマニメーション】[デ][字]</title>
+    <desc lang="ja">愛車サリーのガソリンを手に入れるため、ガソリンスタンドへと向かうアキたち。寄り道しながら進んでいき、ついに目的地に到着するが、ゾンビたちが次々と姿を現す。</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261018000000 +0900" stop="20261018010000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5433">
+    <title lang="ja">千鳥の相席食堂　山下健二郎の旅! / 世界の格闘技相席</title>
+    <desc lang="ja">有名人が見知らぬ街で地元民と突然相席!偶然の出会いから始まる相席を通じて、街の魅力や新たな自分を発見する新感覚バラエティ▽ガチ交流ロケにMC千鳥がツッコミまくる!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018010000 +0900" stop="20261018013000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5434">
+    <title lang="ja">なにわ男子の逆転男子　Aぇ! group末澤参戦!「好きです」マッチングで本音告白!</title>
+    <desc lang="ja">大好評「マッチング男子」第3弾!Aぇ! group末澤誠也を迎え匿名投票で理想の相手を選ぶ!「無人島で1週間暮らすなら?」「恋敵を演じるなら?」本音が続々!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018013000 +0900" stop="20261018020000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5435">
+    <title lang="ja">貸した魔力は【リボ払い】で強制徴収　#3【ヌマニメーション】[字]</title>
+    <desc lang="ja">新たなスキルで力を得たレントは、エムピーとともにメルバの大迷宮へ。初めて自ら魔物と戦う喜びを知る一方、第三層では剣士のリンカが仲間に冷遇されていた。</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261018020000 +0900" stop="20261018023000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5436">
+    <title lang="ja">[新]dreamland【ANiMAZiNG!!!】#1</title>
+    <desc lang="ja">炎への恐怖を抱える少年テレンスは、夢の世界「ドリームランド」で炎を操る「夢人」として目覚める。現実と悪夢を越える、少年の冒険が始まる。</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261018023000 +0900" stop="20261018030000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5437">
+    <title lang="ja">お買い物情報</title>
+    <desc lang="ja">お買い物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018030000 +0900" stop="20261018033000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5438">
+    <title lang="ja">お買い物情報</title>
+    <desc lang="ja">お買い物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018033000 +0900" stop="20261018033500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5439">
+    <title lang="ja">クロージング</title>
+    <desc lang="ja"> </desc>
+  </programme>
+  <programme start="20261018040000 +0900" stop="20261018045000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5441">
+    <title lang="ja">おはよう天気</title>
+    <desc lang="ja">熊本県内各地のお天気、気象情報をお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018045000 +0900" stop="20261018052000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5442">
+    <title lang="ja">お買い物情報</title>
+    <desc lang="ja">お買い物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018052000 +0900" stop="20261018055000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5443">
+    <title lang="ja">お買い物情報</title>
+    <desc lang="ja">お買い物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018055000 +0900" stop="20261018080000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5444">
+    <title lang="ja">グッド!モーニング[デ][字]</title>
+    <desc lang="ja">台風30号発生「非常に強い勢力」まで発達の予想も、今後の進路は▽極上「くまもと黒毛和牛」食肉祭に登場、復興へ被災店が大奮闘▽愛子さまのこれまでの歩みがマンガに</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018080000 +0900" stop="20261018083000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5445">
+    <title lang="ja">よ〜い!スターと!トビダスクール　心のモヤモヤをぶん投げる![デ][字]</title>
+    <desc lang="ja">竹下☆ぱらだいす、しなこ、MADAMADAによる全く新しい学園エンターテインメント!誰もが持っている&lt;自分だけのスター性&gt;を見つけるために「よ〜い!スターと!」</desc>
+    <category lang="ja">趣味／教育</category>
+  </programme>
+  <programme start="20261018083000 +0900" stop="20261018090000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5446">
+    <title lang="ja">名探偵プリキュア! #38 くれあの答え[デ][字]</title>
+    <desc lang="ja">「探偵」のプリキュアが誕生!!そのナゾ!キュアット解決!</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261018090000 +0900" stop="20261018093000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5447">
+    <title lang="ja">仮面ライダーマイス　第7話「怒れる羊の鉄槌」[デ][字]</title>
+    <desc lang="ja">人々を守るため戦う十二支同盟。
+お嬢様のために戦う仮面ライダーマイス。
+新たな仮面ライダーの神話が始まる!</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261018093000 +0900" stop="20261018100000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5448">
+    <title lang="ja">角醒ハンター　オメガホーン　第13話「来たれ!異世界の来訪者!」[デ][字]</title>
+    <desc lang="ja">PROJECT R.E.D.第二弾　エゴの声を上げろ!
+ハンタータイム　スタート!</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261018100000 +0900" stop="20261018103000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5449">
+    <title lang="ja">題名のない音楽会「あのクラシック音楽はなぜ運動会に使われているの?の音楽会」[字]</title>
+    <desc lang="ja">スポーツの秋!クラシック音楽には運動会でおなじみの名曲が多くありますが、今回はそれらの名曲がなぜ運動会の定番曲になったのか?その意外な理由を紐解きます。</desc>
+    <category lang="ja">音楽</category>
+  </programme>
+  <programme start="20261018103000 +0900" stop="20261018103500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5450">
+    <title lang="ja">ケービィーch(5)▼KABのイチオシ番組を紹介します♪</title>
+    <desc lang="ja">KABのおすすめの番組を紹介します。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018103500 +0900" stop="20261018113500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5451">
+    <title lang="ja">ナニコレ珍百景　石原さとみ感動!ノリ漁師ピアニスト&amp;キャバクラ老人ホーム[再]</title>
+    <desc lang="ja">▼兵庫…キャバクラ&amp;ホストクラブに変身する大人気!老人ホーム
+▼佐賀海苔漁師が50歳すぎて人気ピアニストに変身
+▼鹿児島・徳之島は珍百景の宝庫!闘牛を育てる兄弟</desc>
+    <category lang="ja">ドキュメンタリー／教養</category>
+  </programme>
+  <programme start="20261018113500 +0900" stop="20261018114500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5452">
+    <title lang="ja">赤ちゃんと一緒!▼どろんこ交流会〜稲刈り〜</title>
+    <desc lang="ja">食育の体験学習の場として開催されている『どろんこ交流会』。今回は、山都町で行われた子どもたちによる稲刈り体験と、生産者との楽しい交流会の様子をお送りします。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018114500 +0900" stop="20261018115000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5453">
+    <title lang="ja">家族のWA!〜想いを詩にのせて〜</title>
+    <desc lang="ja">「おとうさん」「おかあさん」への想いを詩につづる「こどもの詩コンクール」の受賞作品を紹介。特別賞・熊本朝日放送賞を受けた文徳学園文徳中学校3年・古閑誉さんの作品</desc>
+    <category lang="ja">趣味／教育</category>
+  </programme>
+  <programme start="20261018115000 +0900" stop="20261018120000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5454">
+    <title lang="ja">ANNニュース[字]</title>
+    <desc lang="ja">正確なニュース・情報をいち早くお伝えするANNニュース!テレビ朝日系列の放送局26局が総力をあげ、緻密な取材にもとづいたニュースを最新機材を駆使して放送します。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018120000 +0900" stop="20261018125500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5455">
+    <title lang="ja">マツコ&amp;有吉　かりそめ天国　ぶらり新幹線こだま旅 豊橋グルメ&amp;琵琶湖の絶景宿[再]</title>
+    <desc lang="ja">ずん飯尾和樹が新幹線こだまで愛知&amp;滋賀をぶらり旅!マツコが狙う豊橋の絶品タコス&amp;琵琶湖をひとり占めできる絶景宿を紹介!◇スマホで風景を上手に撮るコツは?</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018125500 +0900" stop="20261018132500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5456">
+    <title lang="ja">新婚さんいらっしゃい!「週刊少年ジャンプ」連載漫画家の大石浩二がデートで号泣[解][字]</title>
+    <desc lang="ja">『週刊少年ジャンプ』に連載していた人気漫画家・大石浩二が妻・山口めろんと登場。超奥手過ぎてファーストキスはまさかの結婚式!テレビ初公開の「結婚ジャンプ」とは!?</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018132500 +0900" stop="20261018135500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5457">
+    <title lang="ja">華丸丼と大吉麺【米所新潟・越後湯沢を散歩!雪国まいたけ収穫&amp;バーベキュー】[字]</title>
+    <desc lang="ja">米所・新潟シリーズ!今回はキノコには目がない大吉さんたっての希望で雪国まいたけ収穫へ!華大さんが「トイプードル!?」と呼ぶその大きさは?さらに炭火でバーベキュー</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018135500 +0900" stop="20261018135700 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5458">
+    <title lang="ja">KABウェザーライン</title>
+    <desc lang="ja">熊本県内を中心にお天気情報をお届けします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018135700 +0900" stop="20261018160000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5459">
+    <title lang="ja">BリーグONE　熊本ヴォルターズvsライジングゼファー福岡</title>
+    <desc lang="ja">りそなグループ　Bリーグ2026-2027シーズン　BリーグONE　熊本ヴォルターズとライジングゼファー福岡との対戦を生中継!めざせ頂点　熊本ヴォルターズ</desc>
+    <category lang="ja">スポーツ</category>
+  </programme>
+  <programme start="20261018160000 +0900" stop="20261018172500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5460">
+    <title lang="ja">富士通レディースゴルフ2026　最終日[字]</title>
+    <desc lang="ja">国内女子ゴルフツアーも残り7試合。
+大会3勝でホステスプロ、メジャー女王でもある古江彩佳が参戦!
+年間女王争いトップをひた走る桑木志帆に待ったをかけるのは…!?</desc>
+    <category lang="ja">スポーツ</category>
+  </programme>
+  <programme start="20261018172500 +0900" stop="20261018173000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5461">
+    <title lang="ja">KABウェザーライン</title>
+    <desc lang="ja">熊本県内を中心にお天気情報をお届けします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018173000 +0900" stop="20261018175500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5462">
+    <title lang="ja">ANNスーパーJチャンネル[字]</title>
+    <desc lang="ja">正確なニュース・情報をいち早くお伝えするANNニュース!テレビ朝日系列の放送局26局が総力をあげ、緻密な取材にもとづいたニュースを最新機材を駆使して放送します。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018175500 +0900" stop="20261018180000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5463">
+    <title lang="ja">ケービィーch(5)▼KABのイチオシ番組を紹介します♪</title>
+    <desc lang="ja">KABのおすすめの番組を紹介します。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018180000 +0900" stop="20261018185600 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5464">
+    <title lang="ja">相葉マナブ　マナブのおうちで秋の栗拾い&amp;絶品スイーツ　モンブラン&amp;フィナンシェ[字]</title>
+    <desc lang="ja">相葉くんが日本の素晴らしさを学ぶため、旬の食材で究極の料理作りに挑戦したり、いろんなものを手作りしたり体験学習をしながら成長していくロケバラエティー</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018185600 +0900" stop="20261018195000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5465">
+    <title lang="ja">ナニコレ珍百景　琵琶湖の先っちょで発見!湖底に沈む「超貴重なある物」一体なぜ?[字]</title>
+    <desc lang="ja">今夜の珍百景は…幻のグルメ続々!宝物みたいな究極フルーツ&amp;生産者はたった1人?幻の食材
+&amp;一子相伝!?室町時代から作られる高級イモ　そして琵琶湖の先っちょ大冒険</desc>
+    <category lang="ja">ドキュメンタリー／教養</category>
+  </programme>
+  <programme start="20261018195000 +0900" stop="20261018195400 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5466">
+    <title lang="ja">KABウェザーライン</title>
+    <desc lang="ja">熊本県内を中心にお天気情報をお届けします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018195400 +0900" stop="20261018205600 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5467">
+    <title lang="ja">ポツンと一軒家　亡き家族の記憶残る故郷…先祖代々守る裏山に“江戸時代の札所"!?[字]</title>
+    <desc lang="ja">衛星写真で発見!“何でこんな所に?"という場所にポツンと建つ一軒家を日本全国大捜索!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018205600 +0900" stop="20261018221500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5468">
+    <title lang="ja">有働Times[字]</title>
+    <desc lang="ja">日曜夜、有働由美子が視聴者をおもてなし!ニュースのナゼを独自視点で徹底深掘り▽千々岩官邸キャップ解説▽週末スポーツを超速報!▽片岡信和“ピアノ弾き語り天気"</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018221500 +0900" stop="20261018230900 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5469">
+    <title lang="ja">ドラマもうパパ!【親友の涙と秘密の初恋!】脚本・吉田恵里香×原菜乃華×堤真一![解][字]</title>
+    <desc lang="ja">脚本・吉田恵里香!身勝手なパパ(堤真一)に、娘(原菜乃華)がついに反発!?親友・俊也(塩崎太智)の涙の理由とは…。初恋相手の陽日(岩瀬洋志)と初めての家出!?</desc>
+    <category lang="ja">ドラマ</category>
+  </programme>
+  <programme start="20261018230900 +0900" stop="20261018231500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5470">
+    <title lang="ja">KABウェザーライン</title>
+    <desc lang="ja">熊本県内を中心にお天気情報をお届けします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018231500 +0900" stop="20261019001000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5471">
+    <title lang="ja">EIGHT-JAM 【山下達郎特集 完結編!SUPER BEAVER渋谷らプロの質問に回答】[字]</title>
+    <desc lang="ja">「JOY 2」をリリースした山下達郎にロングインタビュー!
+今回はライブだからこそ味わえる山下達郎の歌唱の魅力に迫る!
+プロたちからは歌唱に関する様々な質問が!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261019001000 +0900" stop="20261019010500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5472">
+    <title lang="ja">ありえへん∞世界 衝撃映像&amp;昭和世代vs令和世代!“ヤバい昭和の流行"大調査SP 後編</title>
+    <desc lang="ja">昭和の常識…令和の非常識!▼昭和おじさん“おしぼりで顔ふく"理由vsサザエさんで見る“寿司折"令和でも効果ある?▼体操・池谷兄弟の今…幸雄は詐欺3億・直樹は借金1億</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261019010500 +0900" stop="20261019011000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5473">
+    <title lang="ja">ケービィーch(5)▼KABのイチオシ番組を紹介します♪</title>
+    <desc lang="ja">KABのおすすめの番組を紹介します。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019011000 +0900" stop="20261019014000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5474">
+    <title lang="ja">さしよりご勘弁</title>
+    <desc lang="ja">熊本LOVE!!熊本を面白く!熊本を元気に!熊本大好き番組がついに誕生!熊本に超密着した視聴者が気になる情報をバラエティ豊かにお届けします!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261019014000 +0900" stop="20261019015500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5475">
+    <title lang="ja">バスケ☆FIVE〜日本バスケ応援宣言〜[字]</title>
+    <desc lang="ja">MCのハライチ澤部を中心にした日本バスケ応援番組☆日本代表、Bリーグ、Wリーグ、NBAに加え、高校バスケなど、知ってほしいバスケ情報を凝縮し全国にお伝えします!!</desc>
+    <category lang="ja">スポーツ</category>
+  </programme>
+  <programme start="20261019015500 +0900" stop="20261019020000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5476">
+    <title lang="ja">ケービィーch(5)▼KABのイチオシ番組を紹介します♪</title>
+    <desc lang="ja">KABのおすすめの番組を紹介します。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019020000 +0900" stop="20261019023000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5477">
+    <title lang="ja">テレメンタリー2026「命運〜日本人と認めない日本〜」[字]</title>
+    <desc lang="ja">フィリピンで現在も「無国籍」の状態に置かれている残留日本人2世。日本国籍回復の申請が却下されたのは「違憲」なのか?なぜ命運が分かれることになったのか?</desc>
+    <category lang="ja">ドキュメンタリー／教養</category>
+  </programme>
+  <programme start="20261019023000 +0900" stop="20261019030000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5478">
+    <title lang="ja">お買い物情報</title>
+    <desc lang="ja">お買い物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019030000 +0900" stop="20261019033000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5479">
+    <title lang="ja">お買い物情報</title>
+    <desc lang="ja">お買い物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019033000 +0900" stop="20261019033500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5480">
+    <title lang="ja">クロージング</title>
+    <desc lang="ja"> </desc>
+  </programme>
+  <programme start="20261019045000 +0900" stop="20261019052000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5481">
+    <title lang="ja">お買い物情報</title>
+    <desc lang="ja">お買い物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019052000 +0900" stop="20261019052500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5482">
+    <title lang="ja">おはようケービィー</title>
+    <desc lang="ja">1日のスタートをケービィーダンスで!</desc>
+  </programme>
+  <programme start="20261019052500 +0900" stop="20261019080000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5483">
+    <title lang="ja">グッド!モーニング[デ][字]</title>
+    <desc lang="ja">けさ知っておきたいニュースを独自目線でわかりやすく伝えます。依田さんの「お天気検定」、「ニュース検定」、「エンタメ検定」にも挑戦しよう!</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019080000 +0900" stop="20261019095500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5484">
+    <title lang="ja">羽鳥慎一モーニングショー[字]</title>
+    <desc lang="ja">羽鳥慎一が毎日の様々なニュースを、分かりやすくお伝えします。暮らしをよりよくする情報はもちろん、難しいことは何が問題なのか、パネルを駆使して読み解きます。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019095500 +0900" stop="20261019100500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5485">
+    <title lang="ja">朝にtouch!▼熊本の気になる「時事」「旬」「トレンド」をお伝えします!</title>
+    <desc lang="ja">「くまもとLive touch」(月〜金夕方6時15分)で放送した特集やグルメから厳選!もう一度伝えたい情報をお届けします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019100500 +0900" stop="20261019104000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5486">
+    <title lang="ja">ちょっとタビ好キ▼2023年総集編</title>
+    <desc lang="ja">前川清&amp;愉快なタビ好キファミリーが“旅手形"に刻まれたキーワードを頼りにふれあい珍道中を繰り広げる“笑顔まんてんタビ好キ"の短縮版。ほっこり笑顔で幸せ家族。</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261019104000 +0900" stop="20261019130000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5487">
+    <title lang="ja">大下容子ワイド!スクランブル[字]</title>
+    <desc lang="ja">スタジオの気鋭の識者たちが、視聴者に知っておいてもらいたい情報、抱いている疑問を深掘り解説!</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019130000 +0900" stop="20261019133000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5488">
+    <title lang="ja">徹子の部屋　沢田亜矢子[字]</title>
+    <desc lang="ja">〜喜寿を迎え…熱中症で命の危険を感じ〜沢田亜矢子さんが今日のゲストです。</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261019133000 +0900" stop="20261019134500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5489">
+    <title lang="ja">DAIGOも台所　〜きょうの献立　何にする?〜基本のキ!ホワイトソースドリア[字]</title>
+    <desc lang="ja">冷蔵庫の食材管理もしながら、家族の好みや栄養バランス、肉・魚・野菜のローテーションも考えて献立を決めるのは本当に大変…日々の料理の悩みにこたえる献立を提案!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261019134500 +0900" stop="20261019135000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5490">
+    <title lang="ja">知っ得!見聞録</title>
+    <desc lang="ja">気になる情報をいち早く!新商品やイベント情報、プレゼント・キャンペーン情報など、皆さまの生活の役に立つ、知って得する情報をお届けします!</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019135000 +0900" stop="20261019142000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5491">
+    <title lang="ja">お買い物情報</title>
+    <desc lang="ja">お買い物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019142000 +0900" stop="20261019145200 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5492">
+    <title lang="ja">ぽっかぽか2</title>
+    <desc lang="ja">「素直なままでいいですか?」(5)</desc>
+    <category lang="ja">ドラマ</category>
+  </programme>
+  <programme start="20261019145200 +0900" stop="20261019155000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5493">
+    <title lang="ja">臨場　続章　#05[再]</title>
+    <desc lang="ja">『カウントダウン〜タロが報せた死』病死に見える老人の孤独死!?死因に不審を抱く倉石(内野聖陽)!しかも、遺言状には、遺産を介護ヘルパー宛に・・・</desc>
+    <category lang="ja">ドラマ</category>
+  </programme>
+  <programme start="20261019155000 +0900" stop="20261019164800 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5494">
+    <title lang="ja">相棒　season3#17[再]</title>
+    <desc lang="ja">警視庁の窓際、“特命係"には二人だけ刑事がいる!クールで頭脳明晰な“杉下右京"と単純明快でホットな“亀山薫"が抜群のコンビネーションで難事件を解決!まさに相棒!</desc>
+    <category lang="ja">ドラマ</category>
+  </programme>
+  <programme start="20261019164800 +0900" stop="20261019181500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5495">
+    <title lang="ja">スーパーJチャンネル[字]</title>
+    <desc lang="ja">井澤健太朗、森山みなみ、三山賀子が「暮らし」につながる「きょうの出来事」をお伝えします。
+どこよりもまっすぐにニュースを深掘りします!</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019181500 +0900" stop="20261019190000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5496">
+    <title lang="ja">[生]くまもとLive touch　▼古書とAI　その光と影　▼がれきの下に本尊が…</title>
+    <desc lang="ja">▼古書を大量注文?　一方で読み解く手助けも　AIの光と影
+▼泊食分離に夜間の景観を楽しむ　菊池温泉街の挑戦</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019190000 +0900" stop="20261019215000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5497">
+    <title lang="ja">帰れマンデー見っけ隊!!&amp;Qさま!!　豪華2本立て3時間SP[デ][字]</title>
+    <desc lang="ja">『帰れマンデー見っけ隊!!』宇都宮サンド旅!プロが教える本当に美味しい餃子探し/20:30〜『Qさま!!』全国の中高生が選ぶ!本当に頭がいい天才偉人ランキング!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261019215000 +0900" stop="20261019215400 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5498">
+    <title lang="ja">KABウェザーライン</title>
+    <desc lang="ja">熊本県内を中心にお天気情報をお届けします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019215400 +0900" stop="20261019231000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5499">
+    <title lang="ja">報道ステーション[字]</title>
+    <desc lang="ja">「今」という世界を見つめる。激動の時代の流れと世界のうねりを真正面から。平日よる9時54分。大越健介キャスターがお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019231000 +0900" stop="20261019231500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5500">
+    <title lang="ja">ケービィーch(5)▼KABのイチオシ番組を紹介します♪</title>
+    <desc lang="ja">KABのおすすめの番組を紹介します。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019231500 +0900" stop="20261019234500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5501">
+    <title lang="ja">光一&amp;シゲのSHOWマン!![字]</title>
+    <desc lang="ja">今回のテーマは、東映のノウハウが詰まった太秦映画村!
+数々の名作が誕生したオープンセット!さらに!映画の世界に入り込める丁半博打やプロが選ぶ時代劇名シーンも!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261019234500 +0900" stop="20261020001500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5502">
+    <title lang="ja">くりぃむナンタラ　腰が抜けるほどの新事実が続々!! 「ダウ90000蓮見を知ろう!」[字]</title>
+    <desc lang="ja">何かと話題のダウ90000蓮見翔の深掘りクイズ!みなみかわ・Aマッソ加納など仲の良い芸人から衝撃情報が続々!今一番困っていることは、元カノとの共演!? 収録中にDM調査…</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261020001500 +0900" stop="20261020005000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5503">
+    <title lang="ja">見取り図じゃん</title>
+    <desc lang="ja">芸能界のてっぺんを目指す見取り図の冠番組
+毎週様々な企画&amp;やりたいことを実現、目指すは天下の大MC!!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261020005000 +0900" stop="20261020015000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5504">
+    <title lang="ja">ぼる部屋　焼き肉系列食堂で夢の定食爆食&amp;箱崎絶品台湾茶かき氷</title>
+    <desc lang="ja">コスパ最高!焼肉店系列の大衆食堂で夢の定食を爆食▽箱崎散歩!絶品台湾茶かき氷に田辺感動</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261020015000 +0900" stop="20261020015500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5505">
+    <title lang="ja">ケービィーch(5)▼KABのイチオシ番組を紹介します♪</title>
+    <desc lang="ja">KABのおすすめの番組を紹介します。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261020015500 +0900" stop="20261020022500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5506">
+    <title lang="ja">お買い物情報</title>
+    <desc lang="ja">お買い物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261020022500 +0900" stop="20261020025500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5507">
+    <title lang="ja">お買い物情報</title>
+    <desc lang="ja">お買い物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261020025500 +0900" stop="20261020032500 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5508">
+    <title lang="ja">お買い物情報</title>
+    <desc lang="ja">お買い物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261020032500 +0900" stop="20261020033000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5509">
+    <title lang="ja">クロージング</title>
+    <desc lang="ja"> </desc>
+  </programme>
+  <programme start="20261020040000 +0900" stop="20261020045000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5510">
+    <title lang="ja">おはよう天気</title>
+    <desc lang="ja">熊本県内各地のお天気、気象情報をお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261020045000 +0900" stop="20261020052000 +0900" channel="KAB.jp" broadcast="terrestrial" service-id="57384" event-id="5511">
+    <title lang="ja">お買い物情報</title>
+    <desc lang="ja">お買い物情報</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261015233000 +0900" stop="20261016001500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40375">
+    <title lang="ja">Live News α【新たな“台風”進路は▼セパＣＳファイナル】[字]</title>
+    <desc lang="ja">新たな“台風”進路は▽中朝間の新大橋開通▽セパＣＳファイナル▽川崎桜×フィギュア</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016001500 +0900" stop="20261016011500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40376">
+    <title lang="ja">英太郎のかたらんね【からし蓮根を作る会社へ！体を張って全力お手伝い】[再]</title>
+    <desc lang="ja">今回の「全力お手伝い！おがったサービス」は八代市でからし蓮根などを製造する会社へ。被災しながらも頑張る皆さんの力になったのか?アレンジレシピも。</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016011500 +0900" stop="20261016014500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40377">
+    <title lang="ja">もっこすちんねんのスリーピース[再]</title>
+    <desc lang="ja">もっこすファイヤーとちんねんがあらゆる隙間に頭をハメていく人間パズル番組！世の男性諸君必見！「好き」の合図を見逃すな！女子が告白のつもりで言ってるセリフ調査。</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016014500 +0900" stop="20261016015000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40378">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja">各地の天気予報をお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016015000 +0900" stop="20261016022000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="41234">
+    <title lang="ja">買い物情報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016045000 +0900" stop="20261016045500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40387">
+    <title lang="ja">おめざめ天気</title>
+    <desc lang="ja">おはようございます。朝一番の各地の天気予報をお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016045500 +0900" stop="20261016052500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="41195">
+    <title lang="ja">買い物情報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016052500 +0900" stop="20261016090000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40389">
+    <title lang="ja">めざましテレビ【１３年ぶり台風30号/独占密着BMSGフェス】[デ]</title>
+    <desc lang="ja">１３年ぶり台風３０号列島いつ接近？進路は▼エスカレーター出火▼「値上げマヒ」６割対抗でお得も最新情報▼独占密着!BMSG▼芦田愛菜&amp;高橋文哉▼米へ織田投手が会見</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016090000 +0900" stop="20261016095000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40392">
+    <title lang="ja">ノンストップ！▼働き盛り女性体力低下スキマでできる運動は▼夜活ツタンカーメン[字]</title>
+    <desc lang="ja">働き盛り女性体力低下スキマでできる運動は▼生活に直結するニュース・天気＆注目のスポーツ・エンタメ・生活情報まで！旬な情報を、明るく・ノンストップ！でお届けします</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016095000 +0900" stop="20261016105000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40393">
+    <title lang="ja">英太郎のかたらんね【８時間旅は福岡柳川で観て作って絶品に舌鼓！】[生]</title>
+    <desc lang="ja">今回の、日帰り旅を提案する８時間旅は福岡・柳川市へ。板海苔の手作りに挑戦！ランチ探しは空振り続き…しかし、その先にまさかの一皿が。</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016105000 +0900" stop="20261016112000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="41280">
+    <title lang="ja">買い物情報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016112000 +0900" stop="20261016112500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40395">
+    <title lang="ja">タウンTOWN</title>
+    <desc lang="ja">熊本県内のイベント・新商品・オススメ情報を満載してお届け!</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261016112500 +0900" stop="20261016113000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40396">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja">各地の天気予報をお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016113000 +0900" stop="20261016114700 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40397">
+    <title lang="ja">Live News days【高市総理VS辻元議員…任命責任を追及】[字]</title>
+    <desc lang="ja">農水大臣１カ月足らずで交代…野党が総理の任命責任追及へ▽不正アクセスの情報漏えい続く…さらなる被害拡大は▽３連敗崖っぷちのドジャース…大谷反撃の一発は</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016114700 +0900" stop="20261016135000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40398">
+    <title lang="ja">ぽかぽか【磯村勇斗＆Ａぇ末澤が映画撮影(秘)ウラ話暴露▽麻辣湯の具材をぴったんこ】[字]</title>
+    <desc lang="ja">磯村がすごいと思った末澤の演技は？綾野剛は芸能界のメンター的存在？▽地元・静岡で映画祭プロデュース!?▽大人気!投扇興で高得点を目指せ▽岩井の代打にSHELLY</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016135000 +0900" stop="20261016154500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40399">
+    <title lang="ja">とれたてっ！[字][デ] 王将・社長射殺判決▼人気芸人のがん告白▼地球上最悪の侵略的植物</title>
+    <desc lang="ja">▼「餃子の王将」社長射殺事件 判決速報▼驚異の繁殖力『地球上最悪の侵略的植物』が拡大▼人気芸人のがん告白▼台風３０号発生</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016154500 +0900" stop="20261016190000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40403">
+    <title lang="ja">TKU Live News【熊本のニュースは午後６時９分〜】[字][生]</title>
+    <desc lang="ja">▽熊本の最新ニュース・天気は６時９分から(1)八代市の新庁舎建設めぐる事件の初公判…(2)今年はどんなドラマが…ツール・ド・九州(3)アクセスランキング</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261016190000 +0900" stop="20261016200000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40404">
+    <title lang="ja">坂上どうぶつ王国▼エキゾチック動物病院密着！次々駆け込む珍獣達の小さな命を救え[字]</title>
+    <desc lang="ja">フクロウ・サル・ヤギ・トカゲまで全国から珍獣が殺到する動物病院に密着▽体重800gのミーアキャットが超難関手術！米粒ほどの骨を救うスゴ腕獣医</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016200000 +0900" stop="20261016210000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40405">
+    <title lang="ja">ウワサのお客さま▼元大関・琴欧洲の秘伝レシピ続々！鳴戸部屋の豪快差し入れBBQ[字]</title>
+    <desc lang="ja">▼大相撲・鳴戸部屋の豪華差し入れ食材を使ったBBQに密着！元大関・琴欧洲が作る冷製ちゃんこ▼人気スーパー・ヤオコーに通う人気芸能人は誰？おいしさの秘密</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016210000 +0900" stop="20261016215800 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40406">
+    <title lang="ja">かまいたちの瞬間回答！〜６０秒でお悩み解決〜▼ファミマ＆味の素冷凍食品工場SP[字]</title>
+    <desc lang="ja">味の素冷凍食品＆ファミリーマート工場潜入ＳＰ人気商品裏ワザ大公開！爆売れおにぎり超絶(秘)ワザ＆圧倒的人気チキンの裏側▼冷凍ギョーザ＆チャーハン簡単レシピ</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016215800 +0900" stop="20261016225200 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40407">
+    <title lang="ja">タイムレスマン 女性９９人と木村佳乃が審査！創作トースト＆爆笑似顔絵センス対決[字]</title>
+    <desc lang="ja">ポテトサラダから納豆・韓国風キムチまで…明日マネできるオリジナルトーストが続々！似顔絵対決にモナリザ・手羽先・巨人師匠？子どもが大好きウサギスクイーズ</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016225200 +0900" stop="20261016230000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40408">
+    <title lang="ja">中原丈雄の味わいの刻</title>
+    <desc lang="ja">料理の味を引き出す本格米焼酎を片手に、味わい人「中原丈雄」が、プロの太鼓判の一皿をご案内します。</desc>
+  </programme>
+  <programme start="20261016230000 +0900" stop="20261016233000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40409">
+    <title lang="ja">全力！脱力タイムズ【錦鯉長谷川＆久保史緒里▼春の次は夏だからですよ!?】[字][解]</title>
+    <desc lang="ja">超難問クイズに連続正解してギャップ萌え!!錦鯉長谷川インテリ化計画▼元乃木坂４６久保史緒里の知性低レベルに衝撃!?▼「1000万!」絶叫で高額賞金ゲット!?</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261016233000 +0900" stop="20261017000000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40411">
+    <title lang="ja">＜ノイタミナ&gt;TVアニメ ホタルの嫁入り #02[字][解][デ]</title>
+    <desc lang="ja">攫われて謎多き島・天女島に辿り着いた紗都子は、進平と共に島を巡る中で、見たことのない世界を目の当たりにする</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261017000000 +0900" stop="20261017004500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40412">
+    <title lang="ja">Live News α【簗氏辞任も…国会攻防▼CS突破へ!第3戦】[字]</title>
+    <desc lang="ja">簗氏辞任も…国会攻防参院予算委で野党追及▽ＣＳ突破へ！第３戦▽正念場ド軍反撃は?</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017004500 +0900" stop="20261017011500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40413">
+    <title lang="ja">おかべろ コブクロ万博の裏側ぶっちゃけ[字]</title>
+    <desc lang="ja">コブクロが万博のとんでもない裏話をひっさげ１年ぶりの登場!
+てんやわんやの開会式の裏側、ミャクミャクとの絆、万博での大失態など、衝撃のウラ側をぶっちゃけまくる!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017011500 +0900" stop="20261017013000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40414">
+    <title lang="ja">ナイトマガジン</title>
+    <desc lang="ja">旬な情報やお得な情報・話題を満載してお届けする深夜の情報便。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017013000 +0900" stop="20261017023000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40415">
+    <title lang="ja">英太郎のかたらんね【８時間旅は福岡柳川で観て作って絶品に舌鼓！】[再]</title>
+    <desc lang="ja">今回の、日帰り旅を提案する８時間旅は福岡・柳川市へ。板海苔の手作りに挑戦！ランチ探しは空振り続き…しかし、その先にまさかの一皿が。</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017023000 +0900" stop="20261017030000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="41016">
+    <title lang="ja">買い物情報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017042500 +0900" stop="20261017043000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40426">
+    <title lang="ja">おめざめ天気</title>
+    <desc lang="ja">おはようございます。朝一番の各地の天気予報をお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017043000 +0900" stop="20261017050000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="41419">
+    <title lang="ja">買い物情報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017050000 +0900" stop="20261017053000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="41231">
+    <title lang="ja">買い物情報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017053000 +0900" stop="20261017060000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40429">
+    <title lang="ja">[新]僕らが選んだベストアドベンチャー【デジモンアドベンチャー】 ＃１[字][解]</title>
+    <desc lang="ja">『デジモンアドベンチャー』第１話「漂流？冒険の島!」</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261017060000 +0900" stop="20261017083000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40430">
+    <title lang="ja">めざましどようび 乾燥で枯れ肌に注意／絶景！紅葉サイクリング[字][デ]</title>
+    <desc lang="ja">緊急地震速報なぜ誤報新幹線が停車…混乱も▼台風３０号最新進路▼乾燥で枯れ肌に注意▼イチゴや魚に異業種▼大谷２カ月ぶりＨＲ▼ミセス×旅のしおり▼紅葉サイクリング!</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017083000 +0900" stop="20261017095500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40431">
+    <title lang="ja">土曜はナニする！？[字] ★スタバ秋の新作＆世界一の注文術★高橋文哉の東京下町ツアー</title>
+    <desc lang="ja">★スターバックス秋の新作ＳＰキャラメルマキアートが超進化＆世界一のバリスタ直伝の注文術！★高橋文哉＆細田佳央太の東京下町旅！話題ドラマの舞台裏＆超絶絶品！町中華</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017095500 +0900" stop="20261017102500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40432">
+    <title lang="ja">新ドラマ！南田南弁護士は天才肌＆小麦とバターと復讐と 徹底解剖SP</title>
+    <desc lang="ja">新ドラマ！芦田愛菜主演の月１０ドラマ「南田南弁護士は天才肌」と伊原六花主演の水ドラ★イレブン「小麦とバターと復讐と」の見どころを徹底解説！撮影の裏側も大公開!</desc>
+    <category lang="ja">ドラマ</category>
+  </programme>
+  <programme start="20261017102500 +0900" stop="20261017103000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40433">
+    <title lang="ja">WELL-BEING FRONTIER</title>
+    <desc lang="ja">新スローガン「ウェルビーイング・フロンティア」を掲げ、QOL豊かな熊本の未来を目指す桜十字の姿を紹介。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017103000 +0900" stop="20261017110000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40434">
+    <title lang="ja">七人の侍(おじさん)だけ。</title>
+    <desc lang="ja">個性豊かな７人のローカルおじさんタレントが集結して、やりたいことをやりたいままに遊びつくす！今回はおじさんの絵画企画第2弾!!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017110000 +0900" stop="20261017110500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40435">
+    <title lang="ja">リズム!TKU</title>
+    <desc lang="ja">「暮らしのリズムに！」「街にリズムを！」この時間は、あなたのリズムにピッタリの、TKUの番組やイベントを紹介します。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017110500 +0900" stop="20261017113500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40749">
+    <title lang="ja">買い物情報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017113500 +0900" stop="20261017114500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40437">
+    <title lang="ja">TKUくらしの窓</title>
+    <desc lang="ja">熊本県内外の企業や新商品の紹介、イベントなどくらしに密着した旬な情報をお届けします。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017114500 +0900" stop="20261017115000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40438">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja">各地の天気予報をお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017115000 +0900" stop="20261017120000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40439">
+    <title lang="ja">Live News days[字]</title>
+    <desc lang="ja">週末の昼も「ライブニュース デイズ」をお見逃しなく。民放で最大級の全国ネットワークを持つFNNの記者が取材したニュースをお届けします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017120000 +0900" stop="20261017130000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40440">
+    <title lang="ja">開運！なんでも鑑定団【世界2点目!?幻のブリキ玩具&amp;明治時代の至宝にド級値】[再]</title>
+    <desc lang="ja">世界で2点目!?&lt;ブリキの東京駅＞＆伊勢で発見!&lt;円山応挙&gt;の掛け軸にド級値■宿場町の名家の蔵に眠る…明治時代の日本が誇る工芸品＜金唐紙＞に衝撃鑑定額が!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017130000 +0900" stop="20261017143000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40441">
+    <title lang="ja">YOUは何しに日本へ?</title>
+    <desc lang="ja">日本縦断2500kmの自転車旅</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017143000 +0900" stop="20261017163000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40442">
+    <title lang="ja">奇跡体験！アンビリバボー 世界のUFO・UMA!! 特大スクープSP!![再][字]</title>
+    <desc lang="ja">日本のテレビ独占取材!!ビッグフットの遺体がついに発見された!?驚愕のＤＮＡ鑑定も!!▽話題沸騰!!観測史上３例目のナゾ天体…実は宇宙人が作った偵察機!?</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017163000 +0900" stop="20261017172500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40443">
+    <title lang="ja">若っ人ランド【若っ人ドリーマー湧心館高校編／高村フィッシング倶楽部】</title>
+    <desc lang="ja">▼高村フィッシング倶楽部!
+1年ぶりの鮎を求めて人吉へ！しかし…!?
+▼若っ人ドリーマー・湧心館高校編
+果たして願いを叶える生徒は誰だ!?</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017172500 +0900" stop="20261017173000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40444">
+    <title lang="ja">お知らせ</title>
+    <desc lang="ja"> </desc>
+  </programme>
+  <programme start="20261017173000 +0900" stop="20261017180000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40445">
+    <title lang="ja">TKU Live News[字]</title>
+    <desc lang="ja">広く秋晴れ夏日続出…行楽日和の各地▼プロ野球ＣＳファイナル崖っぷちの阪神は▼福岡県議会が百条委設置へ未明の採決▼高市総理は「真榊」奉納…靖国神社で秋の例大祭</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261017180000 +0900" stop="20261017183000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40446">
+    <title lang="ja">MUSIC FAIR【アイナ/緑黄色社会/なにわ男子/『RENT』】[字][解]</title>
+    <desc lang="ja">アイナ×長屋晴子が「GLAMOROUS SKY」を仲良しコラボ！なにわ男子「Moonlit」アイナ「ルミナス」緑黄色社会「TABOO」ミュージカル『RENT』も</desc>
+    <category lang="ja">音楽</category>
+  </programme>
+  <programme start="20261017183000 +0900" stop="20261017205400 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40447">
+    <title lang="ja">世界！爆笑おバカ＆爽快映像ＧＰ★本当にあった！爆笑＆スカッとする瞬間映像大連発[字]</title>
+    <desc lang="ja">(1)おバカ発明博覧会(2)自滅おじさん(3)股間直撃もん絶クマ(4)メジャー超プレー(5)巨大魚と壮絶格闘(6)スイカ爆笑赤ちゃん(7)爆破解体</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017205400 +0900" stop="20261017210000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40448">
+    <title lang="ja">GO!くまモン☆ナビ</title>
+    <desc lang="ja">第２２回「くまもと県民交流館パレア〜県民みんなの交流拠点〜」</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261017210000 +0900" stop="20261017231000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40449">
+    <title lang="ja">土曜プレミアム・高校アカペラ日本一決定戦！ハモネプハイスクール2026[字]</title>
+    <desc lang="ja">▼上沼恵美子＆粗品＆こっちのけんと＆山田裕貴が審査!▼Ado!嵐!玉置浩二!ミセス!M!LK!緑黄色社会!米津玄師…名曲を声だけで奏でる頂上決戦!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017231000 +0900" stop="20261017234000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40450">
+    <title lang="ja">さんまのお笑い向上委員会▼女芸人恋愛事情！カーネーション吉田の乙女心を強制開花[字]</title>
+    <desc lang="ja">引き締め芸人カーネーション吉田の裏に隠れた不器用な隠れ乙女心を呼び戻せ！若手女芸人合コン軍団をおばちゃん芸人が引き締め！山添＆レインボーのスキャンダル</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261017234000 +0900" stop="20261018003500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40451">
+    <title lang="ja">土ドラ・再生のウズメ ＃０３[字]【イモトアヤコ主演・家出少女と「繋がる思い」】</title>
+    <desc lang="ja">「友達いない…」元ひきこもり４０才！便利屋で人生再生中！家出少女の捜索からまさかの女のバトル勃発！？仲間が抱える傷を知り痛む心。繋がる思いはいつか救いになる!</desc>
+    <category lang="ja">ドラマ</category>
+    <icon src="https://tvguide.myjcom.jp/monomedia/sirc/470000/477237/image/b9e9f376928fb2964659ce7a4cdd2cda.jpg" />
+  </programme>
+  <programme start="20261018003500 +0900" stop="20261018004500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40452">
+    <title lang="ja">FNNニュース＆スポーツ</title>
+    <desc lang="ja">土曜日の締めは「FNNニュース＆スポーツ」!FNN各局が国内外でキャッチしたニュースを、さらに注目のスポーツをまとめて、「土曜日」をしっかり報じます</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018004500 +0900" stop="20261018014000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40453">
+    <title lang="ja">踊る大捜査線＃１ 後編[再][字]</title>
+    <desc lang="ja">「サラリーマン刑事と最初の難事件」</desc>
+    <category lang="ja">ドラマ</category>
+  </programme>
+  <programme start="20261018014000 +0900" stop="20261018021000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40454">
+    <title lang="ja">晩酌の流儀５〜夏編〜＃９「やみつきよだれ鯖」</title>
+    <desc lang="ja">栗山千明主演！究極の晩酌に全てを捧げる伊澤美幸( 栗山千明) はある日、事故物件を求める謎の客・小畑礼子( 工藤遥) の物件探しを担当する。</desc>
+    <category lang="ja">ドラマ</category>
+  </programme>
+  <programme start="20261018021000 +0900" stop="20261018030500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40455">
+    <title lang="ja">若っ人ランド【若っ人ドリーマー湧心館高校編／高村フィッシング倶楽部】[再]</title>
+    <desc lang="ja">▼高村フィッシング倶楽部!
+1年ぶりの鮎を求めて人吉へ！しかし…!?
+▼若っ人ドリーマー・湧心館高校編
+果たして願いを叶える生徒は誰だ!?</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018042000 +0900" stop="20261018042500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40461">
+    <title lang="ja">おめざめ天気</title>
+    <desc lang="ja">おはようございます。朝一番の各地の天気予報をお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018042500 +0900" stop="20261018045500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="41461">
+    <title lang="ja">買い物情報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018045500 +0900" stop="20261018052500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="41277">
+    <title lang="ja">買い物情報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018052500 +0900" stop="20261018053000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40464">
+    <title lang="ja">GO!くまモン☆ナビ[再]</title>
+    <desc lang="ja">第２２回「くまもと県民交流館パレア〜県民みんなの交流拠点〜」</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018053000 +0900" stop="20261018060000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40465">
+    <title lang="ja">田村亮の釣りならまかせろ!</title>
+    <desc lang="ja">★放送300回記念★シマアジならまかせろ！前編</desc>
+    <category lang="ja">趣味／教育</category>
+  </programme>
+  <programme start="20261018060000 +0900" stop="20261018061500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40466">
+    <title lang="ja">FNNニュース[字]</title>
+    <desc lang="ja">日曜日の朝は「FNNニュース」。コンパクトながら情報満載。全国のＦＮＮ系列の記者がしのぎを削って集めたニュースをしっかりお届けします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018061500 +0900" stop="20261018063000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40467">
+    <title lang="ja">カンゲキ!博多座#79</title>
+    <desc lang="ja">歌舞伎にミュージカル、宝塚歌劇、歌謡ショーなど、博多座で上演する舞台作品について独占インタビュー、稽古場映像などを交え最新情報をお届けします！お楽しみに!</desc>
+    <category lang="ja">趣味／教育</category>
+  </programme>
+  <programme start="20261018063000 +0900" stop="20261018070000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40468">
+    <title lang="ja">ポケモンとどこいく!?#233</title>
+    <desc lang="ja">さいやくポケモン襲来！？幸運をゲットせよ</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261018070000 +0900" stop="20261018085500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40469">
+    <title lang="ja">SUNDAYブレイク. 住宅のプロ222人が選ぶ!今狙い目都内オススメエリア[字][多]</title>
+    <desc lang="ja">住宅のプロ２２２人が選ぶ！“都内オススメエリア”ベスト５▽マーラータンの次は回転火鍋！？▽ディズニークルーズ船名発表！クルーズ新トレンドは「近・短」</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018085500 +0900" stop="20261018090000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40471">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja">各地の天気予報をお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018090000 +0900" stop="20261018093000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40472">
+    <title lang="ja">ポケットモンスター#152</title>
+    <desc lang="ja">ともっこ襲来！モモワロウの決断!!</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261018093000 +0900" stop="20261018100000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40473">
+    <title lang="ja">テレビアニメ「鬼滅の刃」シリーズ全編再放送【無限列車編】[字][解][デ]</title>
+    <desc lang="ja">「無限列車編」第二話『深い眠り』</desc>
+    <category lang="ja">アニメ／特撮</category>
+    <icon src="https://tvguide.myjcom.jp/monomedia/sirc/470000/478162/image/ac929dc8fc09dc0880168f73d2a37ed5.jpg" />
+  </programme>
+  <programme start="20261018100000 +0900" stop="20261018111500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40474">
+    <title lang="ja">かのサンド◆念願の!狩野英孝VSサンドウィッチマン！釣り＆ゴルフ対決SP[字]</title>
+    <desc lang="ja">絶品グルメをかけて大勝負！伊達がやりたかった釣り＆ゴルフで対決ＳＰ▼有村智恵プロ参戦！勝負の行方は？▼北海道のチーズスイーツに舌つづみ▼</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018111500 +0900" stop="20261018114500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40475">
+    <title lang="ja">ミラモンGOLD[字]</title>
+    <desc lang="ja">ミライに羽ばたく金のタマゴ応援番組。ホッケー・吉岡真大（高３）インターハイで7得点!MVPに輝きチームを3連覇に導いた超逸材が二冠目・国スポに挑む!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018114500 +0900" stop="20261018115000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40476">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja">各地の天気予報をお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018115000 +0900" stop="20261018120000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40477">
+    <title lang="ja">Live News days[字]</title>
+    <desc lang="ja">週末の昼も「ライブニュース デイズ」をお見逃しなく。民放で最大級の全国ネットワークを持つFNNの記者が取材したニュースをお届けします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018120000 +0900" stop="20261018130000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40478">
+    <title lang="ja">開運！なんでも鑑定団【幻のミニカー40台&amp;桂文治一門に伝わる秘宝にド級値】</title>
+    <desc lang="ja">桂文治一門に伝わる中国硯にド級値▼ガレの花瓶＆ミュシャのランプ&amp;約160 年前のオルゴール…西洋の美が集結▼激レア！北欧ミニカー４０台の鑑定結果にスタジオ騒然!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018130000 +0900" stop="20261018150000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40479">
+    <title lang="ja">世界の給与明細【フランス観光バイトで月収４０万円超＆ハンガリー消費税27%】</title>
+    <desc lang="ja">少子化対策がスゴい国SP▼ハンガリー…出生率30%UP秘策!子ども3人で税金ゼロ!?▼フランス…ライトな結婚！？謎の制度“パックス”とは？不倫しても離婚の慰謝料ゼロ</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261018150000 +0900" stop="20261018160000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40480">
+    <title lang="ja">競馬BEAT 【秋華賞】牝馬三冠最終戦!4戦無敗の逸材登場▽井森美幸▽菅井友香</title>
+    <desc lang="ja">新ヒロイン誕生へ！史上４頭目の無敗Ｖか？武豊が導く前哨戦の覇者か？春のクラシック活躍馬か？▽元ジョッキーの豪華解説！安藤勝己＆細江純子▽シャンプーハット恋さん</desc>
+    <category lang="ja">スポーツ</category>
+  </programme>
+  <programme start="20261018160000 +0900" stop="20261018170000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40481">
+    <title lang="ja">救命病棟24時【江口洋介×松嶋菜々子!16年ぶりに最強タッグ復活】 #1[再][解]</title>
+    <desc lang="ja">医療ドラマの金字塔が再始動！▼主題歌は今作もドリカム新曲!2026年現代で奮闘する医師たちの新たな救命物語が幕をあける▼豪華キャストたちが集結!</desc>
+    <category lang="ja">ドラマ</category>
+  </programme>
+  <programme start="20261018170000 +0900" stop="20261018173000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40482">
+    <title lang="ja">若きクリエーターが未体験のアプリ開発に挑む SPAJAM2026九州予選会</title>
+    <desc lang="ja">２４時間でアプリを開発するアプリ開発技術者の大会SPAJAM。その九州予選会の模様をお届けします。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018173000 +0900" stop="20261018180000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40483">
+    <title lang="ja">TKU Live News[字]</title>
+    <desc lang="ja">週末に国内外で起きたニュース＆スポーツを一挙紹介。最新天気も合わせてどこよりも早く正確な内容でお届けします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261018180000 +0900" stop="20261018183000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40484">
+    <title lang="ja">ちびまる子ちゃん【ヒロシ、憧れのビールかけ／お母さんの栗ごはん】[字][解]</title>
+    <desc lang="ja">「ヒロシ、憧れのビールかけ」の巻
+「お母さんの栗ごはん」の巻</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261018183000 +0900" stop="20261018190000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40485">
+    <title lang="ja">サザエさん【タラちゃんのポケット／僕たち兄妹 ほか】[字][解][デ]</title>
+    <desc lang="ja">▽満員電車はつらいよ
+▽タラちゃんのポケット
+▽僕たち兄妹</desc>
+    <category lang="ja">アニメ／特撮</category>
+    <icon src="https://tvguide.myjcom.jp/monomedia/sirc/470000/478163/image/976eb0da7b9e524c90b8225f97668201.jpg" />
+  </programme>
+  <programme start="20261018190000 +0900" stop="20261018210000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40486">
+    <title lang="ja">千鳥の鬼レンチャン◆サビカラ女祭り！歴史が動く？鬼ハード＆最年少鬼レンへ挑戦[字]</title>
+    <desc lang="ja">丘みどり２年ぶりの帰還…ソロ＆タッグ＆鬼ハード３冠達成で歴史に名を刻むか▽ラブワン藤咲…最年少鬼レン更新なるか▽時をかける河邑ミク▽鬼レンの教祖宇徳様</desc>
+    <category lang="ja">音楽</category>
+    <icon src="https://tvguide.myjcom.jp/monomedia/sirc/470000/477910/image/29dad25ac71111b5aae0760d7aedf9a9.jpg" />
+  </programme>
+  <programme start="20261018210000 +0900" stop="20261018230900 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40487">
+    <title lang="ja">Mr.サンデー[字][デ]</title>
+    <desc lang="ja">日曜夜の情報LIVEショー▼１週間の話題総ざらい！速報＆スクープ＆物語徹底取材▼再現ドラマで描く心温まる感動物語▼宮根＆小室＆旬のゲストがぶっちゃける</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018230900 +0900" stop="20261018231500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40489">
+    <title lang="ja">リズム!TKU</title>
+    <desc lang="ja">「暮らしのリズムに！」「街にリズムを！」この時間は、あなたのリズムにピッタリの、TKUの番組やイベントを紹介します。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261018231500 +0900" stop="20261018234500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40490">
+    <title lang="ja">ドラゴンボール超 ビルス[字][解]</title>
+    <desc lang="ja">鳥山明が原作・ストーリー・キャラクターデザインを手掛ける「ドラゴンボール超」が“エンハンスド版”で登場！破壊神と悟空たちの超絶バトルが幕を開ける!</desc>
+    <category lang="ja">アニメ／特撮</category>
+  </programme>
+  <programme start="20261018234500 +0900" stop="20261019005500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40491">
+    <title lang="ja">すぽると![字]</title>
+    <desc lang="ja">キャプテンは元高校球児のバカリズム！モットーは独自目線×独自取材▼週末スポーツをバカリズム独自の切り口で楽しく詳しく分かりやすく！新時代スポーツショー</desc>
+    <category lang="ja">スポーツ</category>
+  </programme>
+  <programme start="20261019005500 +0900" stop="20261019012500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40492">
+    <title lang="ja">川島明の辞書で呑む 【せ】をツマミに酒を呑む「日本語の夏フェス今年も開催SP」</title>
+    <desc lang="ja">サーヤは再開を喜ぶ。尾崎世界観は名前の由来を語る。岸本は賤劣な毒を吐く。ウイカは井蛙に気づく。渡辺銀次40歳は全熟に疑問を抱く。村上は正反合の良例を皆に求める。</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261019012500 +0900" stop="20261019022000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40493">
+    <title lang="ja">FNSドキュメンタリー大賞 帰る場所を閉じるとき〜家じまいの決断〜</title>
+    <desc lang="ja">全国的に大きな社会問題となっている「家じまい」
+家を残しても処分しても、茨の道が待ち受ける。この選択に直面した家族に密着し、家を閉じる覚悟の裏にある想いを拾う。</desc>
+    <category lang="ja">ドキュメンタリー／教養</category>
+  </programme>
+  <programme start="20261019042000 +0900" stop="20261019042500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40507">
+    <title lang="ja">おめざめ天気</title>
+    <desc lang="ja">おはようございます。朝一番の各地の天気予報をお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019042500 +0900" stop="20261019045500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="41462">
+    <title lang="ja">買い物情報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019045500 +0900" stop="20261019052500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="41463">
+    <title lang="ja">買い物情報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019052500 +0900" stop="20261019090000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40510">
+    <title lang="ja">めざましテレビ[デ]</title>
+    <desc lang="ja">目覚める朝に新情報をニュース＆スポーツ＆エンタメ▽ココ調でギモン検証▽イマドキなトレンド▽話題深掘りカイトウ▽わんこ＆ロペ＆占い▽最新！あまゆか天気</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019090000 +0900" stop="20261019095000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40513">
+    <title lang="ja">ノンストップ![字]</title>
+    <desc lang="ja">ＭＣバナナマン設楽統▼生活に直結するニュース・天気＆注目のスポーツ・エンタメ・生活情報まで！旬な情報を、明るく・ノンストップ！でお届けします!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261019095000 +0900" stop="20261019105000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40514">
+    <title lang="ja">英太郎のかたらんね【平成界隈プチ自慢探し！驚きのチョコ＆プール】[生]</title>
+    <desc lang="ja">今回は、熊本市・平成界隈でおがっちが「わいさーし」なプチ自慢探し！チョコの概念が変わる？衝撃の一品が登場。</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261019105000 +0900" stop="20261019112000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="41278">
+    <title lang="ja">買い物情報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019112000 +0900" stop="20261019112500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40516">
+    <title lang="ja">健康リポート 医療大百科</title>
+    <desc lang="ja">気になる病気やケガの予防・治療法などについて専門家がアドバイス。</desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261019112500 +0900" stop="20261019113000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40517">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja">各地の天気予報をお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019113000 +0900" stop="20261019114700 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40518">
+    <title lang="ja">Live News days[字]</title>
+    <desc lang="ja">「暮らし」を意識したラインナップで世の中の動きを素早くキャッチ！最新ニュースをわかりやすく、丁寧にお届けします。「命を守る」防災情報も様々なテーマで。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019114700 +0900" stop="20261019135000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40519">
+    <title lang="ja">ぽかぽか◆高橋文哉＆久保史緒里が月１０ドラマ撮影裏話をぶっちゃけ＆雑学クイズ[字]</title>
+    <desc lang="ja">月１０ドラマ『南田南弁護士は天才肌』出演の高橋文哉＆久保史緒里が撮影裏話▼調理師免許所有の高橋が簡単おすすめレシピを伝授▼リアクションダウト演技力対決</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261019135000 +0900" stop="20261019154500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40520">
+    <title lang="ja">とれたてっ![字][デ]</title>
+    <desc lang="ja">全国各地の「いま起きていること」を伝えるニュース・情報番組。ＭＣ青木源太と歯に衣着せないパネラーたちがズバッと切り込みます!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261019154500 +0900" stop="20261019190000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40524">
+    <title lang="ja">TKU Live News【熊本のニュースは午後６時９分〜】[字][生]</title>
+    <desc lang="ja">榎並大二郎、山崎夕貴、遠藤玲子「毎日の夕方」を安心して過ごすためのお手伝い。暮らしに必要な情報を分かりやすくお伝え!
+▽熊本の最新ニュース・天気は６時９分から</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019190000 +0900" stop="20261019205400 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40525">
+    <title lang="ja">真剣遊戯!THEバトルSHOW★SnowMan渡辺&amp;向井軍vs出川軍2時間SP[字]</title>
+    <desc lang="ja">大人気ゴチャ文字＆２択生き残りＱ「国立ライブより緊張」しょっぴー辻ちゃん美肌秘訣トーク「〇〇を飲め」＆金メダリスト対決！向井バックダンサー拒否され事件</desc>
+    <category lang="ja">バラエティ</category>
+    <icon src="https://tvguide.myjcom.jp/monomedia/sirc/470000/477907/image/fe0dfb282454a2fe7bc3907f8f35b5f7.jpg" />
+  </programme>
+  <programme start="20261019205400 +0900" stop="20261019210000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40526">
+    <title lang="ja">TKUニュース</title>
+    <desc lang="ja">熊本のスタジオから、その日の重要なニュースはもちろん、最新のニュースもお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019210000 +0900" stop="20261019215400 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40527">
+    <title lang="ja">救命病棟２４時【江口洋介×松嶋菜々子！進藤が帰還！物語が動き出す】 #02[字][解]</title>
+    <desc lang="ja">大人気シリーズついに再始動！主題歌は今作もドリカム新曲!16年ぶりに再会した進藤と小島はどのように若手医師たちと向き合っていくのか▼豪華キャストが集結</desc>
+    <category lang="ja">ドラマ</category>
+    <icon src="https://tvguide.myjcom.jp/monomedia/sirc/470000/477911/image/ac412de3a6a511ddd08c464100b3f192.jpg" />
+  </programme>
+  <programme start="20261019215400 +0900" stop="20261019220000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40528">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja">各地の天気予報をお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261019220000 +0900" stop="20261019230900 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40529">
+    <title lang="ja">[新]南田南弁護士は天才肌 ＃０１[字][デ] 上から読んでも下から読んでも南田南です</title>
+    <desc lang="ja">【主演：芦田愛菜】自閉スペクトラム症の新人弁護士・南田南が初の法廷へ！老夫婦の間で起きた殺人未遂事件の被告人弁護で、セオリーを打ち破り、無罪を主張!?</desc>
+    <category lang="ja">ドラマ</category>
+    <icon src="https://tvguide.myjcom.jp/monomedia/sirc/470000/478133/image/9ff95ae7021ab8b141431bc581b97377.jpg" />
+  </programme>
+  <programme start="20261019230900 +0900" stop="20261019231500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40530">
+    <title lang="ja">ハイスクール天国</title>
+    <desc lang="ja">熊本県内の高校生が、部活動や課外活動で活躍する姿を紹介しちゃいます!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261019231500 +0900" stop="20261019234500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40531">
+    <title lang="ja">けるとめる▼高校生２００人と現役Ｊリーガーが力合わせゴール目指す！トラジャ挑戦[字]</title>
+    <desc lang="ja">絶対にあきらめない！茨城県水戸の高校生２００名と現役Ｊリーガーが絆をつなぐ青春ドキュメント完結編！トラジャも挑戦！一度もボールを落とさずゴールを目指せ</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261019234500 +0900" stop="20261020003000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40532">
+    <title lang="ja">Live News α[字]</title>
+    <desc lang="ja">働く人に役立つ情報を＋αして、その日のニュースをコンパクトにお伝えします。キャスターは月〜木曜日が堤礼実、金曜日は海老原優香。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261020003000 +0900" stop="20261020013000 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40533">
+    <title lang="ja">英太郎のかたらんね【平成界隈プチ自慢探し！驚きのチョコ＆プール】[再]</title>
+    <desc lang="ja">「英太郎のかたらんね」を深夜に再放送!!熊本の「ワクワクする情報」と「人々のふれあい」満載でお届け！英太郎＆本田千穂が夜も熊本にちなんだ情報をお伝えします!</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261020013000 +0900" stop="20261020013500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40534">
+    <title lang="ja">天気予報</title>
+    <desc lang="ja">各地の天気予報をお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261020013500 +0900" stop="20261020020500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40535">
+    <title lang="ja">あちこちオードリー【完全未公開！秘蔵トークＳＰ】</title>
+    <desc lang="ja">▼アンジャッシュ渡部秘エピソード▼クロちゃんトリオのガチ悩み▼ナダルのお笑い持論▼春日の悩める引越し事情▼長引くネルソンズ問題</desc>
+    <category lang="ja">バラエティ</category>
+  </programme>
+  <programme start="20261020020500 +0900" stop="20261020023500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40536">
+    <title lang="ja">ディノスTHEストア</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261020023500 +0900" stop="20261020030500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="41232">
+    <title lang="ja">買い物情報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+  <programme start="20261020045000 +0900" stop="20261020045500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="40541">
+    <title lang="ja">おめざめ天気</title>
+    <desc lang="ja">おはようございます。朝一番の各地の天気予報をお伝えします。</desc>
+    <category lang="ja">ニュース／報道</category>
+  </programme>
+  <programme start="20261020045500 +0900" stop="20261020052500 +0900" channel="TKU.jp" broadcast="terrestrial" service-id="57368" event-id="41464">
+    <title lang="ja">買い物情報</title>
+    <desc lang="ja"> </desc>
+    <category lang="ja">情報／ワイドショー</category>
+  </programme>
+</tv>
